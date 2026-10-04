@@ -728,10 +728,10 @@ open(fn404, "w", encoding="utf-8").write(s)
 
 # ======================= sitemap / robots / redirects =======================
 pages_sm = [("/", "1.0"), ("/zakelijk/", "0.9"), ("/particulier/", "0.9"), ("/contact/", "0.8"), ("/over-ons/", "0.6"),
-            ("/werken-bij/", "0.5"), ("/blog/", "0.7"), ("/portfolio/", "0.8"), ("/privacy/", "0.2")] + [(f"/{d['slug']}/", "0.9") for d in D.DIENSTEN] + [(f"/post/{p['slug']}/", "0.6") for p in posts.POSTS]
+            ("/werken-bij/", "0.5"), ("/blog/", "0.7"), ("/portfolio/", "0.8"), ("/privacy/", "0.2")] + [(f"/{d['slug']}/", "0.9") for d in D.DIENSTEN] + [(f"/post/{p['slug']}/", "0.6", p.get("modified", p["date"])) for p in posts.POSTS]
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-for u, pr in pages_sm:
-    sm += f"  <url><loc>{BASE}{u}</loc><lastmod>2026-10-04</lastmod><priority>{pr}</priority></url>\n"
+for u, pr, *lm in pages_sm:
+    sm += f"  <url><loc>{BASE}{u}</loc><lastmod>{lm[0] if lm else '2026-10-04'}</lastmod><priority>{pr}</priority></url>\n"
 sm += "</urlset>\n"
 open(os.path.join(OUT, "sitemap.xml"), "w").write(sm)
 open(os.path.join(OUT, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\n\nSitemap: {BASE}/sitemap.xml\n")
