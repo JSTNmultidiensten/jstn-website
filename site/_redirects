@@ -1,0 +1,15 @@
+# Oude Wix-adressen -> nieuwe pagina's (301 = permanent, behoudt Google-waarde)
+/about-us              /zakelijk/      301
+/about-us-1            /particulier/   301
+/blank-1               /werken-bij/    301
+/blank-1-1             /over-ons/      301
+/privacy-policy        /privacy/       301
+/portfolio-collections/*  /portfolio/  301
+/blog/categories/*     /blog/          301
+/blog/page/*           /blog/          301
+# Oude Wix-sitemaps
+/pages-sitemap.xml                 /sitemap.xml  301
+/blog-posts-sitemap.xml            /sitemap.xml  301
+/blog-categories-sitemap.xml       /sitemap.xml  301
+/portfolio-projects-sitemap.xml    /sitemap.xml  301
+/portfolio-collections-sitemap.xml /sitemap.xml  301
