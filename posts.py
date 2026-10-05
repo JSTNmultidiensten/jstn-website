@@ -3,6 +3,70 @@
 
 POSTS = [
 {
+ "slug": "huurwoning-opleveren-stappenplan",
+ "title": "Huurwoning opleveren: stappenplan van opzegging tot sleuteloverdracht",
+ "seo_title": "Huurwoning opleveren: stappenplan | JSTN",
+ "desc": "Huurwoning opleveren zonder gedoe over je borg: wat moet weg, hoe werkt de voorinspectie en hoe schoon moet de woning zijn? Praktisch stappenplan.",
+ "date": "2026-10-05", "modified": "2026-10-05", "date_nl": "5 oktober 2026",
+ "cat": "Opleveren", "icon": "key",
+ "note": "Dit artikel is met AI-ondersteuning geschreven.",
+ "sources": [
+   ("Juridisch Loket — Hoe moet ik mijn huurwoning opleveren?", "https://www.juridischloket.nl/wonen-en-buren/huurwoning/huurwoning-opleveren/"),
+   ("Rijksoverheid — Mag mijn verhuurder een waarborgsom vragen?", "https://www.rijksoverheid.nl/onderwerpen/woning-huren/vraag-en-antwoord/woning-huren-waarborgsom"),
+ ],
+ "faq": [
+   ("Moet ik mijn huurwoning opnieuw laten schilderen voordat ik vertrek?",
+    "Niet automatisch. Normale slijtage hoef je niet te herstellen, en muren in een gangbare kleur die er netjes bij staan zijn meestal prima. Heb je zelf felle kleuren, donkere muren of veel gaten gemaakt, of zit er nicotine-aanslag op wanden en plafonds, dan vraagt de verhuurder vaak wel herstel. Kijk in je huurcontract en vraag het na bij de voorinspectie, zodat je niet voor niets schildert."),
+   ("Wat is het verschil tussen bezemschoon en schoon opleveren?",
+    "Bezemschoon betekent meestal: leeg, vrij van grof vuil en aangeveegd. Schoon opleveren gaat verder: keuken ontvet, sanitair kalkvrij, ramen, kozijnen en vloeren gereinigd. Welke eis voor jou geldt, staat in je huurcontract of de opleveringsvoorwaarden van de verhuurder. Juridisch Loket noemt schoon opleveren als uitgangspunt, dus ga daar bij twijfel van uit."),
+   ("Mag ik mijn vloer of gordijnen laten liggen voor de nieuwe huurder?",
+    "Alleen als de verhuurder daarmee akkoord gaat, en de nieuwe huurder is niet verplicht iets van je over te nemen. Leg een overnameafspraak altijd schriftelijk vast, inclusief wat er gebeurt als de nieuwe huurder afhaakt. Zonder die afspraak ga je ervan uit dat alles wat je zelf hebt aangebracht weg moet."),
+   ("Binnen hoeveel tijd krijg ik mijn borg terug?",
+    "Volgens de Rijksoverheid moet de verhuurder de borg binnen 14 dagen na het einde van de huur terugbetalen. Haalt de verhuurder kosten zoals schade of een huurachterstand van de borg af, dan moet het resterende bedrag binnen 30 dagen terug zijn."),
+ ],
+ "html": """
+<p class="lead">Een huurwoning opleveren doe je in vier stappen: zoek uit in welke staat je de woning kreeg, laat een voorinspectie doen, werk de lijst van de verhuurder af en lever de woning leeg en schoon op bij de eindinspectie. Wie dat op tijd plant, voorkomt dat er kosten van de borg worden afgehaald.</p>
+<p>De meeste discussies bij een oplevering gaan niet over grote schade, maar over kleine dingen die op het laatste moment opvallen: een vloer die nog ligt, een vette afzuigkap, gaten in de muur of een tuin vol spullen. Met onderstaand stappenplan weet je wat er van je verwacht wordt en wat je gerust zelf kunt doen.</p>
+
+<h2>Stap 1: zoek je opnamestaat en huurcontract op</h2>
+<p>Het uitgangspunt is simpel: je levert de woning op in de staat waarin je hem kreeg, met uitzondering van normale slijtage. Hoe die staat eruitzag, staat idealiter in een opnamestaat: een beschrijving van de woning bij het begin van de huur, vaak met foto's. Volgens <a href="https://www.juridischloket.nl/wonen-en-buren/huurwoning/huurwoning-opleveren/" target="_blank" rel="noopener">Juridisch Loket</a> is zo'n beschrijving niet verplicht, maar bepaalt die wel wat er bij oplevering van je gevraagd mag worden. Is er geen opnamestaat, dan gaat de wet ervan uit dat je de woning in goede staat hebt ontvangen.</p>
+<p>Lees daarnaast je huurcontract en eventuele opleveringsvoorwaarden. Daar staat vaak of de woning bezemschoon of schoon moet worden opgeleverd, en wat er met vloeren, gordijnen en lampen moet gebeuren. Woningcorporaties in Groningen werken meestal met een vaste lijst; vraag die op als je hem niet hebt.</p>
+
+<h2>Stap 2: laat een voorinspectie doen</h2>
+<p>Een voorinspectie vindt meestal minimaal twee weken voor het einde van de huur plaats. De verhuurder loopt dan met je door de woning en noteert wat je nog moet herstellen of weghalen. Dat lijstje is goud waard: volgens Juridisch Loket mag de verhuurder bij de eindinspectie alleen nieuwe punten noemen die hij bij de voorinspectie niet kon zien.</p>
+<p>Een paar tips voor dit moment:</p>
+<ul>
+<li>Plan de voorinspectie zo vroeg mogelijk, zodat je tijd hebt om het werk te laten doen.</li>
+<li>Vraag bij elk punt door: moet het weg, hersteld of alleen schoongemaakt?</li>
+<li>Vraag of de nieuwe huurder iets wil overnemen, zoals vloerbedekking of gordijnen. Overname is niet verplicht, dus leg een afspraak altijd schriftelijk vast.</li>
+<li>Maak zelf foto's van alle ruimtes, ook van dingen die al versleten waren.</li>
+</ul>
+
+<h2>Stap 3: bepaal wat weg moet en wat mag blijven</h2>
+<p>Kleine veranderingen die je eenvoudig kunt terugdraaien, mocht je zonder toestemming aanbrengen. Voor grotere veranderingen had je schriftelijke toestemming nodig. Heb je die gekregen, dan hoef je de verandering meestal niet terug te draaien. Zonder toestemming moet je de oude situatie herstellen.</p>
+<p>In de praktijk betekent dit vaak: zelf gelegde vloeren, gordijnrails, lampen, losse kasten en alle spullen in schuur en tuin moeten eruit. Normale slijtage hoef je niet te herstellen. Juridisch Loket geeft als voorbeeld dat een badkamer van vijftien jaar oud niet meer in perfecte staat hoeft te zijn. Schade die je zelf hebt veroorzaakt, zoals grote gaten, kapotte deuren of brandplekken, valt daar niet onder.</p>
+<p>Heb je veel spullen die nog prima bruikbaar zijn? Zet die op tijd apart voor familie, een kringloopwinkel of marktplaats. Wat overblijft moet worden afgevoerd. Bij een volle woning is een <a href="/woningontruiming-groningen/">woningontruiming</a> vaak sneller dan zelf heen en weer rijden naar de milieustraat.</p>
+
+<h2>Stap 4: schoonmaken in de juiste volgorde</h2>
+<p>Pas als de woning leeg is, kun je goed schoonmaken. Werk van boven naar beneden en van achter naar voren, zodat je niets twee keer hoeft te doen:</p>
+<ol>
+<li>Eerst eventueel gaten dichten en schilderen, want dat geeft stof en spetters.</li>
+<li>Daarna de keuken: kastjes binnen en buiten, afzuigkap en filter, tegels en aanrecht ontvetten.</li>
+<li>Dan badkamer en toilet: kalk van kranen, douchewand en tegels, voegen en afvoeren reinigen.</li>
+<li>Vervolgens ramen, kozijnen, deuren, plinten, schakelaars en radiatoren.</li>
+<li>Als laatste de vloeren, en vergeet de berging, meterkast en buitenruimte niet.</li>
+</ol>
+<p>Een woning waar je een paar jaar netjes hebt gewoond, kun je prima zelf opleveren met een volle dag of weekend schoonmaken. Heb je lang in de woning gewoond, is er gerookt, of zit er veel vet en kalk, dan kom je met een gewone schoonmaakbeurt vaak tekort. Dan is dieptereiniging nodig.</p>
+
+<h2>Stap 5: de eindinspectie en je borg</h2>
+<p>Bij de eindinspectie controleert de verhuurder of de punten van de voorinspectie zijn opgelost. Je levert de sleutels in en tekent meestal een opleveringsrapport. Lees dat goed door voordat je tekent en zet er bij een meningsverschil een opmerking bij.</p>
+<p>Volgens de <a href="https://www.rijksoverheid.nl/onderwerpen/woning-huren/vraag-en-antwoord/woning-huren-waarborgsom" target="_blank" rel="noopener">Rijksoverheid</a> moet de verhuurder de borg binnen 14 dagen na het einde van de huur terugbetalen. Worden er kosten verrekend, zoals schade of een huurachterstand, dan moet het restant binnen 30 dagen terug zijn. Krijg je onterecht kosten in rekening gebracht, dan helpen je foto's en de lijst van de voorinspectie om dat te onderbouwen.</p>
+
+<h2>Lukt het niet zelf? Zo kunnen wij helpen</h2>
+<p>Heb je weinig tijd, woon je al ergens anders of gaat het om de woning van een ouder? JSTN Multidiensten kan het <a href="/woning-opleveren-groningen/">opleveren van je huurwoning</a> in Groningen en omgeving van begin tot eind regelen: leeghalen, schoonmaken en waar nodig schilderen, afgestemd op de lijst van je verhuurder. Je hebt één aanspreekpunt en we kunnen vooraf een vaste prijs afspreken. Op ons <a href="/portfolio/">portfolio</a> zie je voor- en na-foto's van eerdere klussen. Wil je weten wat er bij jouw woning nodig is? Neem <a href="/contact/">contact</a> op; je hoort binnen 12 uur van ons.</p>
+""",
+},
+{
  "slug": "zo-kies-je-een-bedrijf-voor-woningontruiming-in-groningen",
  "title": "Zo kies je een bedrijf voor woningontruiming in Groningen",
  "seo_title": "Zo kies je een bedrijf voor woningontruiming in Groningen | JSTN",
