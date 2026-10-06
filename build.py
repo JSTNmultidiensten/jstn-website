@@ -65,7 +65,7 @@ ORG = {
               "addressLocality": "Groningen", "addressCountry": "NL"},
   "areaServed": [{"@type": "City", "name": n} for n in D.PLAATSEN] + [{"@type": "AdministrativeArea", "name": "Provincie Groningen"}],
   "openingHours": "Mo-Sa 07:00-18:00",
-  "slogan": "Schoon, leeg en netjes opgeleverd.",
+  "slogan": "Snel, netjes en zonder zorgen geregeld.",
   "description": "Schoonmaak en desinfectie, vloerreiniging, glasbewassing, ontruimen, verhuizen, schilder- en behangwerk, opleveren van zorg-appartementen en hogedrukreiniging in Groningen en omgeving.",
 }
 
@@ -94,7 +94,7 @@ FOOTER = f'''<footer class="ft">
 <div class="w ftg">
 <div>
 <a class="logo" href="/" aria-label="JSTN Multidiensten, naar home"><img src="/logo-wit.png" width="150" height="68" alt="JSTN Multidiensten" loading="lazy"></a>
-<p class="ftp">Schoon, leeg en netjes opgeleverd.</p>
+<p class="ftp">Snel, netjes en zonder zorgen geregeld.</p>
 </div>
 <div><h2 class="fth">Ga naar</h2><ul>{"".join(f'<li><a href="{u}">{t}</a></li>' for u, t in NAV)}</ul></div>
 <div><h2 class="fth">Diensten</h2><ul>{"".join(f'<li><a href="/{d["slug"]}/">{d["kort"]}</a></li>' for d in D.DIENSTEN)}</ul></div>
@@ -218,8 +218,8 @@ home = f'''<section class="sec">
 <div class="w hero">
 <div>
 <span class="tag">Voor bedrijven en particulieren</span>
-<h1>Schoon, leeg en netjes opgeleverd.</h1>
-<p class="lead">Schoonmaak, ontruiming, verhuizen en schilderwerk door één team. U belt één keer, wij regelen de rest.</p>
+<h1>Snel, netjes en zonder zorgen geregeld.</h1>
+<p class="lead">Eén team en één aanspreekpunt voor bedrijven en particulieren. U belt één keer, wij regelen de rest.</p>
 <div class="row" style="margin-top:22px">
 <a class="btn" href="/contact/">{ic("mail")}Offerte aanvragen</a>
 <a class="btn btn-wa" href="{WA}" target="_blank" rel="noopener">{ic("wa")}WhatsApp ons</a>
