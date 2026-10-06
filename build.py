@@ -65,12 +65,12 @@ ORG = {
               "addressLocality": "Groningen", "addressCountry": "NL"},
   "areaServed": [{"@type": "City", "name": n} for n in D.PLAATSEN] + [{"@type": "AdministrativeArea", "name": "Provincie Groningen"}],
   "openingHours": "Mo-Sa 07:00-18:00",
-  "slogan": "Uw partner voor elke klus in Nederland",
+  "slogan": "Schoonmaak, ontruiming en opleveringen. Wij regelen het.",
   "description": "Schoonmaak en desinfectie, vloerreiniging, glasbewassing, ontruimen, verhuizen, schilder- en behangwerk, opleveren van zorg-appartementen en hogedrukreiniging in Groningen en omgeving.",
 }
 
 NAV = [("/", "Home"), ("/zakelijk/", "Zakelijk"), ("/particulier/", "Particulier"),
-       ("/over-ons/", "Over ons"), ("/portfolio/", "Portfolio"), ("/werken-bij/", "Bij ons werken"), ("/blog/", "Blog"), ("/contact/", "Contact")]
+       ("/over-ons/", "Over ons"), ("/portfolio/", "Portfolio"), ("/werken-bij/", "Vacatures"), ("/blog/", "Blog"), ("/contact/", "Contact")]
 
 def header(active):
     links = "".join(f'<a href="{u}"{" class=on aria-current=page" if u == active else ""}>{t}</a>' for u, t in NAV)
@@ -93,7 +93,7 @@ FOOTER = f'''<footer class="ft">
 <div class="w ftg">
 <div>
 <a class="logo" href="/" aria-label="JSTN Multidiensten, naar home"><img src="/logo-wit.png" width="150" height="68" alt="JSTN Multidiensten" loading="lazy"></a>
-<p class="ftp">Uw partner voor elke klus in Nederland.</p>
+<p class="ftp">Schoonmaak, ontruiming en opleveringen. Wij regelen het.</p>
 </div>
 <div><h2 class="fth">Ga naar</h2><ul>{"".join(f'<li><a href="{u}">{t}</a></li>' for u, t in NAV)}</ul></div>
 <div><h2 class="fth">Diensten</h2><ul>{"".join(f'<li><a href="/{d["slug"]}/">{d["kort"]}</a></li>' for d in D.DIENSTEN)}</ul></div>
@@ -216,9 +216,9 @@ REVIEWS_SEC = f'''<section class="sec" id="reviews">
 home = f'''<section class="sec">
 <div class="w hero">
 <div>
-<span class="tag">Groningen en omgeving</span>
-<h1>Uw partner voor elke klus in Groningen</h1>
-<p class="lead">Schoonmaak, ontruiming, verhuizen, schilderwerk en het opleveren van (zorg)woningen. Eén team, één aanspreekpunt — voor bedrijven én particulieren.</p>
+<span class="tag">Voor bedrijven en particulieren</span>
+<h1>Schoonmaak, ontruiming en opleveringen. Wij regelen het.</h1>
+<p class="lead">Van dieptereiniging tot een leeggeruimde, geschilderde woning. Eén team en één aanspreekpunt, voor bedrijven én particulieren.</p>
 <div class="row" style="margin-top:22px">
 <a class="btn" href="/contact/">{ic("mail")}Offerte aanvragen</a>
 <a class="btn btn-wa" href="{WA}" target="_blank" rel="noopener">{ic("wa")}WhatsApp ons</a>
@@ -271,40 +271,34 @@ page("/", "Schoonmaak, ontruiming & verhuizen in Groningen | JSTN Multidiensten"
 # ======================= ZAKELIJK =======================
 zak_svcs = [
  ("sparkle", "Schoonmaak &amp; desinfectie", "schoonmaak", [
-   "Ook voor de schoonmaak van zorgappartementen en woningen kunt u op JSTN Multidiensten rekenen. Wij verzorgen zowel reguliere schoonmaak als grondige dieptereinigingen, zodat een ruimte snel en zorgvuldig weer gebruiksklaar is.",
-   "Voor specialistische reiniging en desinfectie werken wij met professionele apparatuur en hoogwaardige reinigings- en desinfectiemiddelen. Zo zorgen wij voor een hygiënische, frisse en representatieve oplevering."]),
+   "Reguliere schoonmaak of een grondige dieptereiniging van kantoren, woningen en zorgappartementen, met professionele apparatuur en desinfectiemiddelen."]),
  ("floor", "Vloerreiniging", "vloerreiniging", [
-   "Grote vloeroppervlakken in scholen, kantoren, bedrijfspanden en andere grote ruimtes reinigen wij grondig met professionele apparatuur. Als eenmalige dieptereiniging of als periodiek onderhoud — voor een frisse, hygiënische en representatieve uitstraling.",
-   "Flexibel in te plannen, ook in (school)vakanties, zodat uw organisatie er geen last van heeft."]),
+   "Grote vloeren in scholen, kantoren en bedrijfspanden grondig schoon. Eenmalig of periodiek, ook in (school)vakanties."]),
  ("key", "Zorg-appartementen", "zorg-appartementen", [
-   "Bij het vertrek van een bewoner zorgen wij ervoor dat het appartement binnen maximaal 3 werkdagen weer beschikbaar is voor een nieuwe cliënt. Het appartement wordt opgeleverd volgens het door u gewenste opleverniveau.",
-   "Naast de benodigde opknap- en herstelwerkzaamheden kunnen wij ook de administratieve afhandeling en schoonmaak volledig voor u verzorgen. Zo nemen wij het gehele proces uit handen en zorgen wij voor een snelle, nette en zorgvuldige oplevering."]),
+   "Bij vertrek van een bewoner is het appartement binnen maximaal 3 werkdagen weer beschikbaar: opknappen, schoonmaken en desgewenst de administratie."]),
  ("box", "Ontruimen", "ontruimen", [
-   "Zowel bij gedwongen als ongedwongen beëindiging van de huur verzorgen wij de ontruiming van uw vastgoed. Wij werken hierbij snel, zorgvuldig en met respect voor de situatie.",
-   "Waar mogelijk werken wij duurzaam door bruikbare materialen en inventaris te hergebruiken en afval zorgvuldig te scheiden. Ook voor spoedontruimingen zijn wij flexibel inzetbaar."]),
+   "Ontruiming bij (gedwongen) beëindiging van de huur: snel, zorgvuldig en duurzaam. Ook spoedontruimingen."]),
  ("roller", "Schilder- &amp; behangwerk", "schilderwerk", [
-   "Voor zowel woningen als zorgappartementen verzorgen wij professioneel schilder- en behangwerk. Van het bijwerken van wanden en plafonds tot het volledig opnieuw schilderen of behangen van een ruimte.",
-   "Wij werken netjes, vakkundig en met oog voor een strak eindresultaat. Zo zorgen wij ervoor dat iedere ruimte weer fris, verzorgd en direct gebruiksklaar wordt opgeleverd."]),
+   "Wanden en plafonds bijwerken of volledig opnieuw schilderen en behangen, netjes en strak afgewerkt."]),
  ("drop", "Hogedrukreiniging", "hogedrukreiniging", [
-   "Mos en aanslag op daken en bedrijfsterreinen zijn niet alleen lelijk, maar vormen een reëel veiligheidsrisico — vooral op platte daken, vluchtroutes en looppaden waar uitglijden tot aansprakelijkheid kan leiden.",
-   "Wij reinigen daken, opritten, terreinen en gevels met hogedruk, als eenmalige beurt of als onderdeel van een vast onderhoudsschema. Zo blijft uw pand veilig, representatief en voldoet u aantoonbaar aan uw zorgplicht."]),
+   "Daken, terreinen, looppaden en gevels vrij van mos en aanslag: veilig, representatief en eenmalig of volgens schema."]),
  ("window", "Glasbewassing", "glasbewassing", [
-   "Streeploos schone ramen voor kantoren, bedrijfspanden en woningen — eenmalig of periodiek, en goed te combineren met de schoonmaak van uw pand."]),
+   "Streeploos schone ramen voor kantoren en bedrijfspanden, eenmalig of periodiek."]),
 ]
 zak = f'''<section class="sec">
 <div class="w hero">
 <div>
 <span class="tag">Zakelijk · B2B</span>
 <h1>Zakelijke dienstverlening in Groningen</h1>
-<p class="lead">Voor makelaars, woningcorporaties, zorginstellingen, scholen en bedrijven. Schoonmaak, vloerreiniging, ontruiming, schilderwerk en het opleveren van zorg-appartementen — met vaste aanspreekpunten en korte lijnen.</p>
+<p class="lead">Voor makelaars, woningcorporaties, zorginstellingen, scholen en bedrijven. Vaste aanspreekpunten en korte lijnen.</p>
 <div class="row" style="margin-top:22px">
 <a class="btn" href="/contact/">{ic("mail")}Offerte aanvragen</a>
 <a class="btn btn-wa" href="{WA}" target="_blank" rel="noopener">{ic("wa")}WhatsApp ons</a>
 </div>
 </div>
 <div class="g1">
-<div class="card"><div class="ic">{ic("bolt")}</div><h2 class="h3">Snel &amp; flexibel</h2><p class="muted">Wij begrijpen dat niet alles vooraf te plannen is en dat onverwachte situaties om een snelle oplossing vragen. Daarom zijn wij flexibel ingericht en kunnen wij snel schakelen wanneer dat nodig is. Of het nu gaat om een onverwachte aanvraag, extra werkzaamheden of een situatie die direct aandacht vraagt: JSTN Multidiensten denkt mee en komt snel in actie.</p><p class="muted">Zo zorgen wij ervoor dat uw bedrijfsprocessen zo min mogelijk worden verstoord en u kunt rekenen op een betrouwbare en flexibele dienstverlening.</p></div>
-<div class="card"><div class="ic">{ic("users")}</div><h2 class="h3">Persoonlijke betrokkenheid</h2><p class="muted">Bij JSTN Multidiensten geloven we in persoonlijk contact en een goede samenwerking met onze opdrachtgevers. Iedere organisatie en iedere opdracht is anders. Daarom vinden wij het belangrijk om goed te luisteren, uw wensen en verwachtingen te begrijpen en ons in te leven in uw situatie.</p><p class="muted">Door te werken met vaste aanspreekpunten en waar mogelijk een vertrouwd team van medewerkers, zorgen we voor korte lijnen, duidelijke communicatie en een consistente dienstverlening.</p></div>
+<div class="card"><div class="ic">{ic("bolt")}</div><h2 class="h3">Snel &amp; flexibel</h2><p class="muted">Een onverwachte aanvraag of extra werk? Wij schakelen snel, zodat uw bedrijfsprocessen zo min mogelijk worden verstoord.</p></div>
+<div class="card"><div class="ic">{ic("users")}</div><h2 class="h3">Persoonlijke betrokkenheid</h2><p class="muted">Vaste aanspreekpunten en waar mogelijk een vertrouwd team. Korte lijnen en duidelijke communicatie.</p></div>
 </div>
 </div>
 </section>
@@ -324,26 +318,17 @@ page("/zakelijk/", "Zakelijke schoonmaak, vloerreiniging & ontruiming Groningen 
 # ======================= PARTICULIER =======================
 par_svcs = [
  ("truck", "Verhuizingen", "verhuizingen", [
-   "Een verhuizing is een grote stap. Daarom zorgen wij ervoor dat alles zo soepel en zorgeloos mogelijk verloopt. Wij zijn gespecialiseerd in verhuizingen voor particulieren en hebben extra aandacht voor senioren en hun persoonlijke bezittingen.",
-   "Van het inpakken en uitpakken tot het zorgvuldig plaatsen van uw meubels en spullen: wij nemen het werk graag volledig uit handen. We richten uw kasten weer in, hangen schilderijen en klokken op en sluiten indien gewenst uw apparatuur weer aan. Zo voelt u zich snel weer thuis.",
-   "Ook wanneer u op korte termijn hulp nodig heeft, denken wij graag met u mee. Voor het inpakken stellen wij verhuisdozen en inpakmateriaal beschikbaar."]),
+   "Inpakken, verhuizen en uitpakken, met extra aandacht voor senioren. We richten kasten in, hangen schilderijen op en sluiten apparatuur aan. Verhuisdozen zijn beschikbaar."]),
  ("box", "Leegruimen", "leegruimen", [
-   "Moet uw woning, of de woning van uw ouders, worden leeggeruimd? JSTN Multidiensten helpt u hier graag bij. Wij verwijderen de volledige inboedel uit uw woning, schuur, berging en tuin en zorgen ervoor dat alles netjes wordt afgevoerd.",
-   "Waar mogelijk geven we bruikbare spullen een tweede leven. Zo werken we niet alleen efficiënt, maar ook met aandacht voor duurzaamheid.",
-   "Daarnaast kunnen wij uw woning volledig verkoopklaar maken, zodat deze netjes en verzorgd kan worden opgeleverd."]),
+   "Woning, schuur, berging en tuin volledig leeg en netjes afgevoerd. Bruikbare spullen krijgen waar mogelijk een tweede leven."]),
  ("clip", "Opleveringen", "opleveringen", [
-   "Moet uw woning worden opgeleverd aan een woningcorporatie, verhuurder of zorginstelling? Wij zorgen ervoor dat de woning netjes en volgens de gestelde opleveringsvoorwaarden wordt achtergelaten.",
-   "Van het verwijderen van vloerafwerking, gordijnen en lampen tot het opruimen van de tuin, reinigen van het sanitair en bezemschoon opleveren van de woning. U hoeft zich nergens zorgen over te maken: wij regelen het van begin tot eind.",
-   "Vooraf spreken we duidelijk af wat er moet gebeuren en kunnen we indien gewenst een vaste prijs aanbieden. Zo weet u precies waar u aan toe bent."]),
+   "Uw huurwoning opgeleverd volgens de voorwaarden van corporatie of verhuurder. Vooraf duidelijke afspraken, een vaste prijs is mogelijk."]),
  ("roller", "Schilder- &amp; behangwerk", "schilderwerk", [
-   "Verhuist u naar een nieuwe woning en kan deze wel een opknapbeurt gebruiken? Dan helpen wij u graag om van uw nieuwe woning snel een fijne en persoonlijke plek te maken.",
-   "Wij verzorgen niet alleen het schilder- en behangwerk, maar kunnen ook andere werkzaamheden voor u regelen, zoals het leveren en leggen van vloeren, het ophangen van gordijnen en diverse aanpassingen in de keuken of badkamer.",
-   "U heeft één vast aanspreekpunt voor de werkzaamheden. Wij regelen en coördineren alles voor u, zodat u niet zelf verschillende partijen hoeft te zoeken en op elkaar af te stemmen. Zo kunt u zich richten op de verhuizing, terwijl wij zorgen dat uw nieuwe woning helemaal naar uw wens wordt."]),
+   "Uw nieuwe woning opgeknapt. Ook vloeren, gordijnen of aanpassingen in keuken of badkamer regelen wij, met één aanspreekpunt."]),
  ("drop", "Hogedrukreiniging", "hogedrukreiniging", [
-   "Een oprit vol mos, een glad tuinpad of een dak met aanslag — met hogedruk maken wij het weer schoon en veilig.",
-   "Ook vullen wij de voegen van uw bestrating opnieuw met voegzand, zodat onkruid minder snel terugkomt en uw oprit of terras er weer strak en verzorgd bij ligt."]),
+   "Oprit, terras of dak weer schoon en veilig, inclusief nieuw voegzand tegen onkruid."]),
  ("sparkle", "Schoonmaak &amp; dieptereiniging", "schoonmaak", [
-   "Een woning die na de verhuizing, een ontruiming of een lange periode van bewoning weer fris moet worden? Wij verzorgen een grondige dieptereiniging: ontvetten, kalk en aanslag verwijderen en waar nodig ontsmetten — zodat u weer op een schone basis begint."]),
+   "Grondig schoon na een verhuizing of ontruiming: ontvetten, ontkalken en waar nodig ontsmetten."]),
 ]
 par = f'''<section class="sec">
 <div class="w hero">
@@ -357,8 +342,8 @@ par = f'''<section class="sec">
 </div>
 </div>
 <div class="g1">
-<div class="card"><div class="ic">{ic("bolt")}</div><h2 class="h3">Snel &amp; flexibel</h2><p class="muted">Wij begrijpen dat een strakke planning belangrijk is. Daarom stemmen we onze werkzaamheden zorgvuldig af op uw wensen en zorgen we samen voor een duidelijke planning. We houden ons aan gemaakte afspraken en zorgen ervoor dat u weet waar u aan toe bent.</p><p class="muted"><b>Bij JSTN Multidiensten geldt: afspraak is afspraak.</b></p></div>
-<div class="card"><div class="ic">{ic("chat")}</div><h2 class="h3">Persoonlijk contact</h2><p class="muted">Bij JSTN Multidiensten hechten we veel waarde aan persoonlijk contact met onze klanten. We luisteren naar uw behoeften en denken actief met u mee.</p><p class="muted">Tijdens de opdracht heeft u één vast contactpersoon en kunt u rekenen op heldere communicatie en duidelijke afspraken. Wij zijn trots op de duurzame relaties die we met onze klanten opbouwen.</p></div>
+<div class="card"><div class="ic">{ic("bolt")}</div><h2 class="h3">Snel &amp; flexibel</h2><p class="muted">We plannen samen met u en houden ons aan de afspraken. <b>Afspraak is afspraak.</b></p></div>
+<div class="card"><div class="ic">{ic("chat")}</div><h2 class="h3">Persoonlijk contact</h2><p class="muted">Eén vast contactpersoon, heldere communicatie en duidelijke afspraken van begin tot eind.</p></div>
 </div>
 </div>
 </section>
@@ -382,9 +367,7 @@ MISSIE = '''<section class="pb">
 <div class="w">
 <div class="dark" style="padding:40px">
 <h2 class="acc" style="margin-top:0">Onze missie</h2>
-<p style="color:#E2E8EC;max-width:820px">Met ons bedrijf willen we een omgeving creëren waarin jonge mensen de kans krijgen om zichzelf te ontwikkelen, verantwoordelijkheid te nemen en te groeien — zowel persoonlijk als professioneel.</p>
-<p style="color:#E2E8EC;max-width:820px">Wij bouwen aan een sterk en professioneel bedrijf waarin ambitie, kwaliteit en plezier samenkomen. Een plek waar hard werken wordt gewaardeerd, waar je kunt leren van elkaar en waar talent de ruimte krijgt om zich te ontwikkelen. We willen jonge mensen inspireren om het beste uit zichzelf te halen en laten zien dat leeftijd geen beperking hoeft te zijn om verantwoordelijkheid te dragen en mooie dingen te bereiken.</p>
-<p style="color:#E2E8EC;max-width:820px">Tegelijkertijd vinden wij het belangrijk om een hecht en gezellig team te zijn. We werken samen, helpen elkaar en streven iedere dag naar verbetering. Door te investeren in onze mensen, onze kwaliteit en onze toekomst willen wij blijven groeien en een bedrijf bouwen waar zowel onze klanten als onze medewerkers trots op kunnen zijn.</p>
+<p style="color:#E2E8EC;max-width:820px">Wij geven jonge mensen de kans om zich te ontwikkelen, verantwoordelijkheid te nemen en te groeien. Ambitie, kwaliteit en plezier komen bij ons samen, in een hecht team dat elkaar helpt en iedere dag beter wil worden.</p>
 <p style="font-weight:800;font-size:18px;margin:18px 0 0">Onze ambitie is duidelijk: <span class="acc">samen groeien, samen beter worden en samen iets neerzetten waar we trots op kunnen zijn.</span></p>
 </div>
 </div>
@@ -394,9 +377,8 @@ over = f'''<section class="sec">
 <div>
 <span class="tag">Over ons</span>
 <h1>Jong, ambitieus en gedreven</h1>
-<p class="lead">Wij zijn een jong, ambitieus en gedreven bedrijf met grote plannen voor de toekomst. Vanaf het begin hebben we één duidelijke gedachte gehad: niet stilstaan, maar blijven groeien. We willen iedere dag beter worden, nieuwe kansen pakken en ons bedrijf steeds verder uitbreiden.</p>
-<p class="muted">Als jong team hebben we de ambitie om iets groters neer te zetten. We zijn bereid om hard te werken, verantwoordelijkheid te nemen en continu te blijven leren. Juist omdat we nog volop in ontwikkeling zijn, zien we overal mogelijkheden om te groeien en nieuwe stappen te zetten.</p>
-<p class="muted">Ons doel is dan ook om niet alleen een sterk bedrijf op te bouwen, maar uiteindelijk een organisatie neer te zetten die op meerdere plekken bekend is en waar mensen graag onderdeel van willen zijn. Daarbij verliezen we nooit uit het oog waar we vandaan komen. We willen groeien zonder onze identiteit te verliezen.</p>
+<p class="lead">Wij zijn een jong, ambitieus team met grote plannen. Niet stilstaan, maar iedere dag beter worden en blijven groeien.</p>
+<p class="muted">We werken hard, nemen verantwoordelijkheid en blijven leren. Zo bouwen we aan een bedrijf waar klanten en medewerkers trots op zijn, zonder te vergeten waar we vandaan komen.</p>
 </div>
 <img class="photo" src="{wimg(IMG_KANTOOR, 900, 900, 'kantoor-jstn-multidiensten')}" srcset="{wimg(IMG_KANTOOR, 600, 600, 'kantoor-jstn-multidiensten')} 600w, {wimg(IMG_KANTOOR, 900, 900, 'kantoor-jstn-multidiensten')} 900w" sizes="(max-width: 760px) 100vw, 540px" width="900" height="900" alt="Kantoor van JSTN Multidiensten aan het Zernikepark in Groningen" loading="lazy">
 </div>

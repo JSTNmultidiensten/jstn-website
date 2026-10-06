@@ -181,4 +181,6 @@ textarea{min-height:120px;resize:vertical}
   .r2{grid-template-columns:1fr;gap:0}
   .wa-float{display:grid}
   .row .btn{flex:1 1 auto}
+  .nav{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;overflow:visible;padding-bottom:10px}
+  .nav a{padding:8px 2px;text-align:center;font-size:13px;background:var(--licht)}
 }
