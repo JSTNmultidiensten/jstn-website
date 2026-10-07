@@ -18,6 +18,10 @@ IMG_KANTOOR = "b719c9_b1a41a0f00494731addb3929defd1ae9~mv2.jpeg"
 def wimg(mid, w, h, name):
     return f"{WIX}{mid}/v1/fill/w_{w},h_{h},al_c,q_80,enc_auto/{name}.jpg"
 
+_HERE = os.path.dirname(os.path.abspath(__file__))
+BLOK_A = open(os.path.join(_HERE, "meetcode_a.html"), encoding="utf-8").read()  # Google consent + GTM (head)
+BLOK_B = open(os.path.join(_HERE, "meetcode_b.html"), encoding="utf-8").read()  # GTM noscript + cookiemelding (body)
+
 # ---------- iconen ----------
 I = {
  "pin": '<path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/>',
@@ -129,6 +133,7 @@ def page(path, title, desc, active, body, extra_ld=None, og_type="website", og_i
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{BLOK_A}
 <title>{html.escape(title)}</title>
 <meta name="description" content="{html.escape(desc)}">
 <link rel="canonical" href="{url}">
@@ -150,6 +155,7 @@ def page(path, title, desc, active, body, extra_ld=None, og_type="website", og_i
 {head_extra}{ld}
 </head>
 <body>
+{BLOK_B}
 {header(active)}
 <main id="inhoud">
 {body}
@@ -695,6 +701,37 @@ for d in D.DIENSTEN:
            {"@context": "https://schema.org", "@type": "FAQPage",
             "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in d["faq"]]}]
     page(path, d["title"], d["desc"], "", body, extra_ld=lds)
+
+
+# ======================= BEDANKT =======================
+bedankt = f"""<section class="sec">
+<div class="w narrow">
+<span class="tag">Aanvraag ontvangen</span>
+<h1>Bedankt, uw aanvraag is binnen</h1>
+<p class="lead" id="bedankt-intro">Justin neemt binnen 12 uur contact met u op, ook in het weekend. Houd uw telefoon bij de hand.</p>
+<div class="card" style="margin-top:24px">
+<h2 class="h3">Wat gebeurt er nu?</h2>
+<ol class="steps">
+<li>Justin bekijkt uw aanvraag</li>
+<li>U hoort binnen 12 uur van ons, telefonisch of via WhatsApp</li>
+<li>We spreken samen af wat er moet gebeuren en wat het kost</li>
+</ol>
+</div>
+<div class="card" style="margin-top:20px">
+<h2 class="h3">Haast?</h2>
+<div class="row" style="margin-top:12px">
+<a class="btn" href="tel:+31636179549">{ic("tel")}Bel direct: +31 6 36179549</a>
+<a class="btn btn-wa" href="https://wa.me/31636179549">{ic("wa")}Stuur een WhatsApp</a>
+</div>
+</div>
+</div>
+</section>
+<script>if(/[?&]via=whatsapp(&|$)/.test(location.search)){{document.getElementById('bedankt-intro').textContent='Uw bericht staat klaar in WhatsApp. Druk daar nog op verzenden, dan reageert Justin binnen 12 uur.';}}</script>
+
+{REVIEWS_SEC}"""
+page("/bedankt/", "Bedankt voor uw aanvraag | JSTN Multidiensten",
+     "Bedankt voor uw aanvraag bij JSTN Multidiensten. Justin neemt binnen 12 uur contact met u op.",
+     "", bedankt, head_extra='<meta name="robots" content="noindex">\n')
 
 # ======================= 404 =======================
 nf = f'''<section class="sec"><div class="w narrow" style="text-align:center">

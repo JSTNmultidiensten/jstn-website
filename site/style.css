@@ -191,3 +191,5 @@ textarea{min-height:120px;resize:vertical}
   .wa-float{display:grid}
   .row .btn{flex:1 1 auto}
 }
+.steps{margin:12px 0 0;padding-left:22px;display:flex;flex-direction:column;gap:8px;font-weight:600}
+.steps li::marker{color:var(--blauw-d);font-weight:800}
