@@ -3,6 +3,78 @@
 
 POSTS = [
 {
+ "slug": "zorgappartement-opleveren-leegstand-kort-houden",
+ "title": "Zorgappartement opleveren na vertrek van een bewoner: zo houd je de leegstand kort",
+ "seo_title": "Zorgappartement snel opleveren: zo werkt het | JSTN",
+ "desc": "Een zorgappartement komt vrij: hoe regel je ontruimen, herstellen en schoonmaken zo dat een nieuwe cliënt snel kan verhuizen? Praktisch stappenplan.",
+ "date": "2026-10-08", "modified": "2026-10-08", "date_nl": "8 oktober 2026",
+ "cat": "Zakelijk", "icon": "clip",
+ "note": "Dit artikel is met AI-ondersteuning geschreven.",
+ "sources": [
+   ("Juridisch Loket — Kan ik na het overlijden van de huurder in de huurwoning blijven?", "https://www.juridischloket.nl/wonen-en-buren/huurwoning/overlijden-huurder/"),
+ ],
+ "faq": [
+   ("Hoe snel kan een zorgappartement weer beschikbaar zijn?",
+    "Dat hangt vooral af van het moment waarop de familie de spullen heeft opgehaald of vrijgegeven. Is het appartement eenmaal vrij, dan kan het werk vaak binnen enkele dagen klaar zijn als ontruimen, herstellen, schilderen en schoonmaken direct achter elkaar worden ingepland. JSTN Multidiensten levert zorgappartementen binnen maximaal 3 werkdagen op."),
+   ("Wie betaalt de ontruiming van een zorgappartement?",
+    "Dat staat in het huur- of zorgcontract en de huisregels van de instelling. Vaak is de familie verantwoordelijk voor het leeghalen en neemt de instelling of verhuurder het herstel- en schoonmaakwerk voor zijn rekening, maar dat verschilt per organisatie. Leg de verdeling vooraf vast, zodat er bij een vertrek geen discussie ontstaat."),
+   ("Kan de familie het appartement zelf leeghalen?",
+    "Ja, en voor veel families is dat ook een waardevol moment. Spreek wel een duidelijke datum af en vertel wat er moet blijven staan, zoals vaste hulpmiddelen of meubilair van de instelling. Lukt het de familie niet binnen de afgesproken tijd, dan kan een ontruimingsbedrijf het overnemen."),
+   ("Wanneer eindigt de huur van een zorgappartement na overlijden?",
+    "Gaat het om een gewoon huurcontract en woonde de bewoner alleen, dan stopt het contract volgens Juridisch Loket automatisch aan het einde van de tweede maand na het overlijden. Bij een zorgcontract zonder aparte huur gelden de afspraken van de zorginstelling. Controleer daarom altijd welk contract van toepassing is."),
+ ],
+ "html": """
+<p class="lead">Een zorgappartement weer snel beschikbaar maken lukt het best als je vier dingen vooraf regelt: duidelijke afspraken met de familie over het leeghalen, een vast opleverniveau, één partij die ontruimen, herstellen, schilderen en schoonmaken achter elkaar inplant, en een korte eindcontrole. Dan zit er geen wachttijd tussen de stappen en blijft de leegstand beperkt tot een paar dagen.</p>
+<p>In de praktijk zit de vertraging zelden in het werk zelf. Een appartement leeghalen of schilderen kost geen weken. De tijd gaat verloren tussen de stappen: wachten op de familie, wachten op de schilder, ontdekken dat de schoonmaker te vroeg was. Dit artikel is bedoeld voor zorgorganisaties, woonbegeleiders en beheerders van zorgwoningen die dat proces strakker willen maken.</p>
+
+<h2>Waarom leegstand bij zorgappartementen extra telt</h2>
+<p>Bij een gewone huurwoning is een paar weken leegstand vooral een financiële kwestie. Bij een zorgappartement staat er vaak een cliënt op de wachtlijst die thuis of in een tijdelijke plek wacht op een passende woonplek. Elke dag dat het appartement leeg staat, is een dag dat die zorg ergens anders moet worden opgevangen. Tegelijk wil je de familie van de vertrokken bewoner niet opjagen. Goede afspraken vooraf zorgen ervoor dat je allebei kunt doen: zorgvuldig zijn én snel.</p>
+
+<h2>Stap 1: maak vooraf afspraken met bewoner en familie</h2>
+<p>Het beste moment om afspraken over een vertrek te maken, is bij de intake. Dan is er nog geen emotie of tijdsdruk. Leg in elk geval vast:</p>
+<ul>
+<li>Binnen welke termijn de familie de persoonlijke spullen ophaalt.</li>
+<li>Wat er gebeurt met spullen die niet worden opgehaald.</li>
+<li>Wat eigendom is van de instelling en dus moet blijven staan, zoals hoog-laagbedden, tilliften of vaste kasten.</li>
+<li>Of er aanpassingen zijn gedaan die terug moeten, zoals extra planken, schilderijhaken of een eigen vloer.</li>
+<li>Wie de kosten van het leeghalen draagt.</li>
+</ul>
+<p>Let op het type contract. Gaat het om een gewoon huurcontract en woonde de bewoner alleen, dan stopt het contract volgens <a href="https://www.juridischloket.nl/wonen-en-buren/huurwoning/overlijden-huurder/" target="_blank" rel="noopener">Juridisch Loket</a> automatisch aan het einde van de tweede maand na het overlijden. Bij een zorgcontract zonder aparte huur bepalen je eigen voorwaarden de termijn. Weet welke regels gelden, zodat je de familie niet iets belooft wat niet klopt.</p>
+
+<h2>Stap 2: bepaal een vast opleverniveau</h2>
+<p>Discussie achteraf ontstaat vaak omdat niemand precies heeft opgeschreven wanneer een appartement klaar is. Maak één opleverlijst die voor al je appartementen geldt. Denk aan:</p>
+<ul>
+<li>Muren en plafonds: alleen bijwerken, of altijd volledig opnieuw schilderen in de standaardkleur?</li>
+<li>Gaten van haken en pluggen dichten en bijwerken.</li>
+<li>Vloer: reinigen, of bij slijtage of vlekken een grondige vloerreiniging?</li>
+<li>Sanitair, keukenblok en afzuiging ontkalken en ontvetten.</li>
+<li>Ramen, kozijnen, deuren, schakelaars, radiatoren en ventilatieroosters reinigen.</li>
+<li>Desinfecterend reinigen van contactpunten zoals deurklinken, handgrepen en beugels.</li>
+</ul>
+<p>Met zo'n lijst weet iedere uitvoerder wat er verwacht wordt, en kan de eindcontrole in een paar minuten.</p>
+
+<h2>Stap 3: plan het werk in de goede volgorde</h2>
+<p>De volgorde maakt het verschil tussen drie dagen en drie weken. Werk altijd van grof naar fijn:</p>
+<ol>
+<li><strong>Leeghalen.</strong> Eerst moet alles eruit wat niet blijft. Bruikbare meubels en spullen kunnen vaak nog een tweede leven krijgen via familie of kringloop.</li>
+<li><strong>Kleine reparaties.</strong> Gaten dichten, losse plinten vastzetten, kapotte onderdelen vervangen.</li>
+<li><strong>Schilderwerk.</strong> Muren en plafonds, waar nodig ook kozijnen en deuren. Dit geeft stof en spetters, dus het moet vóór de schoonmaak.</li>
+<li><strong>Dieptereiniging.</strong> Pas als alles droog is: van boven naar beneden, met de vloer als laatste.</li>
+<li><strong>Eindcontrole.</strong> Loop de opleverlijst af en maak foto's, zodat je bij de volgende wisseling een vergelijking hebt.</li>
+</ol>
+<p>Werk je met losse partijen voor elke stap, dan moet je die allemaal afstemmen en ontstaat er al snel wachttijd. Eén partij die alles inplant, kan de stappen direct op elkaar laten aansluiten.</p>
+
+<h2>Stap 4: houd het contact met de familie menselijk</h2>
+<p>Voor de familie is het leeghalen van een appartement vaak een afscheid. Geef ze ruimte om zelf de persoonlijke spullen uit te zoeken en laat duidelijk weten wanneer de ontruiming plaatsvindt. Vraag of er nog iets is wat ze apart willen houden, zoals foto's, papieren of sieraden die in een kast zijn achtergebleven. Een ontruimer die dat soort spullen tegenkomt, hoort ze apart te leggen en niet weg te gooien.</p>
+
+<h2>Wanneer kun je het zelf doen?</h2>
+<p>Heb je een eigen technische dienst en schoonmaakteam met ruimte in de planning, dan kun je een wisseling prima zelf afhandelen. Zeker bij een appartement waar de bewoner kort heeft gewoond en weinig is aangepast. Uitbesteden loont vooral als er meerdere appartementen tegelijk vrijkomen, als je eigen mensen hun handen al vol hebben aan de dagelijkse zorg, of als het appartement flink moet worden opgeknapt.</p>
+
+<h2>Hulp bij het opleveren van zorgappartementen</h2>
+<p>JSTN Multidiensten levert <a href="/zorgappartementen-opleveren/">zorgappartementen</a> in Groningen en tot ongeveer 50 km eromheen binnen maximaal 3 werkdagen op: leeghalen, kleine reparaties, schilderen en schoonmaken, volgens het opleverniveau dat jij bepaalt. Je hebt één aanspreekpunt en er is een vaste prijs mogelijk. Wil je bekijken hoe zo'n oplevering eruitziet, kijk dan op ons <a href="/portfolio/">portfolio</a> of neem <a href="/contact/">contact</a> op; je krijgt binnen 12 uur een reactie.</p>
+""",
+},
+{
  "slug": "huurwoning-opleveren-stappenplan",
  "title": "Huurwoning opleveren: stappenplan van opzegging tot sleuteloverdracht",
  "seo_title": "Huurwoning opleveren: stappenplan | JSTN",
