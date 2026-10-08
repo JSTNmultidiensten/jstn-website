@@ -49,6 +49,7 @@
     data._subject = "Nieuwe aanvraag via website – " + data["Dienst"];
     data._template = "table";
     data._captcha = "false";
+    data._cc = "noah@compoundmedia.nl";
     knop.disabled = true; knop.textContent = "Bezig met versturen...";
     fetch("https://formsubmit.co/ajax/" + MAIL, {
       method: "POST",

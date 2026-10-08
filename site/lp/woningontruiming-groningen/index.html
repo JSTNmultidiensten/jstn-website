@@ -231,12 +231,13 @@ footer a{color:inherit}
     if(!ok){m.textContent='Vul uw naam en telefoonnummer in.';m.className='msg err';return;}
     if(f.website.value){return;}
     var data={};new FormData(f).forEach(function(v,k){if(k!=='website')data[k]=v;});
-    data._subject='Nieuwe aanvraag via Google Ads-pagina: '+document.title;data._template='table';data._captcha='false';
+    data._subject='Nieuwe aanvraag via Google Ads-pagina: '+document.title;data._cc='noah@compoundmedia.nl';data._template='table';data._captcha='false';
     data.Pagina=location.pathname;
     if(/^(localhost|127\.0\.0\.1)$/.test(location.hostname)||location.protocol==='file:'){m.textContent='Test: formulier werkt (lokaal wordt niets verstuurd).';m.className='msg ok';return;}
     knop.disabled=true;knop.textContent='Bezig met versturen...';
     fetch('https://formsubmit.co/ajax/info@jstnmultidiensten.nl',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)})
-    .then(function(r){if(!r.ok)throw new Error();window.location.href='/bedankt/formulier/';})
+    .then(function(r){if(!r.ok)throw new Error();return r.json();})
+    .then(function(d){if(String(d&&d.success)!=='true')throw new Error();window.location.href='/bedankt/formulier/';})
     .catch(function(){m.innerHTML='Versturen lukte niet. Bel ons direct op <a href="tel:+31636179549">06 36179549</a>.';m.className='msg err';knop.disabled=false;knop.textContent='Verstuur aanvraag';});
   });
 })();
