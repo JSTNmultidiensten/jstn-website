@@ -29,7 +29,7 @@
       (plaats ? "Plaats: " + plaats + "\n" : "") +
       "\n" + bericht.value.trim();
     window.open("https://wa.me/" + NUMMER + "?text=" + encodeURIComponent(tekst), "_blank", "noopener");
-    window.location.href = "/bedankt/?via=whatsapp";
+    window.location.href = "/bedankt/whatsapp/";
   });
 
   // E-mailformulier via FormSubmit
@@ -56,7 +56,7 @@
       body: JSON.stringify(data)
     }).then(function (res) {
       if (!res.ok) throw new Error();
-      window.location.href = "/bedankt/";
+      window.location.href = "/bedankt/formulier/";
     }).catch(function () {
       melding.innerHTML = 'Versturen lukte niet. Mail ons direct via <a href="mailto:' + MAIL + '">' + MAIL + '</a> of bel +31 6 36179549.';
       melding.className = "msg err";

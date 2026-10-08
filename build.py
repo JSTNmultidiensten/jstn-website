@@ -729,7 +729,10 @@ bedankt = f"""<section class="sec">
 <script>if(/[?&]via=whatsapp(&|$)/.test(location.search)){{document.getElementById('bedankt-intro').textContent='Uw bericht staat klaar in WhatsApp. Druk daar nog op verzenden, dan reageert Justin binnen 12 uur.';}}</script>
 
 {REVIEWS_SEC}"""
-page("/bedankt/", "Bedankt voor uw aanvraag | JSTN Multidiensten",
+# /bedankt/ en subpagina's (formulier, whatsapp, bellen) staan als vaste bestanden in site/bedankt/
+# (met GTM en cookiebanner) en worden NIET meer door build.py gegenereerd.
+# Ook site/lp/ (landingspagina's) is handmatig en hoort niet in menu of sitemap.
+if False: page("/bedankt/", "Bedankt voor uw aanvraag | JSTN Multidiensten",
      "Bedankt voor uw aanvraag bij JSTN Multidiensten. Justin neemt binnen 12 uur contact met u op.",
      "", bedankt, head_extra='<meta name="robots" content="noindex">\n')
 
