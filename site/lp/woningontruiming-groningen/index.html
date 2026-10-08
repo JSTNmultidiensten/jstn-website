@@ -242,22 +242,31 @@ footer a{color:inherit}
 })();
 
 (function(){
+  var fine=!!(window.matchMedia&&window.matchMedia('(pointer:fine)').matches);
   function go(p){window.location.href=p;}
+  // Na het verlaten van de pagina (app geopend) en terugkomen: doorsturen naar de bedankpagina.
+  function onReturn(p){
+    var left=false,done=false;
+    function fin(){if(done)return;done=true;go(p);}
+    document.addEventListener('visibilitychange',function(){if(document.hidden){left=true;}else if(left){setTimeout(fin,300);}});
+    window.addEventListener('pagehide',function(){left=true;});
+    window.addEventListener('blur',function(){left=true;});
+    window.addEventListener('focus',function(){if(left)setTimeout(fin,300);});
+    window.addEventListener('pageshow',function(e){if(left||e.persisted)setTimeout(fin,300);});
+    return {fin:fin,left:function(){return left;}};
+  }
   document.addEventListener('click',function(e){
     var a=e.target.closest?e.target.closest('a[href]'):null;if(!a)return;
     var h=a.getAttribute('href')||'';
     if(h.indexOf('https://wa.me/')===0){
-      e.preventDefault();
+      if(!fine){onReturn('/bedankt/whatsapp/');return;}   // telefoon: link opent de app, terugkomen = bedankpagina
+      e.preventDefault();                                   // computer: WhatsApp in nieuw tabblad, dit tabblad door
       var w=window.open(h,'_blank');
       if(w){try{w.opener=null;}catch(x){}setTimeout(function(){go('/bedankt/whatsapp/');},150);}
       else{window.location.href=h;}
     }else if(h.indexOf('tel:')===0){
-      var left=false,done=false;
-      function fin(){if(done)return;done=true;go('/bedankt/bellen/');}
-      window.addEventListener('blur',function(){left=true;},{once:true});
-      window.addEventListener('focus',function(){if(left)setTimeout(fin,300);},{once:true});
-      document.addEventListener('visibilitychange',function(){if(document.hidden){left=true;}else if(left){setTimeout(fin,300);}});
-      if(window.matchMedia&&window.matchMedia('(pointer:fine)').matches){setTimeout(function(){if(!left)fin();},1200);}
+      var r=onReturn('/bedankt/bellen/');
+      if(fine){setTimeout(function(){if(!r.left())r.fin();},1200);}
     }
   });
 })();
