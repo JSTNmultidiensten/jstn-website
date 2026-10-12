@@ -3,6 +3,81 @@
 
 POSTS = [
 {
+ "slug": "mos-op-oprit-of-terras-wanneer-hogedrukreinigen",
+ "title": "Mos en groene aanslag op je oprit of terras: wanneer moet je hogedrukreinigen?",
+ "seo_title": "Mos op je oprit: wanneer hogedrukreinigen? | JSTN",
+ "desc": "Groene aanslag of mos op je oprit of terras? Lees wanneer hogedrukreinigen zin heeft, wat je zelf kunt doen en hoe je voorkomt dat het snel terugkomt.",
+ "date": "2026-10-12", "modified": "2026-10-12", "date_nl": "12 oktober 2026",
+ "cat": "Hogedrukreiniging", "icon": "drop",
+ "note": "Dit artikel is met AI-ondersteuning geschreven.",
+ "faq": [
+   ("Wat is de beste tijd van het jaar om een oprit te hogedrukreinigen?",
+    "Een droge periode in het voorjaar of vroege najaar werkt het best. De bestrating droogt dan goed op, zodat je de voegen direct na het reinigen opnieuw kunt invullen met voegzand. Bij vorst kun je beter wachten, omdat water in de voegen en stenen kan bevriezen."),
+   ("Kan hogedrukreinigen mijn bestrating beschadigen?",
+    "Ja, als de druk te hoog is of je de spuitkop te dicht bij de steen houdt. Vooral zachtere stenen, oude tegels en voegen zijn gevoelig. Werk met een vlakreiniger of op voldoende afstand, en test eerst op een onopvallend stukje."),
+   ("Waarom moeten de voegen opnieuw worden ingevuld na het reinigen?",
+    "Bij hogedrukreinigen spoelt een deel van het voegzand weg. Lege voegen zijn een ideale plek voor nieuw mos en onkruid, en de stenen kunnen gaan schuiven. Door de voegen opnieuw te vullen met voegzand blijft de bestrating stabiel en komt groen minder snel terug."),
+   ("Hoe vaak moet je een oprit of terras laten reinigen?",
+    "Dat hangt vooral af van de ligging. Een terras in de schaduw, onder bomen of op het noorden wordt veel sneller groen dan een oprit in de zon. Sommige mensen laten het één keer per jaar doen, anderen pas als het echt glad wordt. Tussendoor vegen en blad weghalen maakt het verschil."),
+ ],
+ "html": """
+<p class="lead">Hogedrukreinigen is zinvol zodra mos en groene aanslag je oprit of terras glad maken, of als het groen diep in de voegen zit en vegen niet meer helpt. Het beste moment is een droge periode in het voorjaar of vroege najaar, en na het reinigen hoor je de voegen opnieuw in te vullen. Anders staat het groen er binnen een seizoen weer.</p>
+<p>In Groningen en omgeving zie je het elk najaar terug: bladeren op de bestrating, weinig zon, veel regen. Dat is precies het klimaat waarin algen en mos zich thuis voelen. Hieronder lees je hoe je bepaalt of je oprit of terras toe is aan een reiniging, wat je zelf kunt doen en wanneer uitbesteden handig is.</p>
+
+<h2>Groene aanslag, algen of mos: wat zie je precies?</h2>
+<p>Niet elke groene waas vraagt om dezelfde aanpak. Het helpt om te weten waar je naar kijkt:</p>
+<ul>
+<li><strong>Groene aanslag (algen):</strong> een dunne, gladde laag op de steen zelf. Vaak op plekken in de schaduw of waar water blijft staan. Ziet er onschuldig uit, maar is bij nat weer verraderlijk glad.</li>
+<li><strong>Mos:</strong> zachte, groene kussentjes, meestal in de voegen en langs randen. Mos houdt vocht vast, waardoor de steen er omheen ook sneller groen wordt.</li>
+<li><strong>Zwarte of grijze aanslag:</strong> vuil, korstmos of resten van bladeren die in de steen zijn getrokken. Dit gaat er met vegen niet meer af.</li>
+</ul>
+<p>Een lichte groene waas kun je vaak nog zelf aanpakken. Zit het mos diep in de voegen of is de hele bestrating verkleurd, dan kom je met een bezem niet meer ver.</p>
+
+<h2>Wanneer is hogedrukreinigen echt nodig?</h2>
+<p>Een paar duidelijke signalen dat je oprit of terras toe is aan een grondige reiniging:</p>
+<ul>
+<li>Je glijdt uit of moet extra voorzichtig lopen als het nat is.</li>
+<li>De voegen zijn groen of zwart, en er groeit mos of onkruid tussen de stenen.</li>
+<li>De oorspronkelijke kleur van de bestrating is niet meer te herkennen.</li>
+<li>Je wilt je woning verkopen of opleveren en de buitenkant moet er verzorgd uitzien.</li>
+</ul>
+<p>Veiligheid is voor veel mensen het belangrijkste argument. Een glad tuinpad naar de voordeur of een groene oprit is vooral voor ouderen en kinderen een risico. Bij bedrijven geldt hetzelfde voor looppaden, parkeerplaatsen en vluchtroutes.</p>
+
+<h2>Kun je het zelf doen?</h2>
+<p>Ja, een gewoon terras of een kleine oprit kun je prima zelf reinigen met een gehuurde of eigen hogedrukreiniger. Let wel op deze punten:</p>
+<ol>
+<li><strong>Veeg eerst alles schoon.</strong> Haal blad, takjes en los vuil weg, en krab het grove mos uit de voegen met een voegkrabber.</li>
+<li><strong>Gebruik een vlakreiniger als het kan.</strong> Zo'n ronde opzetstuk verdeelt de druk gelijkmatig, spat minder en geeft geen strepen.</li>
+<li><strong>Houd afstand.</strong> Met een losse lans dicht op de steen kun je het oppervlak beschadigen of het voegzand er volledig uitspuiten. Test eerst op een onopvallend stuk.</li>
+<li><strong>Spuit van de gevel af.</strong> Zo voorkom je dat vuil water tegen je muur, kozijnen of deur spat.</li>
+<li><strong>Vul de voegen opnieuw in.</strong> Laat de bestrating opdrogen, strooi voegzand over de stenen en veeg het goed in de voegen. Herhaal dit na een paar dagen als het zand is ingezakt.</li>
+</ol>
+<p>Wees voorzichtig met agressieve middelen zoals chloor of bleek. Die spoelen via de goot of tuin weg en zijn slecht voor planten en dieren. Gebruik je toch een reinigingsmiddel, lees dan altijd het etiket en kies een middel dat bedoeld is voor bestrating.</p>
+
+<h2>Wanneer is uitbesteden handiger?</h2>
+<p>Zelf doen kost meer tijd dan veel mensen denken. Een oprit van een gemiddelde gezinswoning is al snel een flinke middag werk, plus het invegen van voegzand achteraf. Uitbesteden is vooral handig als:</p>
+<ul>
+<li>het om een groot oppervlak gaat, zoals een lange oprit, een bedrijfsterrein of meerdere terrassen;</li>
+<li>de ondergrond gevoelig is, bijvoorbeeld oude tegels, natuursteen of bestrating die al los ligt;</li>
+<li>je ook het dak of de gevel wilt laten reinigen, waarvoor je op hoogte moet werken;</li>
+<li>je niet zelf de tijd of fysieke ruimte hebt om een dag te spuiten en te vegen.</li>
+</ul>
+<p>Bij een woning die je gaat verkopen of opleveren kan een schone oprit samen met een <a href="/schoonmaak-groningen/">grondige schoonmaak</a> binnen het verschil maken in de eerste indruk.</p>
+
+<h2>Zo voorkom je dat het groen snel terugkomt</h2>
+<p>Helemaal voorkomen lukt niet, zeker niet in de schaduw. Maar je kunt het wel flink vertragen:</p>
+<ul>
+<li>Veeg regelmatig, vooral in de herfst. Bladeren die blijven liggen houden vocht vast en zijn voedsel voor algen.</li>
+<li>Houd de voegen vol. Volle voegen geven mos minder kans om wortel te schieten.</li>
+<li>Snoei overhangende takken en struiken, zodat er meer licht en wind bij de bestrating komt.</li>
+<li>Zorg dat regenwater kan weglopen. Plekken waar water blijft staan, worden altijd als eerste groen.</li>
+</ul>
+
+<h2>Hulp bij het reinigen van je oprit of terras</h2>
+<p>Wil je het liever laten doen? JSTN Multidiensten verzorgt <a href="/hogedrukreiniging-groningen/">hogedrukreiniging</a> van opritten, terrassen, daken en gevels in Groningen en tot ongeveer 50 km eromheen, voor particulieren en bedrijven. Na het reinigen vullen we de voegen opnieuw met voegzand, zodat onkruid minder snel terugkomt. Stuur gerust een foto van je bestrating via de <a href="/contact/">contactpagina</a>; je krijgt binnen 12 uur een reactie.</p>
+""",
+},
+{
  "slug": "zorgappartement-opleveren-leegstand-kort-houden",
  "title": "Zorgappartement opleveren na vertrek van een bewoner: zo houd je de leegstand kort",
  "seo_title": "Zorgappartement snel opleveren: zo werkt het | JSTN",
