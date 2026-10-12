@@ -5,6 +5,13 @@ import diensten as D
 from urllib.parse import quote
 
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "site")
+
+# Sinds het nieuwe ontwerp (v2, Compound Media, oktober 2026) staan alle HTML-pagina's als vaste
+# bestanden in site/: de 22 pagina's, de blogartikelen, 404.html, /lp/ en /bedankt/.
+# Dit script schrijft die NIET meer (anders overschrijft het v2 met het oude ontwerp).
+# Het maakt alleen nog: sitemap.xml, robots.txt, _redirects en de portfoliofoto's (site/portfolio/img/).
+# site/_headers wordt met de hand bijgehouden en is de enige bron van headers.
+SCHRIJF_PAGINAS = False
 BASE = "https://www.jstnmultidiensten.nl"
 TEL = "+31636179549"
 TEL_TXT = "+31 6 36179549"
@@ -164,6 +171,8 @@ def page(path, title, desc, active, body, extra_ld=None, og_type="website", og_i
 </body>
 </html>
 '''
+    if not SCHRIJF_PAGINAS:
+        return url
     d = os.path.join(OUT, path.strip("/"))
     fn = os.path.join(d, "index.html") if not path.endswith(".html") else os.path.join(OUT, path.strip("/"))
     os.makedirs(os.path.dirname(fn), exist_ok=True)
@@ -743,11 +752,12 @@ nf = f'''<section class="sec"><div class="w narrow" style="text-align:center">
 <div class="row" style="justify-content:center"><a class="btn" href="/">Naar de homepage</a><a class="btn btn-wa" href="{WA}" target="_blank" rel="noopener">{ic("wa")}WhatsApp</a></div>
 </div></section>'''
 page("/404.html", "Pagina niet gevonden | JSTN Multidiensten", "Deze pagina bestaat niet (meer).", "", nf)
-# 404 mag niet in de index
-fn404 = os.path.join(OUT, "404.html")
-s = open(fn404, encoding="utf-8").read().replace('<meta name="viewport"', '<meta name="robots" content="noindex">\n<meta name="viewport"', 1)
-s = s.replace(f'<link rel="canonical" href="{BASE}/404.html">\n', "")
-open(fn404, "w", encoding="utf-8").write(s)
+# 404 mag niet in de index (alleen relevant als dit script zelf de 404 schrijft)
+if SCHRIJF_PAGINAS:
+    fn404 = os.path.join(OUT, "404.html")
+    s = open(fn404, encoding="utf-8").read().replace('<meta name="viewport"', '<meta name="robots" content="noindex">\n<meta name="viewport"', 1)
+    s = s.replace(f'<link rel="canonical" href="{BASE}/404.html">\n', "")
+    open(fn404, "w", encoding="utf-8").write(s)
 
 # ======================= sitemap / robots / redirects =======================
 pages_sm = [("/", "1.0"), ("/zakelijk/", "0.9"), ("/particulier/", "0.9"), ("/contact/", "0.8"), ("/over-ons/", "0.6"),
@@ -777,14 +787,6 @@ redirects = """# Oude Wix-adressen -> nieuwe pagina's (301 = permanent, behoudt 
 """
 open(os.path.join(OUT, "_redirects"), "w").write(redirects)
 
-headers = """/*
-  X-Content-Type-Options: nosniff
-  Referrer-Policy: strict-origin-when-cross-origin
-  X-Frame-Options: SAMEORIGIN
-/*.png
-  Cache-Control: public, max-age=31536000
-/*.jpg
-  Cache-Control: public, max-age=31536000
-"""
-open(os.path.join(OUT, "_headers"), "w").write(headers)
-print("klaar")
+# _headers wordt niet meer door dit script geschreven: site/_headers (uit het v2-pakket,
+# met CSP, HSTS en de cacheregels voor png/jpg) is de enige bron.
+print("klaar: sitemap.xml, robots.txt, _redirects en portfoliofoto's bijgewerkt")
