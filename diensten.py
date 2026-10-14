@@ -7,7 +7,7 @@ DIENSTEN = [
  "h1": "Schoonmaak en dieptereiniging in Groningen",
  "title": "Schoonmaakbedrijf Groningen | Dieptereiniging & desinfectie | JSTN",
  "desc": "Schoonmaakbedrijf in Groningen voor bedrijven en particulieren: reguliere schoonmaak, dieptereiniging en desinfectie met professionele apparatuur. Reactie binnen 12 uur.",
- "lead": "Reguliere schoonmaak of een grondige dieptereiniging van uw kantoor, praktijk, woning of (zorg)appartement. Wij werken met professionele apparatuur en hoogwaardige reinigings- en desinfectiemiddelen.",
+ "lead": "Reguliere schoonmaak of een grondige dieptereiniging, met professionele apparatuur en middelen.",
  "pts": ["Zakelijk én particulier", "Eenmalig of periodiek", "Ook na verhuizing, ontruiming of verbouwing"],
  "blokken": [
   ("office", "Zakelijke schoonmaak", "Voor kantoren, scholen, praktijken, bedrijfspanden en zorginstellingen. Periodiek onderhoud of een eenmalige grote beurt — met vaste aanspreekpunten en duidelijke afspraken over wat er wanneer gebeurt."),
@@ -29,7 +29,7 @@ DIENSTEN = [
  "h1": "Vloerreiniging in Groningen",
  "title": "Vloerreiniging Groningen | Scholen, kantoren & bedrijfspanden | JSTN",
  "desc": "Professionele vloerreiniging in Groningen voor scholen, kantoren en bedrijfspanden. Eenmalige dieptereiniging of periodiek onderhoud, ook in (school)vakanties.",
- "lead": "Grote vloeroppervlakken in scholen, kantoren, bedrijfspanden en andere grote ruimtes reinigen wij grondig met professionele apparatuur — voor een frisse, hygiënische en representatieve uitstraling.",
+ "lead": "Grote vloeren in scholen, kantoren en bedrijfspanden, grondig gereinigd met professionele apparatuur.",
  "pts": ["Ook in (school)vakanties", "Eenmalig of periodiek onderhoud", "Professionele apparatuur"],
  "blokken": [
   ("office", "Scholen en kantoren", "Gangen, lokalen, kantine en kantoortuinen. Wij plannen de reiniging op momenten dat het gebouw leeg is, zodat leerlingen en medewerkers er geen last van hebben."),
@@ -49,7 +49,7 @@ DIENSTEN = [
  "h1": "Glazenwasser in Groningen",
  "title": "Glazenwasser Groningen | Glasbewassing woning & bedrijf | JSTN",
  "desc": "Glasbewassing in Groningen voor woningen, kantoren en bedrijfspanden. Streeploos schone ramen, eenmalig of periodiek en goed te combineren met schoonmaak.",
- "lead": "Streeploos schone ramen voor woningen, kantoren en bedrijfspanden — eenmalig of periodiek, en goed te combineren met de schoonmaak van uw pand.",
+ "lead": "Streeploos schone ramen voor woningen, kantoren en bedrijfspanden. Eenmalig of periodiek.",
  "pts": ["Woningen en bedrijfspanden", "Eenmalig of periodiek", "Te combineren met schoonmaak"],
  "blokken": [
   ("office", "Zakelijke glasbewassing", "Schone ramen bepalen voor een groot deel de eerste indruk van uw pand. Wij houden ze schoon volgens een vast schema dat bij u past."),
@@ -68,7 +68,7 @@ DIENSTEN = [
  "h1": "Woningontruiming in Groningen",
  "title": "Woningontruiming Groningen | Huis leegruimen & ontruimen | JSTN",
  "desc": "Woningontruiming in Groningen: wij ruimen woning, schuur, berging en tuin volledig leeg, voeren alles netjes af en kunnen de woning bezemschoon of verkoopklaar opleveren.",
- "lead": "Moet uw woning, of de woning van uw ouders, worden leeggeruimd? Wij verwijderen de volledige inboedel uit woning, schuur, berging en tuin en zorgen dat alles netjes wordt afgevoerd.",
+ "lead": "Woning, schuur, berging en tuin leeg en netjes afgevoerd. Ontruiming vanaf €300.",
  "pts": ["Ook spoedontruimingen", "Bruikbare spullen krijgen een tweede leven", "Bezemschoon of verkoopklaar opgeleverd"],
  "blokken": [
   ("home", "Particuliere ontruiming", "Na een overlijden, een verhuizing naar een zorginstelling of de verkoop van een huis. Wij werken zorgvuldig en met respect voor de situatie en de spullen."),
@@ -90,7 +90,7 @@ DIENSTEN = [
  "h1": "Verhuizen in Groningen, met extra aandacht voor senioren",
  "title": "Verhuizen Groningen | Seniorenverhuizing, in- en uitpakken | JSTN",
  "desc": "Verhuisservice in Groningen voor particulieren en senioren: inpakken, verhuizen, uitpakken, kasten inrichten en schilderijen ophangen. Verhuisdozen beschikbaar.",
- "lead": "Een verhuizing is een grote stap. Wij zorgen dat alles zo soepel mogelijk verloopt, met extra aandacht voor senioren en hun persoonlijke bezittingen.",
+ "lead": "Wij zorgen dat uw verhuizing soepel verloopt, met extra aandacht voor senioren.",
  "pts": ["Inpakken én uitpakken", "Verhuisdozen en inpakmateriaal beschikbaar", "Ook op korte termijn"],
  "blokken": [
   ("box", "Inpakken", "Wij pakken uw spullen zorgvuldig in. Verhuisdozen en inpakmateriaal stellen wij beschikbaar."),
@@ -111,7 +111,7 @@ DIENSTEN = [
  "h1": "Huurwoning opleveren in Groningen",
  "title": "Huurwoning opleveren Groningen | Opleveringsschoonmaak | JSTN",
  "desc": "Uw huurwoning opleveren in Groningen aan corporatie, verhuurder of zorginstelling: vloeren, gordijnen en lampen verwijderen, tuin opruimen, schoonmaken en bezemschoon opleveren.",
- "lead": "Moet uw woning worden opgeleverd aan een woningcorporatie, verhuurder of zorginstelling? Wij zorgen dat de woning netjes en volgens de opleveringsvoorwaarden wordt achtergelaten.",
+ "lead": "Uw woning netjes opgeleverd, volgens de voorwaarden van de corporatie of verhuurder.",
  "pts": ["Volgens de opleveringsvoorwaarden", "Vaste prijs mogelijk", "Van begin tot eind geregeld"],
  "blokken": [
   ("box", "Leeghalen", "Verwijderen van vloerafwerking, gordijnen, lampen en achtergebleven spullen, en het opruimen van de tuin."),
@@ -130,7 +130,7 @@ DIENSTEN = [
  "h1": "Zorg-appartementen opleveren binnen 3 werkdagen",
  "title": "Zorgappartementen opleveren Groningen | Binnen 3 werkdagen | JSTN",
  "desc": "Voor zorginstellingen in Groningen: bij vertrek van een bewoner leveren wij het zorgappartement binnen maximaal 3 werkdagen op — ontruimen, herstellen, schilderen en schoonmaken.",
- "lead": "Bij het vertrek van een bewoner zorgen wij dat het appartement binnen maximaal 3 werkdagen weer beschikbaar is voor een nieuwe cliënt, opgeleverd volgens het door u gewenste opleverniveau.",
+ "lead": "Bij vertrek van een bewoner is het appartement binnen 3 werkdagen klaar voor een nieuwe cliënt.",
  "pts": ["Binnen maximaal 3 werkdagen", "Eén partij voor het hele proces", "Op uw opleverniveau"],
  "blokken": [
   ("box", "Ontruimen", "Respectvol en zorgvuldig leeghalen van het appartement, in overleg met familie en de instelling."),
@@ -150,7 +150,7 @@ DIENSTEN = [
  "h1": "Schilder- en behangwerk in Groningen",
  "title": "Schilder Groningen | Schilder- & behangwerk binnen | JSTN",
  "desc": "Schilder- en behangwerk in Groningen voor woningen en zorgappartementen: wanden en plafonds bijwerken of volledig opnieuw schilderen en behangen. Eén aanspreekpunt.",
- "lead": "Van het bijwerken van wanden en plafonds tot het volledig opnieuw schilderen of behangen van een ruimte. Netjes, vakkundig en met oog voor een strak eindresultaat.",
+ "lead": "Wanden en plafonds bijwerken, opnieuw schilderen of behangen. Netjes en strak afgewerkt.",
  "pts": ["Woningen en zorgappartementen", "Strak en netjes afgewerkt", "Eén vast aanspreekpunt"],
  "blokken": [
   ("home", "Uw nieuwe woning opknappen", "Verhuist u naar een woning die een opknapbeurt kan gebruiken? Wij maken er snel een fijne, persoonlijke plek van."),
@@ -170,7 +170,7 @@ DIENSTEN = [
  "h1": "Hogedrukreiniging in Groningen",
  "title": "Hogedrukreiniging Groningen | Oprit, terras, dak & gevel | JSTN",
  "desc": "Hogedrukreiniging in Groningen voor opritten, terrassen, daken, gevels en bedrijfsterreinen. Mos en aanslag weg, voegen opnieuw ingevuld. Particulier en zakelijk.",
- "lead": "Een oprit vol mos, een glad tuinpad of een dak met aanslag — met hogedruk maken wij het weer schoon en veilig. Voor particulieren en bedrijven.",
+ "lead": "Mos op de oprit of een glad tuinpad? Met hogedruk maken wij het weer schoon en veilig.",
  "pts": ["Opritten, terrassen, daken en gevels", "Voegen opnieuw gevuld", "Eenmalig of als onderhoud"],
  "blokken": [
   ("home", "Oprit en terras", "Mos, algen en aanslag verwijderd. Daarna vullen we de voegen opnieuw met voegzand, zodat onkruid minder snel terugkomt."),

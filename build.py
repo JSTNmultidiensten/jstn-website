@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """Bouwt de statische website van JSTN Multidiensten in ./site"""
-import os, json, html
+import os, json, html, re
 import diensten as D
 from urllib.parse import quote
 
@@ -54,6 +54,15 @@ def ic(name, cls=""):
 
 STARS = '<div class="st" aria-label="5 sterren">' + "".join(ic("star") for _ in range(5)) + "</div>"
 
+# v4: gevuld WhatsApp-logo en Google-G
+WAI = '<svg class="wa-logo" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c.6.3 1.1.4 1.5.5a3.6 3.6 0 0 0 1.7.1c.5-.1 1.5-.6 1.7-1.2s.2-1.1.2-1.2-.2-.2-.4-.3z"/></svg>'
+def glogo(cls="g"):
+    return (f'<svg class="{cls}" viewBox="0 0 48 48" aria-hidden="true">'
+            '<path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>'
+            '<path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>'
+            '<path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>'
+            '<path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>')
+
 # ---------- structured data ----------
 ORG = {
   "@context": "https://schema.org",
@@ -87,6 +96,7 @@ def header(active):
 <a class="chip" href="https://maps.google.com/?q=Zernikepark+4,+9747+AN+Groningen" target="_blank" rel="noopener">{ic("pin")}<span><small>Ons adres</small>Zernikepark 4, Groningen</span></a>
 <a class="chip" href="tel:{TEL}">{ic("tel")}<span><small>Bel ons</small>{TEL_TXT}</span></a>
 <a class="btn hide-s" href="/contact/">Neem contact op</a>
+<a class="btn btn-wa" href="{WA}" target="_blank" rel="noopener">{WAI}WhatsApp</a>
 </div>
 </div>
 <div class="navwrap"><button type="button" class="nav-btn prev" aria-label="Menu naar links" tabindex="-1">{ic("arrow")}</button><nav class="nav" id="hoofdmenu" aria-label="Hoofdmenu">{links}</nav><button type="button" class="nav-btn next" aria-label="Meer menu-items" tabindex="-1">{ic("arrow")}</button></div>
@@ -103,22 +113,23 @@ FOOTER = f'''<footer class="ft">
 <div><h2 class="fth">Ga naar</h2><ul>{"".join(f'<li><a href="{u}">{t}</a></li>' for u, t in NAV)}</ul></div>
 <div><h2 class="fth">Diensten</h2><ul>{"".join(f'<li><a href="/{d["slug"]}/">{d["kort"]}</a></li>' for d in D.DIENSTEN)}</ul></div>
 <div><h2 class="fth">Contact</h2><ul><li>Zernikepark 4, 9747 AN Groningen</li><li><a href="tel:{TEL}">{TEL_TXT}</a></li><li><a href="mailto:{MAIL}">{MAIL}</a></li><li><a href="/privacy/">Privacybeleid</a></li></ul></div>
-<div><h2 class="fth">Maak een afspraak</h2><p class="ftp">Laat u adviseren door een van onze experts voor een oplossing die past bij uw situatie.</p><a class="btn btn-wa" href="{WA}" target="_blank" rel="noopener">{ic("wa")}WhatsApp</a></div>
+<div><h2 class="fth">Maak een afspraak</h2><p class="ftp">Laat u adviseren door een van onze experts voor een oplossing die past bij uw situatie.</p><a class="btn btn-wa" href="{WA}" target="_blank" rel="noopener">{WAI}WhatsApp</a></div>
 </div>
 <div class="w"><div class="copy">© 2026 Jstnmultidiensten.nl · Alle rechten voorbehouden</div></div>
 </footer>
-<a class="wa-float" href="{WA}" target="_blank" rel="noopener" aria-label="Stuur ons een WhatsApp">{ic("wa")}</a>'''
+<a class="wa-float" href="{WA}" target="_blank" rel="noopener" aria-label="Stuur ons een WhatsApp">{WAI}</a>
+<div class="balk"><a class="btn btn-light" href="tel:{TEL}">{ic("tel")}Bellen</a><a class="btn btn-wa" href="{WA}" target="_blank" rel="noopener">{WAI}WhatsApp</a></div>'''
 
 CTA = f'''<section class="pb">
 <div class="w">
 <div class="dark cta">
 <div style="max-width:560px">
 <h2 style="color:#fff;margin-top:0">Klaar voor uw klus?</h2>
-<p style="color:#E2E8EC;margin:0"><span class="acc" style="font-weight:800">Reactie binnen 12 uur.</span> Vraag vrijblijvend een offerte aan of stuur ons direct een WhatsApp.</p>
+<p style="color:#E2E8EC;margin:0"><span class="acc" style="font-weight:800">Reactie binnen 12 uur, ook in het weekend.</span> App ons gerust, ook met een paar foto's van de klus.</p>
 </div>
 <div class="row">
+<a class="btn btn-wa" href="{WA}" target="_blank" rel="noopener">{WAI}WhatsApp</a>
 <a class="btn btn-light" href="/contact/">Offerte aanvragen</a>
-<a class="btn btn-wa" href="{WA}" target="_blank" rel="noopener">{ic("wa")}WhatsApp</a>
 </div>
 </div>
 </div>
@@ -176,6 +187,12 @@ def crumbs(items):
             "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": n, "item": BASE + u}
                                 for i, (n, u) in enumerate(items)]}
 
+def eerste_zin(t):
+    # v4: kaarttekst langer dan 16 woorden -> alleen de eerste zin
+    if len(re.sub(r"<[^>]+>", "", t).split()) <= 16: return t
+    m = re.match(r"(.+?[.!?])(\s|$)", t)
+    return m.group(1) if m else t
+
 def card(icon, title, text, tag="h3", bg=None):
     style = f' style="background:{bg}"' if bg else ""
     return f'<div class="card"{style}><div class="ic">{ic(icon)}</div><{tag}>{title}</{tag}><p class="muted">{text}</p></div>'
@@ -190,6 +207,22 @@ def svc(icon, title, paras, anchor):
     ps = "".join(f"<p>{p}</p>" for p in paras)
     lk = f'<a class="link" href="/{ANCHOR2SLUG[anchor]}/">Meer over {title.lower()}{ic("arrow")}</a>' if anchor in ANCHOR2SLUG else ""
     return f'<article class="card svc" id="{anchor}"><div class="ic">{ic(icon)}</div><div><h3>{title}</h3>{ps}{lk}</div></article>'
+
+# v4: micro-regel + bewijsrij onder de hero-knoppen
+GREVIEWS_URL = "https://www.google.com/maps/search/?api=1&query=JSTN+Multidiensten+Zernikepark+4+Groningen"
+MICRO = f'<p class="micro">Vrijblijvend · reactie binnen 12 uur, ook in het weekend · of bel <a href="tel:{TEL}">06 36179549</a></p>'
+STATS = f'''<div class="stats"><a class="st-g" href="{GREVIEWS_URL}" target="_blank" rel="noopener"><b class="gb">{glogo()}5,0</b><span class="sterren">★★★★★</span><span>15 reviews op Google</span></a><div><b>12 uur</b><span>reactie, ook in het weekend</span></div><div><b>1</b><span>vast aanspreekpunt</span></div></div>'''
+def knoppen(wa_href=None, wa_txt="WhatsApp ons", mt="22px"):
+    return f'''<div class="row" style="margin-top:{mt}">
+<a class="btn btn-wa" href="{wa_href or WA}" target="_blank" rel="noopener">{WAI}{wa_txt}</a>
+<a class="btn" href="/contact/">{ic("mail")}Offerte aanvragen</a>
+</div>
+{MICRO}
+{STATS}'''
+
+def chips(items):
+    # v4: rij met diensten als klikbare labels (home, zakelijk, particulier)
+    return '<nav class="diensten-chips" aria-label="Onze diensten">' + "".join(f'<a href="{u}"><span class="ci">{ic(i)}</span>{t}</a>' for i, t, u in items) + '</nav>'
 
 # ======================= HOME =======================
 SERVICES = [
@@ -212,29 +245,30 @@ REVIEWS = [
  ("Luca, Groningen", "Service was top notch. My partner and I just moved to a new home and it was dirty! Sent a message to Justin and asked him if the day after he could come and do an urgency deep clean and he did it for less than i was expecting even if the work-load was more than he expected, excellent service overall will call again."),
  ("Milan, Froombosch", "Zeer tevreden over JSTN Multidiensten! Alles werd netjes en vakkundig uitgevoerd. De communicatie was duidelijk, afspraken werden goed nagekomen en het resultaat was precies zoals gehoopt. Zeker een aanrader als je op zoek bent naar een betrouwbare en professionele service!"),
 ]
-rev_cards = "".join(f'<figure class="card rv">{STARS}<blockquote>“{q}”</blockquote><figcaption>{n}</figcaption></figure>' for n, q in REVIEWS)
+import re as _re
+def kort_review(q):
+    # v4: reviews langer dan 25 woorden -> eerste 2 zinnen + " ..."
+    if len(q.split()) <= 25: return q
+    zinnen = _re.findall(r'[^.!?]+[.!?]+', q)
+    return " ".join(z.strip() for z in zinnen[:2]) + " ..."
+# v4: 2 reviews in plaats van 3 (de langste valt weg)
+_langste = max(REVIEWS, key=lambda r: len(r[1]))
+rev_cards = "".join(f'<figure class="card rv">{glogo("g-rv")}{STARS}<blockquote>“{kort_review(q)}”</blockquote><figcaption>{n}</figcaption></figure>' for n, q in REVIEWS if (n, q) != _langste)
 REVIEWS_SEC = f'''<section class="sec" id="reviews">
 <div class="w">
-<div class="head"><span class="tag">Google Reviews</span><h2>Wat klanten over ons zeggen</h2><p class="lead"><b>5,0 ★</b> gemiddeld uit 15 reviews op Google · <a class="link" style="display:inline-flex" href="{GREVIEWS}" target="_blank" rel="noopener">Bekijk alle reviews{ic("arrow")}</a></p></div>
-<div class="g3">{rev_cards}</div>
+<div class="head"><span class="tag">Google Reviews</span><h2>Wat klanten over ons zeggen</h2><p class="lead glead">{glogo()}<b>5,0 ★</b> gemiddeld uit 15 reviews op Google · <a class="link" style="display:inline-flex" href="{GREVIEWS}" target="_blank" rel="noopener">Bekijk alle reviews{ic("arrow")}</a></p></div>
+<div class="g2">{rev_cards}</div>
 </div>
 </section>'''
 
 home = f'''<section class="sec">
-<div class="w hero">
+<div class="w hero foto-eerst">
 <div>
-<span class="tag">Voor bedrijven en particulieren</span>
-<h1>Alles onder één dak: van schoonmaak tot oplevering.</h1>
-<p class="lead">Wekelijkse schoonmaak, dieptereiniging, vloeren van scholen en kantoren, ontruimingen en verhuizingen. Eén team en één aanspreekpunt, voor bedrijven en particulieren.</p>
-<div class="row" style="margin-top:22px">
-<a class="btn" href="/contact/">{ic("mail")}Offerte aanvragen</a>
-<a class="btn btn-wa" href="{WA}" target="_blank" rel="noopener">{ic("wa")}WhatsApp ons</a>
-</div>
-<ul class="pts">
-<li>{ic("check")}Reactie binnen 12 uur</li>
-<li>{ic("check")}Flexibel inplanbaar, ook in (school)vakanties</li>
-<li>{ic("check")}Ontruimen, schoonmaken en schilderen in één keer</li>
-</ul>
+<span class="tag">Alles onder één dak</span>
+<h1>Schoonmaak, ontruiming en opleveren in Groningen.</h1>
+<p class="lead">Voor bedrijven en particulieren. Eén vast aanspreekpunt, van begin tot eind.</p>
+{chips([(i, t, u) for i, t, d, u in SERVICES])}
+{knoppen()}
 </div>
 <img class="photo" src="{wimg(IMG_BUSSEN, 900, 900, 'bussen-jstn-multidiensten')}" srcset="{wimg(IMG_BUSSEN, 600, 600, 'bussen-jstn-multidiensten')} 600w, {wimg(IMG_BUSSEN, 900, 900, 'bussen-jstn-multidiensten')} 900w" sizes="(max-width: 760px) 100vw, 540px" width="900" height="900" alt="Bedrijfsbussen van JSTN Multidiensten in Groningen" fetchpriority="high">
 </div>
@@ -245,13 +279,13 @@ home = f'''<section class="sec">
 <div class="card stack">
 <div class="ic">{ic("office")}</div>
 <h2 class="h3">Zakelijke dienstverlening</h2>
-<p class="muted">Voor makelaars, woningcorporaties, zorginstellingen, scholen en bedrijven. Snel schakelen, vaste aanspreekpunten en zorg-appartementen binnen 3 werkdagen opgeleverd.</p>
+<p class="muted">Voor makelaars, woningcorporaties, zorginstellingen, scholen en bedrijven.</p>
 <a class="link" href="/zakelijk/">Bekijk zakelijk{ic("arrow")}</a>
 </div>
 <div class="card stack">
 <div class="ic">{ic("home")}</div>
 <h2 class="h3">Particuliere dienstverlening</h2>
-<p class="muted">Verhuizen, leegruimen, opleveren of uw nieuwe woning opknappen. Duidelijke afspraken en één vast contactpersoon van begin tot eind.</p>
+<p class="muted">Verhuizen, leegruimen, opleveren of uw nieuwe woning opknappen.</p>
 <a class="link" href="/particulier/">Bekijk particulier{ic("arrow")}</a>
 </div>
 </div>
@@ -298,10 +332,8 @@ zak = f'''<section class="sec">
 <span class="tag">Zakelijk · B2B</span>
 <h1>Zakelijke dienstverlening in Groningen</h1>
 <p class="lead">Voor makelaars, woningcorporaties, zorginstellingen, scholen en bedrijven. Vaste aanspreekpunten en korte lijnen.</p>
-<div class="row" style="margin-top:22px">
-<a class="btn" href="/contact/">{ic("mail")}Offerte aanvragen</a>
-<a class="btn btn-wa" href="{WA}" target="_blank" rel="noopener">{ic("wa")}WhatsApp ons</a>
-</div>
+{chips([(i, t, "/" + ANCHOR2SLUG[a] + "/") for i, t, a, p in zak_svcs])}
+{knoppen()}
 </div>
 <div class="g1">
 <div class="card"><div class="ic">{ic("bolt")}</div><h2 class="h3">Snel &amp; flexibel</h2><p class="muted">Een onverwachte aanvraag of extra werk? Wij schakelen snel, zodat uw bedrijfsprocessen zo min mogelijk worden verstoord.</p></div>
@@ -342,11 +374,9 @@ par = f'''<section class="sec">
 <div>
 <span class="tag">Particulier · B2C</span>
 <h1>Particuliere dienstverlening in Groningen</h1>
-<p class="lead">Verhuizen, leegruimen, uw woning opleveren of uw nieuwe huis opknappen. Wij regelen het van begin tot eind, met duidelijke afspraken en één vast contactpersoon.</p>
-<div class="row" style="margin-top:22px">
-<a class="btn" href="/contact/">{ic("mail")}Offerte aanvragen</a>
-<a class="btn btn-wa" href="{WA}" target="_blank" rel="noopener">{ic("wa")}WhatsApp ons</a>
-</div>
+<p class="lead">Verhuizen, leegruimen, opleveren of opknappen. Eén vast contactpersoon van begin tot eind.</p>
+{chips([(i, t, "/" + ANCHOR2SLUG[a] + "/") for i, t, a, p in par_svcs])}
+{knoppen()}
 </div>
 <div class="g1">
 <div class="card"><div class="ic">{ic("bolt")}</div><h2 class="h3">Snel &amp; flexibel</h2><p class="muted">We plannen samen met u en houden ons aan de afspraken. <b>Afspraak is afspraak.</b></p></div>
@@ -385,7 +415,8 @@ over = f'''<section class="sec">
 <span class="tag">Over ons</span>
 <h1>Jong, ambitieus en gedreven</h1>
 <p class="lead">Wij zijn een jong, ambitieus team met grote plannen. Niet stilstaan, maar iedere dag beter worden en blijven groeien.</p>
-<p class="muted">We werken hard, nemen verantwoordelijkheid en blijven leren. Zo bouwen we aan een bedrijf waar klanten en medewerkers trots op zijn, zonder te vergeten waar we vandaan komen.</p>
+<p class="muted">We werken hard, nemen verantwoordelijkheid en blijven leren.</p>
+{knoppen()}
 </div>
 <img class="photo" src="{wimg(IMG_KANTOOR, 900, 900, 'kantoor-jstn-multidiensten')}" srcset="{wimg(IMG_KANTOOR, 600, 600, 'kantoor-jstn-multidiensten')} 600w, {wimg(IMG_KANTOOR, 900, 900, 'kantoor-jstn-multidiensten')} 900w" sizes="(max-width: 760px) 100vw, 540px" width="900" height="900" alt="Kantoor van JSTN Multidiensten aan het Zernikepark in Groningen" loading="lazy">
 </div>
@@ -414,13 +445,13 @@ werk = f'''<section class="sec">
 <span class="tag">Vacatures</span>
 <h1>Join the team!</h1>
 <p class="lead">Wij zijn altijd op zoek naar enthousiaste mensen die ons team willen versterken!</p>
-<p class="muted">Ons team bestaat uit jonge, gezellige en gemotiveerde collega’s die samen zorgen voor een fijne werksfeer. We vinden het belangrijk dat je met plezier naar je werk gaat, jezelf kunt zijn en samen met je collega’s een mooie ervaring neerzet voor onze klanten. Lijkt het jou leuk om ons team te komen versterken?</p>
+<p class="muted">Jonge, gezellige collega's en een fijne werksfeer. Lijkt het je leuk om ons team te versterken?</p>
 </div>
 <div class="card">
 <h2 class="h3">Stuur ons een berichtje</h2>
 <p class="muted">Stuur ons een mailtje of bel ons gerust. We maken graag kennis met je en wie weet ben jij binnenkort onze nieuwe collega!</p>
 <div class="opts">
-<a class="opt" href="{WA}?text=Hoi%2C%20ik%20heb%20interesse%20om%20bij%20JSTN%20Multidiensten%20te%20werken!" target="_blank" rel="noopener"><span class="ic wa">{ic("wa")}</span><span><b>WhatsApp</b><small>{TEL_TXT}</small></span></a>
+<a class="opt" href="{WA}?text=Hoi%2C%20ik%20heb%20interesse%20om%20bij%20JSTN%20Multidiensten%20te%20werken!" target="_blank" rel="noopener"><span class="ic wa">{WAI}</span><span><b>WhatsApp</b><small>{TEL_TXT}</small></span></a>
 <a class="opt" href="tel:{TEL}"><span class="ic">{ic("tel")}</span><span><b>Bellen</b><small>{TEL_TXT}</small></span></a>
 <a class="opt" href="mailto:{MAIL}?subject=Werken%20bij%20JSTN%20Multidiensten"><span class="ic">{ic("mail")}</span><span><b>E-mail</b><small>{MAIL}</small></span></a>
 </div>
@@ -439,17 +470,25 @@ DIENSTEN_OPT = "".join(f"<option>{d}</option>" for d in [
     "Schilder- en behangwerk", "Zorg-appartement opleveren", "Woning opleveren", "Hogedrukreiniging", "Anders / meerdere diensten"])
 contact = f'''<section class="sec">
 <div class="w">
-<div class="head"><span class="tag">Contact</span><h1>Neem contact met ons op</h1><p class="lead">Vraag een offerte aan of stel uw vraag. Het snelst bereikt u ons via WhatsApp — we reageren binnen 12 uur.</p></div>
-<div class="cgrid">
-<div class="card">
-<div class="tabs" role="tablist">
-<button type="button" class="tab on" data-tab="wa" role="tab" aria-selected="true">WhatsApp</button>
-<button type="button" class="tab" data-tab="mail" role="tab" aria-selected="false">E-mail</button>
+<div class="card c-hero">
+<span class="tag">Contact</span>
+<h1>Neem contact met ons op</h1>
+<p class="lead">Vraag een offerte aan of stel uw vraag. Het snelst bereikt u ons via WhatsApp.</p>
+<div class="row" style="margin-top:22px">
+<a class="btn btn-wa" href="{WA}?text=Hallo%20JSTN%20Multidiensten%2C%20ik%20heb%20een%20vraag%3A%20" target="_blank" rel="noopener">{WAI}WhatsApp</a>
+<a class="btn btn-light" href="tel:{TEL}">{ic("tel")}Bel 06 36179549</a>
 </div>
+{MICRO}
+{STATS}
+</div>
+</div>
+</section>
 
-<div class="pane on" id="pane-wa">
+<section class="pb">
+<div class="w g2 forms">
+<div class="card">
 <h2 class="h3">Stuur ons een WhatsApp</h2>
-<p class="muted">Vul het in en klik op de knop — uw bericht staat dan direct klaar in WhatsApp.</p>
+<p class="muted">Vul het in en klik op de knop: uw bericht staat dan direct klaar in WhatsApp.</p>
 <form id="waForm" novalidate>
 <div class="r2">
 <div><label for="naam">Naam *</label><input id="naam" required autocomplete="name" placeholder="Uw naam"></div>
@@ -461,14 +500,14 @@ contact = f'''<section class="sec">
 </div>
 <label for="bericht">Uw vraag of omschrijving *</label>
 <textarea id="bericht" required placeholder="Bijv. 3-kamerappartement eindschoonmaak, opleveren op 15 november."></textarea>
-<button type="submit" class="btn btn-wa full">{ic("wa")}Verstuur via WhatsApp</button>
+<button type="submit" class="btn btn-wa full">{WAI}Verstuur via WhatsApp</button>
 <p class="small">Werkt op telefoon en computer (WhatsApp Web).</p>
 </form>
 </div>
 
-<div class="pane" id="pane-mail">
+<div class="card">
 <h2 class="h3">Stuur ons een e-mail</h2>
-<p class="muted">Vraag een offerte aan — u ontvangt binnen 12 uur een reactie per mail.</p>
+<p class="muted">Vraag een offerte aan: u ontvangt binnen 12 uur een reactie per mail.</p>
 <form id="mailForm" novalidate>
 <div class="r2">
 <div><label for="m-naam">Naam *</label><input id="m-naam" name="Naam" required autocomplete="name" placeholder="Uw naam"></div>
@@ -491,19 +530,17 @@ contact = f'''<section class="sec">
 </form>
 </div>
 </div>
+</section>
 
-<div class="card">
-<h2 class="h3">Liever direct contact?</h2>
-<p class="muted">Kies wat voor u het makkelijkst is.</p>
-<div class="opts">
-<a class="opt" href="{WA}?text=Hallo%20JSTN%20Multidiensten%2C%20ik%20heb%20een%20vraag%3A%20" target="_blank" rel="noopener"><span class="ic wa">{ic("wa")}</span><span><b>WhatsApp</b><small>{TEL_TXT}</small></span></a>
+<section class="pb">
+<div class="w">
+<div class="head c-head"><h2>Liever direct contact?</h2><p class="lead">Kies wat voor u het makkelijkst is.</p></div>
+<div class="opts g3">
+<a class="opt" href="{WA}?text=Hallo%20JSTN%20Multidiensten%2C%20ik%20heb%20een%20vraag%3A%20" target="_blank" rel="noopener"><span class="ic wa">{WAI}</span><span><b>WhatsApp</b><small>{TEL_TXT}</small></span></a>
 <a class="opt" href="tel:{TEL}"><span class="ic">{ic("tel")}</span><span><b>Bellen</b><small class="u">{TEL_TXT}</small></span></a>
 <a class="opt" href="mailto:{MAIL}"><span class="ic">{ic("mail")}</span><span><b>E-mail</b><small>{MAIL}</small></span></a>
 </div>
-<div class="info"><p><b>JSTN Multidiensten</b></p><p>Zernikepark 4<br>9747 AN Groningen</p></div>
-<div class="dark promise"><span class="acc" style="font-weight:800">Reactie binnen 12 uur.</span> Flexibel inplanbaar, ook in (school)vakanties.</div>
-</div>
-</div>
+<p class="muted c-info">JSTN Multidiensten · Zernikepark 4, 9747 AN Groningen · Reactie binnen 12 uur, ook in het weekend · Flexibel inplanbaar, ook in (school)vakanties.</p>
 </div>
 </section>
 <script src="/contact.js" defer></script>'''
@@ -521,7 +558,7 @@ page("/privacy/", "Privacyverklaring | JSTN Multidiensten",
 import posts
 blog_cards = ""
 for p in sorted(posts.POSTS, key=lambda x: x["date"], reverse=True):
-    blog_cards += f'''<a class="card post-card" href="/post/{p["slug"]}/"><div class="ic">{ic(p["icon"])}</div><p class="meta">{p["date_nl"]} · {p["cat"]}</p><h2 class="h3">{p["title"]}</h2><p class="muted">{p["desc"]}</p><span class="link">Lees verder{ic("arrow")}</span></a>'''
+    blog_cards += f'''<a class="card post-card" href="/post/{p["slug"]}/"><div class="ic">{ic(p["icon"])}</div><p class="meta">{p["date_nl"]} · {p["cat"]}</p><h2 class="h3">{p["title"]}</h2><p class="muted">{eerste_zin(p["desc"])}</p><span class="link">Lees verder{ic("arrow")}</span></a>'''
     art_ld = {"@context": "https://schema.org", "@type": "BlogPosting", "headline": p["title"], "description": p["desc"],
               "datePublished": p["date"], "dateModified": p.get("modified", p["date"]),
               "author": {"@type": "Person", "name": "Justin", "jobTitle": "Eigenaar"},
@@ -551,8 +588,8 @@ for p in sorted(posts.POSTS, key=lambda x: x["date"], reverse=True):
 {src_html}
 </article>
 <div class="dark cta" style="margin-top:24px">
-<div><h2 style="color:#fff;margin:0 0 6px">Hulp nodig bij uw klus?</h2><p style="color:#E2E8EC;margin:0"><span class="acc" style="font-weight:800">Reactie binnen 12 uur.</span> Vraag vrijblijvend een offerte aan.</p></div>
-<div class="row"><a class="btn btn-light" href="/contact/">Offerte aanvragen</a><a class="btn btn-wa" href="{WA}" target="_blank" rel="noopener">{ic("wa")}WhatsApp</a></div>
+<div><h2 style="color:#fff;margin:0 0 6px">Hulp nodig bij uw klus?</h2><p style="color:#E2E8EC;margin:0"><span class="acc" style="font-weight:800">Reactie binnen 12 uur, ook in het weekend.</span> App ons gerust, ook met een paar foto's van de klus.</p></div>
+<div class="row"><a class="btn btn-wa" href="{WA}" target="_blank" rel="noopener">{WAI}WhatsApp</a><a class="btn btn-light" href="/contact/">Offerte aanvragen</a></div>
 </div>
 {('<h2 style="margin-top:40px">Lees ook</h2><div class="g2">' + more + '</div>') if more else ''}
 </div>
@@ -561,7 +598,8 @@ for p in sorted(posts.POSTS, key=lambda x: x["date"], reverse=True):
 
 blog = f'''<section class="sec">
 <div class="w">
-<div class="head"><span class="tag">Blog</span><h1>Tips &amp; advies</h1><p class="lead">Praktische artikelen over schoonmaak, ontruimen, verhuizen en opleveren in Groningen en omgeving.</p></div>
+<div class="head"><span class="tag">Blog</span><h1>Tips &amp; advies</h1><p class="lead">Praktische artikelen over schoonmaak, ontruimen, verhuizen en opleveren in Groningen en omgeving.</p>
+{knoppen()}</div>
 <div class="g2">{blog_cards}</div>
 </div>
 </section>
@@ -605,10 +643,11 @@ def pf_card(pr):
     else:
         media = '<div class="pfg">' + "".join(f'<figure>{pf_img(n, a)}</figure>' for n, a in pr["fotos"]) + '</div>'
     d = next(x for x in D.DIENSTEN if x["slug"] == pr["dienst"])
-    return f'<article class="card pf"><span class="tag">{pr["label"]}</span><h2 class="h3">{pr["titel"]}</h2><p class="muted">{pr["tekst"]}</p>{media}<a class="link" href="/{d["slug"]}/">Meer over {d["kort"].lower()}{ic("arrow")}</a></article>'
+    return f'<article class="card pf"><span class="tag">{pr["label"]}</span><h2 class="h3">{pr["titel"]}</h2><p class="muted">{eerste_zin(pr["tekst"])}</p>{media}<a class="link" href="/{d["slug"]}/">Meer over {d["kort"].lower()}{ic("arrow")}</a></article>'
 pf = f"""<section class="sec">
 <div class="w">
-<div class="head"><span class="tag">Portfolio</span><h1>Ons werk in Groningen en omgeving</h1><p class="lead">Een greep uit onze klussen: schoonmaak, bouwopleveringen, vloerreiniging, glasbewassing en hogedrukreiniging. Echte foto's van ons eigen werk — voor en na.</p><p class="muted">Dit portfolio wordt regelmatig aangevuld met nieuwe klussen. Kom dus gerust nog eens terug.</p></div>
+<div class="head"><span class="tag">Portfolio</span><h1>Ons werk in Groningen en omgeving</h1><p class="lead">Echte foto's van ons eigen werk, voor en na.</p>
+{knoppen()}</div>
 <div class="pfl">{"".join(pf_card(x) for x in PF)}</div>
 </div>
 </section>
@@ -625,12 +664,13 @@ for _x in PF: PF_BY.setdefault(_x["dienst"], []).append(_x)
 # ======================= DIENSTPAGINA'S =======================
 BYSLUG = {d["slug"]: d for d in D.DIENSTEN}
 PLAATS_TXT = ", ".join(D.PLAATSEN[:-1]) + " en " + D.PLAATSEN[-1]
+HERO_FOTO = {"woningontruiming-groningen": "Lege, opgeruimde woning", "woning-opleveren-groningen": "Lege, opgeruimde woning"}
 for d in D.DIENSTEN:
     path = f"/{d['slug']}/"
     pts = "".join(f"<li>{ic('check')}{x}</li>" for x in d["pts"])
-    blok = "".join(card(i, t, x) for i, t, x in d["blokken"])
+    blok = "".join(card(i, t, eerste_zin(x)) for i, t, x in d["blokken"])
     faq = "".join(f'<details class="faq"><summary>{q}</summary><p>{a}</p></details>' for q, a in d["faq"])
-    verw = "".join(f'<a class="card svc-link" href="/{v}/"><div class="ic">{ic(BYSLUG[v]["icon"])}</div><h3>{BYSLUG[v]["kort"]}</h3><p class="muted">{D.KAART[v]}</p></a>' for v in d["verwant"])
+    verw = "".join(f'<a class="card svc-link" href="/{v}/"><div class="ic">{ic(BYSLUG[v]["icon"])}</div><h3>{BYSLUG[v]["kort"]}</h3></a>' for v in d["verwant"])
     blog = ""
     if d.get("blog"):
         bp = next((p for p in posts.POSTS if p["slug"] == d["blog"]), None)
@@ -641,6 +681,15 @@ for d in D.DIENSTEN:
         pfsec = f'''<section class="sec band"><div class="w"><div class="head"><span class="tag">Uit ons werk</span><h2>Voor en na</h2></div><div class="pfl">{"".join(pf_card(x) for x in PF_BY[d["slug"]])}</div><p style="margin-top:18px"><a class="link" href="/portfolio/">Bekijk het hele portfolio{ic("arrow")}</a></p></div></section>
 
 '''
+    waarom = f'''<div class="card">
+<h2 class="h3">Waarom JSTN Multidiensten</h2>
+<ul class="pts" style="margin-top:12px">{pts}</ul>
+</div>'''
+    # v4: foto bovenaan rechts op Woningontruiming en Woning opleveren (stockfoto, bewust geen Voor/Na-label)
+    if d["slug"] in HERO_FOTO:
+        zij = f'<div class="hero-zij"><img class="photo hero-foto" src="/img/leeg-appartement-1200.webp" width="1200" height="800" alt="{HERO_FOTO[d["slug"]]}" fetchpriority="high">{waarom}</div>'
+    else:
+        zij = waarom
     body = f"""<section class="sec">
 <div class="w hero">
 <div>
@@ -648,15 +697,9 @@ for d in D.DIENSTEN:
 <span class="tag">Groningen en omgeving</span>
 <h1>{d["h1"]}</h1>
 <p class="lead">{d["lead"]}</p>
-<div class="row" style="margin-top:22px">
-<a class="btn" href="/contact/">{ic("mail")}Offerte aanvragen</a>
-<a class="btn btn-wa" href="{WA}?text={quote('Hallo JSTN Multidiensten, ik heb een vraag over ' + d['kort'].lower() + ': ')}" target="_blank" rel="noopener">{ic("wa")}WhatsApp ons</a>
+{knoppen(WA + "?text=" + quote('Hallo JSTN Multidiensten, ik heb een vraag over ' + d['kort'].lower() + ': '))}
 </div>
-</div>
-<div class="card">
-<h2 class="h3">Waarom JSTN Multidiensten</h2>
-<ul class="pts" style="margin-top:12px">{pts}<li>{ic("check")}Reactie binnen 12 uur</li><li>{ic("check")}5,0 ★ uit 15 Google-reviews</li></ul>
-</div>
+{zij}
 </div>
 </section>
 
@@ -668,17 +711,11 @@ for d in D.DIENSTEN:
 </section>
 
 <section class="sec">
-<div class="w g2" style="align-items:start">
+<div class="w narrow" style="align-items:start">
 <div>
 <span class="tag">Veelgestelde vragen</span>
 <h2>Vragen over {d["kort"].lower()}</h2>
 {faq}
-</div>
-<div class="card">
-<div class="ic">{ic("pin")}</div>
-<h2 class="h3">Werkgebied</h2>
-<p class="muted">Wij werken in de stad Groningen en tot ongeveer 50 km daaromheen, onder andere in {PLAATS_TXT}.</p>
-<p class="muted">Vanuit ons kantoor aan het Zernikepark 4 in Groningen zijn we snel ter plaatse.</p>
 {blog}
 </div>
 </div>
@@ -721,7 +758,7 @@ bedankt = f"""<section class="sec">
 <h2 class="h3">Haast?</h2>
 <div class="row" style="margin-top:12px">
 <a class="btn" href="tel:+31636179549">{ic("tel")}Bel direct: +31 6 36179549</a>
-<a class="btn btn-wa" href="https://wa.me/31636179549">{ic("wa")}Stuur een WhatsApp</a>
+<a class="btn btn-wa" href="https://wa.me/31636179549">{WAI}Stuur een WhatsApp</a>
 </div>
 </div>
 </div>
@@ -740,7 +777,7 @@ if False: page("/bedankt/", "Bedankt voor uw aanvraag | JSTN Multidiensten",
 nf = f'''<section class="sec"><div class="w narrow" style="text-align:center">
 <span class="tag">404</span><h1>Deze pagina bestaat niet (meer)</h1>
 <p class="lead" style="margin:0 auto 22px">Misschien is de pagina verplaatst. Kijk op de homepage of neem direct contact met ons op.</p>
-<div class="row" style="justify-content:center"><a class="btn" href="/">Naar de homepage</a><a class="btn btn-wa" href="{WA}" target="_blank" rel="noopener">{ic("wa")}WhatsApp</a></div>
+<div class="row" style="justify-content:center"><a class="btn" href="/">Naar de homepage</a><a class="btn btn-wa" href="{WA}" target="_blank" rel="noopener">{WAI}WhatsApp</a></div>
 </div></section>'''
 page("/404.html", "Pagina niet gevonden | JSTN Multidiensten", "Deze pagina bestaat niet (meer).", "", nf)
 # 404 mag niet in de index

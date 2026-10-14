@@ -193,3 +193,115 @@ textarea{min-height:120px;resize:vertical}
 }
 .steps{margin:12px 0 0;padding-left:22px;display:flex;flex-direction:column;gap:8px;font-weight:600}
 .steps li::marker{color:var(--blauw-d);font-weight:800}
+
+/* v4: contact altijd binnen handbereik */
+.hd .btn-wa{min-height:44px}
+/* knoppen: heldere WhatsApp-groen + lichte 3D-rand */
+.btn{box-shadow:0 4px 0 #222122;transition:background .15s,transform .1s,box-shadow .1s}
+.btn:active{transform:translateY(3px);box-shadow:0 1px 0 #222122}
+.btn-wa{background:#1DA851;box-shadow:0 4px 0 #168A42}.btn-wa:hover{background:#19B657}
+.btn-wa:active{box-shadow:0 1px 0 #168A42}
+.btn-light{box-shadow:0 4px 0 var(--rand)}.btn-light:active{box-shadow:0 1px 0 var(--rand)}
+.chip{box-shadow:none}
+/* hero: micro-regel + bewijsrij */
+.micro{margin:14px 0 0;font-size:14px;font-weight:600;color:var(--tekst2)}
+.micro a{font-weight:700;white-space:nowrap}
+.stats{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:12px 32px;margin-top:22px;padding-top:20px;border-top:1px solid var(--rand)}
+.stats>*{display:flex;flex-direction:column;text-decoration:none;color:var(--grijs)}
+.stats b{font-size:26px;font-weight:800;line-height:1.1}
+.stats span{font-size:13px;font-weight:600;color:var(--tekst2);margin-top:4px;line-height:1.3;max-width:15ch}
+.stats .gb{display:inline-flex;align-items:center;gap:8px;align-self:flex-start;background:#fff;border:1px solid var(--rand);border-radius:10px;padding:2px 10px 2px 8px;box-shadow:0 4px 12px rgba(14,60,80,.08)}
+.stats .g{width:20px;height:20px}
+.stats .sterren{color:#E2A100;letter-spacing:2px;font-size:13px;margin-top:6px}
+.st-g:hover b{border-color:var(--blauw)}
+/* v4 details: één WhatsApp-groen overal + opvallende contactopties */
+:root{--wa:#1DA851;--wa-d:#168A42}
+svg.wa-logo{fill:currentColor!important;stroke:none!important}
+.ic.wa svg.wa-logo{fill:#fff!important;width:26px;height:26px}
+.wa-float svg.wa-logo{fill:#fff!important}
+.btn-light svg{stroke:var(--blauw-d)}
+.opt{position:relative;background:#fff;padding:16px 46px 16px 16px;box-shadow:0 2px 0 var(--rand);transition:border-color .15s,transform .15s,box-shadow .15s}
+.opt::after{content:"";position:absolute;right:20px;top:50%;width:9px;height:9px;border-right:2.5px solid var(--grijs);border-top:2.5px solid var(--grijs);transform:translateY(-50%) rotate(45deg);opacity:.3;transition:opacity .15s,right .15s}
+.opt:hover{transform:translateY(-2px);border-color:var(--blauw);box-shadow:0 10px 24px rgba(14,60,80,.10)}
+.opt:hover::after{opacity:.7;right:16px}
+.opt .ic{width:50px;height:50px;border-radius:12px;box-shadow:0 3px 0 rgba(0,0,0,.12)}
+.opt b{font-size:16px}.opt small{font-size:14px;font-weight:600}
+.opt[href^="https://wa.me"]{background:linear-gradient(135deg,#E9FAF0,#fff 70%);border-color:#BDEBCF}
+.opt[href^="https://wa.me"]:hover{border-color:var(--wa)}
+.opt[href^="tel:"] .ic{background:var(--grijs)}.opt[href^="tel:"] .ic svg{stroke:var(--blauw)}
+.opt[href^="tel:"]{background:linear-gradient(135deg,#F1F2F3,#fff 70%)}
+.opt[href^="mailto:"] .ic{background:var(--blauw)}
+.opt[href^="mailto:"]{background:linear-gradient(135deg,#E8F7FD,#fff 70%);border-color:#C9ECFA}
+.opt small.u{color:var(--grijs);text-decoration:none}
+/* v4 mobiel rustiger (feedback Justin 12-10: "op tel nog heel druk") */
+@media (max-width:760px){
+  .sec{padding:34px 0}.pb{padding:0 0 34px}
+  h1{font-size:30px;margin:12px 0 10px}
+  h2{font-size:24px}
+  .lead{font-size:15.5px}
+  .hero .row,.w .head+.row{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .hero .row .btn,.head ~ .row .btn{padding:11px 8px;font-size:14px;min-height:46px}
+  .micro{display:none}
+  .hero .row .btn,.cta .row .btn{white-space:nowrap}
+  .hero .row .btn:not(.btn-wa) svg{display:none}
+  .stats{margin-top:16px;padding-top:14px}
+  .hero .photo{aspect-ratio:16/10}
+  .foto-eerst>.photo{order:-1;aspect-ratio:16/9}
+  main nav.diensten-chips{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:14px}
+  main nav.diensten-chips a{font-size:12px;padding:5px 6px 5px 5px;gap:6px;border-radius:10px}
+  main nav.diensten-chips .ci{width:22px;height:22px}main nav.diensten-chips svg{width:12px;height:12px}
+  .foto-eerst h1{font-size:27px}
+  .card{padding:16px 16px}
+  .g2 .card:not(.rv),.g2x .card:not(.rv),.g3 .card:not(.rv),.g4 .card:not(.rv){display:grid;grid-template-columns:40px 1fr;column-gap:14px;align-items:start}
+  .g2 .card:not(.rv)>*,.g2x .card:not(.rv)>*,.g3 .card:not(.rv)>*,.g4 .card:not(.rv)>*{grid-column:2}
+  .g2 .card:not(.rv)>.ic,.g2x .card:not(.rv)>.ic,.g3 .card:not(.rv)>.ic,.g4 .card:not(.rv)>.ic{grid-column:1;grid-row:1 / span 4;width:40px;height:40px;margin:0}
+  .g2 .card:not(.rv)>.ic svg,.g2x .card:not(.rv)>.ic svg,.g3 .card:not(.rv)>.ic svg,.g4 .card:not(.rv)>.ic svg{width:20px;height:20px}
+  .card h3,.card .h3,.g4 .card h2{font-size:16.5px;margin:2px 0 4px}
+  .card .muted{font-size:14px;margin:0}
+  .stack{gap:6px}
+  .g2,.g2x,.g3,.g4{gap:10px}
+  .rv{padding:18px}.rv blockquote{font-size:14.5px}
+  .head{margin-bottom:20px}
+  .head .glead{flex-wrap:wrap;font-size:14px}
+  .cta{padding:22px;gap:16px}.cta .row{display:grid;grid-template-columns:1fr 1fr;gap:8px;width:100%}.cta .row .btn{padding:11px 8px;font-size:14px}
+  .ft{padding:32px 0 96px}
+  .ftg{grid-template-columns:1fr 1fr;gap:18px 14px}
+  .ftg>div:first-child{grid-column:1 / -1}
+  .ftg>div:last-child{display:none}
+  .ft ul{font-size:13px;gap:4px}
+  .copy{margin-top:20px}
+  .bc{display:none}
+  .pf .ba,.pfg{gap:6px}
+}
+/* kaarttitels die als h2 in een kaart staan (over ons: waarden) op kaartformaat */
+.card>h2:not(.h3){font-size:20px;line-height:1.25;margin:0 0 6px;overflow-wrap:anywhere;hyphens:auto}
+/* foto + Waarom-kaart gestapeld in de hero */
+.hero-zij{display:flex;flex-direction:column;gap:16px}
+.hero-zij .hero-foto{aspect-ratio:16/10}
+/* homepage: alle diensten direct zichtbaar */
+.diensten-chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 2px;max-width:560px}
+.diensten-chips a{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--rand);border-radius:999px;padding:6px 13px 6px 6px;font-size:13.5px;font-weight:700;line-height:1.2;text-decoration:none;color:var(--grijs);box-shadow:0 2px 0 var(--rand);transition:border-color .15s,transform .15s}
+.diensten-chips a:hover{border-color:var(--blauw);transform:translateY(-1px);color:var(--grijs)}
+.diensten-chips .ci{width:26px;height:26px;border-radius:50%;background:var(--blauw);display:grid;place-items:center;flex:none}
+.diensten-chips svg{width:14px;height:14px;stroke:var(--grijs)}
+/* contact */
+.c-hero{background:linear-gradient(135deg,#D3F1FD,#F2FBFF 60%,#fff);border-color:#BDE9FB;padding:clamp(28px,4vw,48px)}
+.c-hero h1{margin-top:14px}
+.forms{align-items:start}.forms .card{height:100%}
+.c-head{text-align:center;margin:0 auto 24px}.c-head .lead{margin:0 auto}
+.opts.g3{display:grid;flex-direction:row;margin:0}
+.c-info{text-align:center;margin-top:22px;font-size:14px}
+/* reviews: Google-merk in de kop en op elke kaart */
+.rv{position:relative}
+.rv .g-rv{position:absolute;top:22px;right:22px;width:20px;height:20px;background:#fff;border-radius:50%;padding:3px;box-sizing:content-box}
+.head .glead{display:inline-flex;align-items:center;gap:8px}.head .glead .g{width:20px;height:20px}
+.balk{display:none}
+@media (max-width:760px){
+  .stats{grid-template-columns:repeat(3,1fr);gap:10px}.stats b{font-size:21px}.stats span{font-size:12px}
+  .wa-float{display:none!important}
+  .hd .chips .btn-wa{display:none}
+  .balk{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:40;background:#fff;border-top:1px solid var(--rand);padding:10px 12px calc(10px + env(safe-area-inset-bottom))}
+  .balk .btn{width:100%}
+  body{padding-bottom:72px}
+  #jstn-cc{bottom:84px!important}
+}
