@@ -3,6 +3,81 @@
 
 POSTS = [
 {
+ "slug": "verhuizen-voor-senioren-checklist",
+ "title": "Verhuizen als senior: checklist voor een rustige verhuizing naar een kleinere woning",
+ "seo_title": "Verhuizen als senior: checklist | JSTN",
+ "desc": "Verhuist jij of je ouder naar een kleinere woning of een appartement? Met deze checklist plan je de verhuizing rustig, van spullen uitzoeken tot oplevering.",
+ "date": "2026-10-15", "modified": "2026-10-15", "date_nl": "15 oktober 2026",
+ "cat": "Verhuizen", "icon": "truck",
+ "note": "Dit artikel is met AI-ondersteuning geschreven.",
+ "sources": [
+   ("Rijksoverheid — Hoe kan ik mijn verhuizing doorgeven aan de gemeente?", "https://www.rijksoverheid.nl/vraag-en-antwoord/gemeenten/hoe-kan-ik-mijn-verhuizing-doorgeven-aan-de-gemeente"),
+   ("Rijksoverheid — Hoe zeg ik de huur op van mijn woning?", "https://www.rijksoverheid.nl/vraag-en-antwoord/woning-huren/huur-opzeggen-woning"),
+ ],
+ "faq": [
+   ("Hoe ver van tevoren begin je met plannen als een senior gaat verhuizen?",
+    "Begin het liefst zodra de nieuwe woning bekend is, en in elk geval een aantal weken voor de verhuisdatum. Vooral het uitzoeken van spullen kost tijd en energie, zeker na tientallen jaren in hetzelfde huis. Wie dat in korte blokken van een paar uur verdeelt, houdt het vol zonder dat het een race tegen de klok wordt."),
+   ("Mag een kind de verhuizing van een ouder doorgeven aan de gemeente?",
+    "Volgens Rijksoverheid mag een meerderjarig kind de verhuizing doorgeven voor een ouder die bij hem of haar thuis woont. In andere situaties, zoals een ouder die zelfstandig woont of naar een zorginstelling gaat, is meestal een machtiging nodig. Vraag bij twijfel bij de nieuwe gemeente na wat zij nodig hebben."),
+   ("Wat doe je met meubels en spullen die niet meer passen?",
+    "Laat de bewoner eerst kiezen wat mee moet, daarna mogen familieleden iets uitzoeken. Wat overblijft en nog bruikbaar is, kan naar een kringloop of goed doel. De rest gaat naar het afvalbrengpunt of grofvuil. Bij een volledige ontruiming kan een ontruimingsbedrijf het sorteren en afvoeren in één keer regelen."),
+   ("Kun je een seniorenverhuizing ook zelf doen?",
+    "Ja, als er genoeg helpende handen zijn, de nieuwe woning dichtbij is en er weinig zware meubels mee hoeven. Uitbesteden is vooral handig als familie ver weg woont, er trappen of grote kasten in het spel zijn, of als de oude woning ook nog leeggemaakt en schoon opgeleverd moet worden."),
+ ],
+ "html": """
+<p class="lead">Een verhuizing als senior verloopt het rustigst als je vroeg begint met uitzoeken, de nieuwe woning op papier inricht voordat er iets wordt ingepakt, en de oude woning pas leegmaakt en oplevert nadat de bewoner op de nieuwe plek is gesetteld. Hieronder vind je een praktische checklist, voor jezelf of voor je vader of moeder.</p>
+<p>Verhuizen naar een appartement, een seniorenwoning of een zorgappartement is vaak een grote stap. Er gaat een huis vol herinneringen naar een kleinere ruimte, en de bewoner moet in korte tijd veel beslissingen nemen. Met een duidelijke volgorde voorkom je dat alles op de laatste week aankomt.</p>
+
+<h2>Stap 1: regel de papieren zaken op tijd</h2>
+<p>Begin met wat aan een datum vastzit. Dat geeft rust, want de rest van de planning hangt eraan.</p>
+<ul>
+<li><strong>Huur opzeggen.</strong> Huurt de bewoner nu? Kijk in het huurcontract welke opzegtermijn geldt; volgens <a href="https://www.rijksoverheid.nl/vraag-en-antwoord/woning-huren/huur-opzeggen-woning" target="_blank" rel="noopener">Rijksoverheid</a> is dat meestal één maand. Zeg schriftelijk op, bij voorkeur aangetekend, of zorg dat je een schriftelijke ontvangstbevestiging van de verhuurder krijgt.</li>
+<li><strong>Verhuizing doorgeven aan de gemeente.</strong> Dat kan maximaal 4 weken voor de verhuisdatum en moet uiterlijk 5 dagen erna, bij de gemeente waar je naartoe verhuist. Een meerderjarig kind mag dit alleen doen voor een ouder die bij het kind thuis woont; anders is een machtiging nodig (bron: <a href="https://www.rijksoverheid.nl/vraag-en-antwoord/gemeenten/hoe-kan-ik-mijn-verhuizing-doorgeven-aan-de-gemeente" target="_blank" rel="noopener">Rijksoverheid</a>).</li>
+<li><strong>Adreswijzigingen.</strong> Denk aan energie, water, internet en tv, de zorgverzekeraar, huisarts, apotheek, bank en abonnementen. Zet ze op één lijst en vink af.</li>
+<li><strong>Sleutels en toegang.</strong> Spreek af wanneer de sleutels van de nieuwe woning beschikbaar zijn en wanneer de oude woning uiterlijk leeg en schoon moet zijn.</li>
+</ul>
+
+<h2>Stap 2: richt de nieuwe woning eerst op papier in</h2>
+<p>De grootste valkuil bij kleiner wonen is te veel meenemen. Dozen en meubels die nergens passen, zorgen op de nieuwe plek voor stress en struikelgevaar. Vraag daarom een plattegrond van de nieuwe woning op en meet de belangrijkste meubels op.</p>
+<ul>
+<li>Teken in waar bed, stoel, tafel en kasten komen te staan. Houd looproutes breed genoeg, zeker als er een rollator of rolstoel gebruikt wordt.</li>
+<li>Kies de favoriete stoel, het eigen bed en vertrouwde spullen eerst. Die maken een nieuwe plek sneller thuis.</li>
+<li>Check de bergruimte: een appartement heeft vaak een kleinere berging of helemaal geen zolder.</li>
+</ul>
+
+<h2>Stap 3: spullen uitzoeken in kleine blokken</h2>
+<p>Uitzoeken is emotioneel en vermoeiend. Plan het daarom in blokken van een paar uur, verspreid over meerdere dagen, en begin bij ruimtes met weinig herinneringen, zoals de schuur of een logeerkamer. Foto's, brieven en persoonlijke spullen bewaar je voor het laatst.</p>
+<p>Werk met vier stapels of kleuren stickers:</p>
+<ol>
+<li><strong>Mee:</strong> past in de nieuwe woning en wordt echt gebruikt.</li>
+<li><strong>Familie:</strong> spullen die kinderen of kleinkinderen graag willen hebben. Laat de bewoner hier zelf over beslissen.</li>
+<li><strong>Tweede leven:</strong> bruikbare meubels, servies en huishoudspullen voor de kringloop of een goed doel.</li>
+<li><strong>Weg:</strong> kapotte of versleten spullen voor het afvalbrengpunt of grofvuil.</li>
+</ol>
+<p>Laat de bewoner zoveel mogelijk zelf kiezen, ook als dat trager gaat. Het voelt anders als iemand anders bepaalt wat er met je spullen gebeurt.</p>
+
+<h2>Stap 4: de verhuisdag zelf</h2>
+<p>Op de verhuisdag wil je zo min mogelijk drukte rond de bewoner. Een paar dingen die helpen:</p>
+<ul>
+<li>Pak een aparte tas in met medicijnen, bril, gehoorapparaat, telefoon met oplader, belangrijke papieren en kleding voor twee dagen. Die gaat met de bewoner mee, niet in de verhuiswagen.</li>
+<li>Laat de bewoner de drukste uren eventueel bij familie doorbrengen en kom pas naar de nieuwe woning als de grote meubels staan.</li>
+<li>Zet het bed als eerste op en maak het op. Wie moe is, heeft dan in elk geval een vertrouwde plek om te rusten.</li>
+<li>Hang gordijnen en lampen zo snel mogelijk op en zet spullen terug op een herkenbare plek, bijvoorbeeld de kopjes weer in de kast naast het aanrecht.</li>
+</ul>
+
+<h2>Stap 5: de oude woning leegmaken en opleveren</h2>
+<p>Na de verhuizing staat er in de oude woning vaak nog veel: de spullen van de stapels "tweede leven" en "weg", vloerbedekking, gordijnen of een volle schuur. Plan genoeg tijd tussen de verhuisdag en de opleverdatum, zodat je niet in één weekend alles hoeft te doen.</p>
+<p>Bij een huurwoning moet je de woning opleveren zoals in het contract staat. Vaak betekent dat: leeg, schoon en zonder zelf aangebrachte zaken die de verhuurder niet wil overnemen. Een voorinspectie met de verhuurder laat vroeg zien wat er nog moet gebeuren. In ons artikel over <a href="/post/huurwoning-opleveren-stappenplan/">huurwoning opleveren</a> lees je hoe je dat stap voor stap aanpakt.</p>
+
+<h2>Zelf doen of laten doen?</h2>
+<p>Een verhuizing zelf regelen kan prima als er genoeg familie of vrienden zijn die kunnen helpen, de nieuwe woning dichtbij is en er weinig zware meubels mee gaan. Uitbesteden is vooral handig als de kinderen ver weg wonen of weinig tijd hebben, als er trappen of grote kasten zijn, of als verhuizen, ontruimen en schoonmaken in korte tijd allemaal moeten gebeuren.</p>
+<p>Het voordeel van één partij voor alles is dat je niet zelf hoeft te schakelen tussen een verhuizer, een ontruimer en een schoonmaker. Er is één aanspreekpunt en de volgorde klopt.</p>
+
+<h2>Hulp bij een seniorenverhuizing in Groningen</h2>
+<p>JSTN Multidiensten helpt senioren en hun familie met <a href="/verhuizen-groningen/">verhuizen</a> in Groningen en tot ongeveer 50 km eromheen, rustig en in overleg. Waar nodig nemen we ook het <a href="/woningontruiming-groningen/">leegmaken van de oude woning</a> en de schoonmaak voor de oplevering mee, en bruikbare spullen krijgen waar mogelijk een tweede leven. Wil je overleggen wat er voor jou of je ouder nodig is? Neem contact op via de <a href="/contact/">contactpagina</a>; je krijgt binnen 12 uur een reactie.</p>
+""",
+},
+{
  "slug": "mos-op-oprit-of-terras-wanneer-hogedrukreinigen",
  "title": "Mos en groene aanslag op je oprit of terras: wanneer moet je hogedrukreinigen?",
  "seo_title": "Mos op je oprit: wanneer hogedrukreinigen? | JSTN",
