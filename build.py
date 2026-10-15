@@ -211,7 +211,7 @@ def svc(icon, title, paras, anchor):
 # v4: micro-regel + bewijsrij onder de hero-knoppen
 GREVIEWS_URL = "https://www.google.com/maps/search/?api=1&query=JSTN+Multidiensten+Zernikepark+4+Groningen"
 MICRO = f'<p class="micro">Vrijblijvend · reactie binnen 12 uur, ook in het weekend · of bel <a href="tel:{TEL}">06 36179549</a></p>'
-STATS = f'''<div class="stats"><a class="st-g" href="{GREVIEWS_URL}" target="_blank" rel="noopener"><b class="gb">{glogo()}5,0</b><span class="sterren">★★★★★</span><span>beoordeling op Google</span></a><div><b>Binnen 12 uur</b><span>reactie, ook in het weekend</span></div><div><b>Gratis</b><span>offerte, vrijblijvend</span></div></div>'''
+STATS = f'''<div class="stats"><a class="st-g" href="{GREVIEWS_URL}" target="_blank" rel="noopener"><b class="gb">{glogo()}5,0</b><span class="sterren">★★★★★</span><span>15+ beoordelingen op Google</span></a><div><b>Binnen 12 uur</b><span>reactie, ook in het weekend</span></div><div><b>Gratis</b><span>offerte, vrijblijvend</span></div></div>'''
 def knoppen(wa_href=None, wa_txt="WhatsApp ons", mt="22px"):
     return f'''<div class="row" style="margin-top:{mt}">
 <a class="btn btn-wa" href="{wa_href or WA}" target="_blank" rel="noopener">{WAI}{wa_txt}</a>
@@ -256,7 +256,7 @@ _langste = max(REVIEWS, key=lambda r: len(r[1]))
 rev_cards = "".join(f'<figure class="card rv">{glogo("g-rv")}{STARS}<blockquote>“{kort_review(q)}”</blockquote><figcaption>{n}</figcaption></figure>' for n, q in REVIEWS if (n, q) != _langste)
 REVIEWS_SEC = f'''<section class="sec" id="reviews">
 <div class="w">
-<div class="head"><span class="tag">Google Reviews</span><h2>Wat klanten over ons zeggen</h2><p class="lead glead">{glogo()}<b>5,0 ★</b> gemiddeld op Google · <a class="link" style="display:inline-flex" href="{GREVIEWS}" target="_blank" rel="noopener">Bekijk alle reviews{ic("arrow")}</a></p></div>
+<div class="head"><span class="tag">Google Reviews</span><h2>Wat klanten over ons zeggen</h2><p class="lead glead">{glogo()}<b>5,0 ★</b> gemiddeld uit 15+ beoordelingen op Google · <a class="link" style="display:inline-flex" href="{GREVIEWS}" target="_blank" rel="noopener">Bekijk alle reviews{ic("arrow")}</a></p></div>
 <div class="g2">{rev_cards}</div>
 </div>
 </section>'''
