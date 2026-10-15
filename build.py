@@ -498,9 +498,15 @@ contact = f'''<section class="sec">
 </section>
 
 <section class="pb">
-<div class="w g2 forms">
+<div class="w narrow">
 <div class="card">
-<h2 class="h3">Stuur ons een WhatsApp</h2>
+<h2 class="h3">Stuur ons een bericht</h2>
+<p class="muted">Kies hoe u het wilt versturen.</p>
+<div class="tabs" role="tablist">
+<button type="button" class="tab on" data-tab="wa" role="tab" aria-selected="true">{WAI}Via WhatsApp</button>
+<button type="button" class="tab" data-tab="mail" role="tab" aria-selected="false">{ic("mail")}Via e-mail</button>
+</div>
+<div class="pane on" id="pane-wa">
 <p class="muted">Vul het in en klik op de knop: uw bericht staat dan direct klaar in WhatsApp.</p>
 <form id="waForm" novalidate>
 <div class="r2">
@@ -517,9 +523,7 @@ contact = f'''<section class="sec">
 <p class="small">Werkt op telefoon en computer (WhatsApp Web).</p>
 </form>
 </div>
-
-<div class="card">
-<h2 class="h3">Stuur ons een e-mail</h2>
+<div class="pane" id="pane-mail">
 <p class="muted">Vraag een offerte aan: u ontvangt binnen 12 uur een reactie per mail.</p>
 <form id="mailForm" novalidate>
 <div class="r2">
@@ -541,6 +545,7 @@ contact = f'''<section class="sec">
 <div class="msg" id="mailMelding" role="status"></div>
 <p class="small">Door te versturen gaat u akkoord met ons <a href="/privacy/">privacybeleid</a>.</p>
 </form>
+</div>
 </div>
 </div>
 </section>

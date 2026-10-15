@@ -334,3 +334,6 @@ b,strong{font-weight:600}
 .chip small{color:var(--blauw-d)}
 .chip svg{stroke:var(--blauw-d)}
 .diensten-chips a{box-shadow:none}
+.tab{font-weight:600;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.tab svg{width:18px;height:18px;stroke:currentColor}
+.tab svg.wa-logo{fill:currentColor;stroke:none}
