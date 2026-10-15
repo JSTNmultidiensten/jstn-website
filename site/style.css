@@ -2,7 +2,7 @@
 :root{--grijs:#3F3D3F;--grijs-d:#2A292A;--blauw:#5CCBF4;--blauw-d:#1A7FA8;--licht:#F4F8FA;--rand:#E2E8EC;--tekst2:#5E5B5E;--wa:#157F43;--wa-d:#106636}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--licht);font-family:'Montserrat',system-ui,-apple-system,Segoe UI,sans-serif;color:var(--grijs);line-height:1.6;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--licht);font-family:'Inter','Montserrat',system-ui,-apple-system,Segoe UI,sans-serif;color:var(--grijs);line-height:1.6;-webkit-font-smoothing:antialiased}
 img{max-width:100%;height:auto;display:block}
 a{color:var(--grijs)}a:hover{color:var(--blauw-d)}
 :focus-visible{outline:3px solid var(--blauw);outline-offset:2px}
@@ -48,10 +48,10 @@ svg{fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .row{display:flex;gap:12px;flex-wrap:wrap}
 
 /* typografie */
-.tag{display:inline-block;background:var(--blauw);color:var(--grijs);font-weight:800;font-size:12px;letter-spacing:2px;padding:6px 12px;border-radius:6px;text-transform:uppercase}
-h1{font-size:clamp(32px,5vw,54px);line-height:1.08;font-weight:800;margin:16px 0 14px;letter-spacing:-.5px}
-h2{font-size:clamp(26px,3.4vw,38px);font-weight:800;margin:10px 0 8px;line-height:1.15}
-h3,.h3{font-size:20px;font-weight:800;margin:0 0 6px;line-height:1.25}
+.tag{display:inline-block;background:var(--blauw);color:var(--grijs);font-weight:700;font-size:12px;letter-spacing:2px;padding:6px 12px;border-radius:6px;text-transform:uppercase}
+h1{font-size:clamp(32px,5vw,54px);line-height:1.08;font-weight:700;margin:16px 0 14px;letter-spacing:-.5px}
+h2{font-size:clamp(26px,3.4vw,38px);font-weight:700;margin:10px 0 8px;line-height:1.15}
+h3,.h3{font-size:20px;font-weight:700;margin:0 0 6px;line-height:1.25}
 p{margin:0 0 10px}
 .lead{color:var(--tekst2);font-size:17px;max-width:640px}
 .muted{color:var(--tekst2);font-size:15px}
@@ -96,7 +96,7 @@ p{margin:0 0 10px}
 /* reviews */
 .rv{background:var(--grijs);color:#fff;border-color:var(--grijs);margin:0;display:flex;flex-direction:column}
 .rv blockquote{margin:0 0 14px;flex:1}
-.rv figcaption{color:var(--blauw);font-weight:800;font-style:italic;font-size:15px}
+.rv figcaption{color:var(--blauw);font-weight:700;font-style:italic;font-size:15px}
 .st{display:flex;gap:2px;margin-bottom:10px}
 .st svg{width:18px;height:18px;fill:#E2A100;stroke:none}
 
@@ -147,7 +147,7 @@ textarea{min-height:120px;resize:vertical}
 .ft{background:var(--grijs);color:#fff;padding:56px 0 28px}
 .ft a{color:#fff;text-decoration:none}.ft a:hover{color:var(--blauw)}
 .ftg{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:32px}
-.fth{color:var(--blauw);font-size:13px;letter-spacing:1.5px;text-transform:uppercase;margin:0 0 12px;font-weight:800}
+.fth{color:var(--blauw);font-size:13px;letter-spacing:1.5px;text-transform:uppercase;margin:0 0 12px;font-weight:700}
 .ft ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;font-size:14px}
 .ftp{color:#C9CDD1;font-size:14px;margin-top:14px}
 .copy{border-top:1px solid #5A585A;margin-top:36px;padding-top:18px;font-size:13px;color:#C9CDD1}
@@ -192,7 +192,7 @@ textarea{min-height:120px;resize:vertical}
   .row .btn{flex:1 1 auto}
 }
 .steps{margin:12px 0 0;padding-left:22px;display:flex;flex-direction:column;gap:8px;font-weight:600}
-.steps li::marker{color:var(--blauw-d);font-weight:800}
+.steps li::marker{color:var(--blauw-d);font-weight:700}
 
 /* v4: contact altijd binnen handbereik */
 .hd .btn-wa{min-height:44px}
@@ -208,7 +208,7 @@ textarea{min-height:120px;resize:vertical}
 .micro a{font-weight:700;white-space:nowrap}
 .stats{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:12px 32px;margin-top:22px;padding-top:20px;border-top:1px solid var(--rand)}
 .stats>*{display:flex;flex-direction:column;text-decoration:none;color:var(--grijs)}
-.stats b{font-size:26px;font-weight:800;line-height:1.1}
+.stats b{font-size:26px;font-weight:700;line-height:1.1}
 .stats span{font-size:13px;font-weight:600;color:var(--tekst2);margin-top:4px;line-height:1.3;max-width:15ch}
 .stats .gb{display:inline-flex;align-items:center;gap:8px;align-self:flex-start;background:#fff;border:1px solid var(--rand);border-radius:10px;padding:2px 10px 2px 8px;box-shadow:0 4px 12px rgba(14,60,80,.08)}
 .stats .g{width:20px;height:20px}
@@ -305,3 +305,32 @@ svg.wa-logo{fill:currentColor!important;stroke:none!important}
   body{padding-bottom:72px}
   #jstn-cc{bottom:84px!important}
 }
+
+/* v5 strakker: rustigere letter, lichtere gewichten, vlakke knoppen (15-10-2026) */
+body{font-weight:400;font-feature-settings:"cv11","ss01";letter-spacing:-.005em}
+h1{font-size:clamp(30px,4.2vw,46px);font-weight:700;letter-spacing:-.025em;line-height:1.1}
+h2{font-size:clamp(23px,2.6vw,30px);font-weight:600;letter-spacing:-.02em;line-height:1.2}
+h3,.h3{font-size:18px;font-weight:600;letter-spacing:-.01em}
+b,strong{font-weight:600}
+.lead{font-size:16.5px;line-height:1.65}
+.tag{background:transparent;color:var(--blauw-d);font-weight:600;font-size:12px;letter-spacing:.14em;padding:0;border-radius:0}
+.btn{font-weight:600;font-size:15px;box-shadow:none;border-radius:10px}
+.btn:active{transform:none;box-shadow:none}
+.btn-wa,.btn-wa:active,.btn-light,.btn-light:active{box-shadow:none}
+.btn-light{border:1px solid var(--rand)}
+.chip{font-weight:500}
+.chip small{font-weight:600}
+.nav a{font-weight:500}
+.stats b{font-size:24px;font-weight:700;letter-spacing:-.02em}
+.stats span{font-weight:500}
+.micro{font-weight:500}
+.meta{font-weight:600}
+.fth{font-weight:600}
+.diensten-chips a{font-weight:500}
+.card{box-shadow:none}
+.pfg figcaption{font-size:14px;color:var(--tekst2);margin-top:6px}
+.chip{background:#fff;color:var(--grijs);border:1px solid var(--rand)}
+.chip:hover{background:var(--licht);color:var(--grijs)}
+.chip small{color:var(--blauw-d)}
+.chip svg{stroke:var(--blauw-d)}
+.diensten-chips a{box-shadow:none}

@@ -125,7 +125,7 @@ CTA = f'''<section class="pb">
 <div class="dark cta">
 <div style="max-width:560px">
 <h2 style="color:#fff;margin-top:0">Klaar voor uw klus?</h2>
-<p style="color:#E2E8EC;margin:0"><span class="acc" style="font-weight:800">Reactie binnen 12 uur, ook in het weekend.</span> App ons gerust, ook met een paar foto's van de klus.</p>
+<p style="color:#E2E8EC;margin:0"><span class="acc" style="font-weight:700">Reactie binnen 12 uur, ook in het weekend.</span> App ons gerust, ook met een paar foto's van de klus.</p>
 </div>
 <div class="row">
 <a class="btn btn-wa" href="{WA}" target="_blank" rel="noopener">{WAI}WhatsApp</a>
@@ -161,7 +161,7 @@ def page(path, title, desc, active, body, extra_ld=None, og_type="website", og_i
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="/style.css">
 {head_extra}{ld}
 </head>
@@ -304,7 +304,7 @@ home = f'''<section class="sec">
 
 <section class="sec">
 <div class="w">
-<div class="head"><span class="tag">Ons werk</span><h2>Zo ziet het eruit als wij klaar zijn</h2><p class="lead">Echte foto's van onze eigen klussen.</p></div>
+<div class="head"><h2>Ons werk</h2></div>
 <div class="pfg">
 <figure><img src="/portfolio/img/glasbewassing-kantoor.jpg" width="900" height="1200" alt="Glasbewassing bij de oplevering van een kantoorpand" loading="lazy"><figcaption>Glasbewassing bij een kantooroplevering</figcaption></figure>
 <figure><img src="/portfolio/img/vloerreiniging-schrobmachine.jpg" width="900" height="1200" alt="Vloerreiniging met de schrobmachine" loading="lazy"><figcaption>Vloerreiniging met de schrobmachine</figcaption></figure>
@@ -418,7 +418,7 @@ MISSIE = '''<section class="pb">
 <div class="dark" style="padding:40px">
 <h2 class="acc" style="margin-top:0">Onze missie</h2>
 <p style="color:#E2E8EC;max-width:820px">Wij geven jonge mensen de kans om zich te ontwikkelen, verantwoordelijkheid te nemen en te groeien. Ambitie, kwaliteit en plezier komen bij ons samen, in een hecht team dat elkaar helpt en iedere dag beter wil worden.</p>
-<p style="font-weight:800;font-size:18px;margin:18px 0 0">Onze ambitie is duidelijk: <span class="acc">samen groeien, samen beter worden en samen iets neerzetten waar we trots op kunnen zijn.</span></p>
+<p style="font-weight:700;font-size:18px;margin:18px 0 0">Onze ambitie is duidelijk: <span class="acc">samen groeien, samen beter worden en samen iets neerzetten waar we trots op kunnen zijn.</span></p>
 </div>
 </div>
 </section>'''
@@ -601,7 +601,7 @@ for p in sorted(posts.POSTS, key=lambda x: x["date"], reverse=True):
 {src_html}
 </article>
 <div class="dark cta" style="margin-top:24px">
-<div><h2 style="color:#fff;margin:0 0 6px">Hulp nodig bij uw klus?</h2><p style="color:#E2E8EC;margin:0"><span class="acc" style="font-weight:800">Reactie binnen 12 uur, ook in het weekend.</span> App ons gerust, ook met een paar foto's van de klus.</p></div>
+<div><h2 style="color:#fff;margin:0 0 6px">Hulp nodig bij uw klus?</h2><p style="color:#E2E8EC;margin:0"><span class="acc" style="font-weight:700">Reactie binnen 12 uur, ook in het weekend.</span> App ons gerust, ook met een paar foto's van de klus.</p></div>
 <div class="row"><a class="btn btn-wa" href="{WA}" target="_blank" rel="noopener">{WAI}WhatsApp</a><a class="btn btn-light" href="/contact/">Offerte aanvragen</a></div>
 </div>
 {('<h2 style="margin-top:40px">Lees ook</h2><div class="g2">' + more + '</div>') if more else ''}
