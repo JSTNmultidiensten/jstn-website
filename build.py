@@ -270,7 +270,7 @@ home = f'''<section class="sec">
 {chips([(i, t, u) for i, t, d, u in SERVICES])}
 {knoppen()}
 </div>
-<img class="photo" src="/img/team-jstn-multidiensten-1600.webp" srcset="/img/team-jstn-multidiensten-900.webp 900w, /img/team-jstn-multidiensten-1600.webp 1600w" sizes="(max-width: 760px) 100vw, 540px" width="1600" height="1066" style="object-position:54% 45%" alt="Justin en het team van JSTN Multidiensten in Groningen" fetchpriority="high">
+<img class="photo" src="/img/team-jstn-multidiensten.jpg" width="2576" height="1717" style="object-position:54% 45%" alt="Justin en het team van JSTN Multidiensten in Groningen" fetchpriority="high">
 </div>
 </section>
 
@@ -418,7 +418,7 @@ over = f'''<section class="sec">
 <p class="muted">We werken hard, nemen verantwoordelijkheid en blijven leren.</p>
 {knoppen()}
 </div>
-<img class="photo" src="/img/team-jstn-multidiensten-1600.webp" srcset="/img/team-jstn-multidiensten-900.webp 900w, /img/team-jstn-multidiensten-1600.webp 1600w" sizes="(max-width: 760px) 100vw, 540px" width="1600" height="1066" style="object-position:54% 45%" alt="Justin en het team van JSTN Multidiensten in Groningen" loading="lazy">
+<img class="photo" src="/img/team-jstn-multidiensten.jpg" width="2576" height="1717" style="object-position:54% 45%" alt="Justin en het team van JSTN Multidiensten in Groningen" loading="lazy">
 </div>
 </section>
 
