@@ -270,7 +270,7 @@ home = f'''<section class="sec">
 {chips([(i, t, u) for i, t, d, u in SERVICES])}
 {knoppen()}
 </div>
-<img class="photo" src="/img/team-jstn-multidiensten.jpg" width="2576" height="1717" style="object-position:54% 45%" alt="Justin en het team van JSTN Multidiensten in Groningen" fetchpriority="high">
+<img class="photo" src="/img/team-jstn-multidiensten-2026.jpg" width="2000" height="1333" style="object-position:50% 35%" alt="Justin en het team van JSTN Multidiensten in Groningen" fetchpriority="high">
 </div>
 </section>
 
@@ -431,7 +431,7 @@ over = f'''<section class="sec">
 <p class="muted">We werken hard, nemen verantwoordelijkheid en blijven leren.</p>
 {knoppen()}
 </div>
-<img class="photo" src="/img/team-jstn-multidiensten.jpg" width="2576" height="1717" style="object-position:54% 45%" alt="Justin en het team van JSTN Multidiensten in Groningen" loading="lazy">
+<img class="photo" src="/img/team-jstn-multidiensten-2026.jpg" width="2000" height="1333" style="object-position:50% 35%" alt="Justin en het team van JSTN Multidiensten in Groningen" loading="lazy">
 </div>
 </section>
 
