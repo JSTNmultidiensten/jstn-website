@@ -211,7 +211,7 @@ def svc(icon, title, paras, anchor):
 # v4: micro-regel + bewijsrij onder de hero-knoppen
 GREVIEWS_URL = "https://www.google.com/maps/search/?api=1&query=JSTN+Multidiensten+Zernikepark+4+Groningen"
 MICRO = f'<p class="micro">Vrijblijvend · reactie binnen 12 uur, ook in het weekend · of bel <a href="tel:{TEL}">06 36179549</a></p>'
-STATS = f'''<div class="stats"><a class="st-g" href="{GREVIEWS_URL}" target="_blank" rel="noopener"><b class="gb">{glogo()}5,0</b><span class="sterren">★★★★★</span><span>beoordeling op Google</span></a><div><b>12 uur</b><span>reactie, ook in het weekend</span></div><div><b>1</b><span>vast aanspreekpunt</span></div></div>'''
+STATS = f'''<div class="stats"><a class="st-g" href="{GREVIEWS_URL}" target="_blank" rel="noopener"><b class="gb">{glogo()}5,0</b><span class="sterren">★★★★★</span><span>beoordeling op Google</span></a><div><b>12 uur</b><span>reactie, ook in het weekend</span></div><div><b>Gratis</b><span>offerte, vrijblijvend</span></div></div>'''
 def knoppen(wa_href=None, wa_txt="WhatsApp ons", mt="22px"):
     return f'''<div class="row" style="margin-top:{mt}">
 <a class="btn btn-wa" href="{wa_href or WA}" target="_blank" rel="noopener">{WAI}{wa_txt}</a>
