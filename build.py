@@ -302,6 +302,19 @@ home = f'''<section class="sec">
 </div>
 </section>
 
+<section class="sec">
+<div class="w">
+<div class="head"><span class="tag">Ons werk</span><h2>Zo ziet het eruit als wij klaar zijn</h2><p class="lead">Echte foto's van onze eigen klussen.</p></div>
+<div class="pfg">
+<figure><img src="/portfolio/img/glasbewassing-kantoor.jpg" width="900" height="1200" alt="Glasbewassing bij de oplevering van een kantoorpand" loading="lazy"><figcaption>Glasbewassing bij een kantooroplevering</figcaption></figure>
+<figure><img src="/portfolio/img/vloerreiniging-schrobmachine.jpg" width="900" height="1200" alt="Vloerreiniging met de schrobmachine" loading="lazy"><figcaption>Vloerreiniging met de schrobmachine</figcaption></figure>
+<figure><img src="/portfolio/img/douchewand-na.jpg" width="900" height="1200" alt="Douchewand na het ontkalken" loading="lazy"><figcaption>Badkamer ontkalkt bij een eindschoonmaak</figcaption></figure>
+<figure><img src="/portfolio/img/hogedrukreiniging-tegels.jpg" width="900" height="1200" alt="Tegels schoon met hogedrukreiniging" loading="lazy"><figcaption>Tegels schoon met hogedruk</figcaption></figure>
+</div>
+<p style="margin-top:18px"><a class="link" href="/portfolio/">Bekijk meer in ons portfolio{ic("arrow")}</a></p>
+</div>
+</section>
+
 {REVIEWS_SEC}
 
 {CTA}'''
