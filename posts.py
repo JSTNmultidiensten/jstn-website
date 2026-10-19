@@ -3,6 +3,85 @@
 
 POSTS = [
 {
+ "slug": "hoe-vaak-school-of-kantoorvloer-laten-reinigen",
+ "title": "Hoe vaak moet je een school- of kantoorvloer laten reinigen?",
+ "seo_title": "Hoe vaak een school- of kantoorvloer reinigen? | JSTN",
+ "desc": "Dagelijks schoonhouden, periodiek dieptereinigen: zo bepaal je hoe vaak een vloer in een school of kantoor grondig gereinigd moet worden, en wanneer.",
+ "date": "2026-10-19", "modified": "2026-10-19", "date_nl": "19 oktober 2026",
+ "cat": "Vloerreiniging", "icon": "floor",
+ "note": "Dit artikel is met AI-ondersteuning geschreven.",
+ "faq": [
+   ("Is dagelijks stofwissen en dweilen niet genoeg voor een schoolvloer?",
+    "Voor het dagelijkse zand, stof en losse vlekken wel. Maar gewoon dweilen haalt vuil dat zich in de structuur van de vloer of in een oude beschermlaag heeft vastgezet er niet uit. Daarom wordt een vloer bij alleen dagelijks onderhoud na verloop van tijd dof, grauw of plakkerig. Een periodieke grondige reiniging lost dat op; het dagelijkse werk zorgt ervoor dat het daarna langer goed blijft."),
+   ("Wanneer plan je vloerreiniging in een school het beste in?",
+    "In de schoolvakantie of op dagen dat er geen les is. Dan kan de vloer rustig drogen, hoeven er geen lokalen te worden omgeroosterd en kan het meubilair zonder haast verplaatst worden. Veel scholen plannen de grootste beurt in de zomervakantie, zodat het nieuwe schooljaar met schone vloeren begint."),
+   ("Hoe zie je dat een vloer toe is aan een grondige reiniging?",
+    "Let op loopstraten die donkerder of doffer zijn dan de rest van de vloer, randen langs plinten en onder radiatoren waar vuil zich ophoopt, een plakkerig gevoel na het dweilen, en vlekken die na een gewone schoonmaak terugkomen. Zie je dat, dan helpt vaker dweilen meestal niet meer en is een grondige beurt nodig."),
+   ("Kunnen we vloerreiniging ook zelf met de eigen schoonmakers doen?",
+    "Het dagelijkse en wekelijkse onderhoud kan prima door de eigen schoonmaakdienst of een vaste schoonmaker. Voor een grondige reiniging van grote oppervlakken is professionele apparatuur nodig en ervaring met het type vloer. Daar huren veel organisaties een gespecialiseerde partij voor in, terwijl het dagelijkse werk in eigen huis blijft."),
+ ],
+ "html": """
+<p class="lead">Een vloer in een school of kantoor heeft twee soorten onderhoud nodig: dagelijks schoonhouden (stofwissen, vegen, vlekken weghalen) en periodiek een grondige reiniging. Hoe vaak die grondige beurt nodig is, hangt vooral af van hoeveel er over de vloer wordt gelopen. Voor drukke ruimtes zoals entrees en gangen is dat vaker dan voor een rustige kantoorvleugel. Hieronder lees je hoe je dat voor jouw gebouw bepaalt.</p>
+<p>Er bestaat geen vaste regel die zegt dat een vloer elke zoveel maanden gereinigd moet worden. Wat wel vaststaat: een vloer die alleen gedweild wordt, wordt langzaam dof en grauw. Vuil zet zich vast in de structuur van de vloer of in een oude beschermlaag, en dat krijg je er met een mop niet meer uit. Wie dat te lang laat liggen, heeft uiteindelijk meer werk aan het herstellen.</p>
+
+<h2>Dagelijks onderhoud en periodieke reiniging: het verschil</h2>
+<p>Het helpt om de twee duidelijk uit elkaar te houden, ook in afspraken met je schoonmaakdienst.</p>
+<ul>
+<li><strong>Dagelijks of wekelijks onderhoud</strong> houdt de vloer bruikbaar en netjes: zand en stof weg, gemorste koffie of modder opruimen, de entree droog houden. Dit voorkomt dat los vuil als schuurpapier over de vloer wordt meegenomen.</li>
+<li><strong>Periodieke grondige reiniging</strong> haalt het vuil weg dat zich toch heeft opgebouwd. Dat gebeurt met professionele apparatuur en middelen die bij het type vloer passen. Het resultaat is een vloer die er weer egaal uitziet in plaats van met donkere loopstraten.</li>
+</ul>
+<p>Een goede vuistregel: hoe beter het dagelijkse onderhoud, hoe langer je kunt wachten met een grondige beurt. Andersom betekent slordig dagelijks werk dat de periodieke reiniging sneller nodig is.</p>
+
+<h2>Welke ruimtes vaker aandacht nodig hebben</h2>
+<p>Niet elke vierkante meter in een gebouw slijt even snel. Deel het gebouw daarom op in zones en kijk per zone hoe intensief het gebruik is.</p>
+<ul>
+<li><strong>Entree en hal:</strong> hier komt het meeste zand en vocht van buiten binnen. Dit is bijna altijd de zone die het eerst grauw wordt, zeker in de herfst en winter.</li>
+<li><strong>Gangen en trappenhuizen:</strong> veel loopverkeer over dezelfde lijnen, waardoor loopstraten ontstaan.</li>
+<li><strong>Kantine, aula en pantry:</strong> morsen van eten en drinken, waardoor vloeren plakkerig worden.</li>
+<li><strong>Lokalen en werkplekken:</strong> minder druk, maar wel vuil onder en rond tafels en stoelen, en langs de randen waar de mop niet goed komt.</li>
+<li><strong>Kamers en vergaderruimtes die weinig gebruikt worden:</strong> hier volstaat vaak minder frequent een grondige beurt.</li>
+</ul>
+<p>Een school met honderden leerlingen die elke dag door dezelfde hal lopen, vraagt dus een ander ritme dan een klein kantoor met een paar medewerkers. Het is daarom zinvol om niet één frequentie voor het hele gebouw af te spreken, maar per zone.</p>
+
+<h2>Zo bepaal je het juiste ritme voor jouw gebouw</h2>
+<p>Je hoeft het niet in één keer goed te hebben. Zo pak je het praktisch aan:</p>
+<ol>
+<li><strong>Start met een nulmeting.</strong> Laat de vloeren één keer grondig reinigen, zodat je vanaf een schone basis begint. Anders weet je niet of het dagelijkse onderhoud werkt of dat je naar oud vuil kijkt.</li>
+<li><strong>Maak foto's van de drukke zones.</strong> Fotografeer de entree en de belangrijkste gangen direct na de reiniging en daarna elke maand vanaf dezelfde plek.</li>
+<li><strong>Kijk wanneer de loopstraten terugkomen.</strong> Zie je na een paar maanden in de entree weer duidelijke donkere banen, terwijl de lokalen nog goed zijn? Dan weet je dat de entree vaker aan de beurt moet dan de rest.</li>
+<li><strong>Leg het vast in een schema.</strong> Spreek per zone een frequentie af en plan de momenten vooruit, bijvoorbeeld in vakanties of buiten kantoortijden.</li>
+<li><strong>Evalueer na een jaar.</strong> Is de vloer tussen twee beurten steeds prima, dan kan het ritme misschien omlaag. Zijn er klachten, dan moet het omhoog of moet het dagelijkse onderhoud beter.</li>
+</ol>
+
+<h2>Signalen dat je niet moet wachten</h2>
+<p>Soms is de vloer al eerder toe aan een grondige reiniging dan je schema zegt. Let op:</p>
+<ul>
+<li>loopstraten die duidelijk donkerder of doffer zijn dan de rest van de vloer;</li>
+<li>vuilranden langs plinten, onder radiatoren en in hoeken;</li>
+<li>een plakkerige vloer, ook direct na het dweilen;</li>
+<li>vlekken die na een gewone schoonmaak steeds terugkomen;</li>
+<li>een vloer die er na de schoonmaak nat schoon uitziet, maar opgedroogd weer grauw is.</li>
+</ul>
+<p>In al die gevallen helpt vaker dweilen niet meer. Het vuil zit dan vast en moet er met de juiste machine en methode uit.</p>
+
+<h2>Plan het rond het rooster of de vakanties</h2>
+<p>Een grondige vloerreiniging vraagt dat een ruimte een tijdje leeg is: meubilair verplaatsen, reinigen en de vloer laten drogen. Voor scholen zijn de schoolvakanties daarom het logische moment. In de zomervakantie kunnen alle lokalen tegelijk, in de kortere vakanties de drukke zones zoals entree en gangen.</p>
+<p>Voor kantoren werkt een avond, een weekend of een rustige week rond de feestdagen vaak goed. Spreek vooraf af wie het meubilair verplaatst, of stoelen op tafels gezet moeten worden en hoe laat de ruimtes weer in gebruik zijn. Dat voorkomt dat er op maandagochtend mensen voor een natte vloer staan.</p>
+
+<h2>Wat je zelf kunt doen om de vloer langer schoon te houden</h2>
+<ul>
+<li><strong>Goede schoonloopmatten bij de ingang.</strong> Hoe minder zand en vocht er binnenkomt, hoe minder slijtage. Zorg dat ze lang genoeg zijn en regelmatig worden schoongemaakt.</li>
+<li><strong>Viltjes onder stoel- en tafelpoten.</strong> Dat scheelt krassen, zeker in lokalen waar veel geschoven wordt.</li>
+<li><strong>Morsen direct opruimen.</strong> Een plas limonade in de aula die een dag blijft liggen, is lastiger te verwijderen.</li>
+<li><strong>Het juiste middel en de juiste dosering.</strong> Te veel schoonmaakmiddel laat een laag achter waar vuil juist aan blijft plakken.</li>
+</ul>
+<p>Het dagelijkse werk kan prima door je eigen schoonmaakdienst of een vaste schoonmaker. Voor de periodieke grondige beurt van grote oppervlakken heb je professionele apparatuur nodig; die hoef je als school of kantoor niet zelf in huis te hebben.</p>
+
+<h2>Vloerreiniging in Groningen en omgeving</h2>
+<p>JSTN Multidiensten verzorgt <a href="/vloerreiniging-groningen/">vloerreiniging voor scholen, kantoren en bedrijfspanden</a> in Groningen en tot ongeveer 50 km eromheen, als eenmalige grondige reiniging of als periodiek onderhoud volgens een vast schema. We zijn flexibel in te plannen, ook in schoolvakanties en buiten kantoortijden, en je hebt één aanspreekpunt. Zoek je ook iemand voor de dagelijkse of wekelijkse <a href="/schoonmaak-groningen/">schoonmaak</a>, dan kan dat in dezelfde afspraak. Wil je overleggen wat bij jouw gebouw past? Neem <a href="/contact/">contact</a> op; je krijgt binnen 12 uur een reactie.</p>
+""",
+},
+{
  "slug": "verhuizen-voor-senioren-checklist",
  "title": "Verhuizen als senior: checklist voor een rustige verhuizing naar een kleinere woning",
  "seo_title": "Verhuizen als senior: checklist | JSTN",
