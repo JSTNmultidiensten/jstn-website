@@ -413,7 +413,7 @@ page("/particulier/", "Verhuizen, leegruimen & woning opleveren in Groningen | J
      "/particulier/", par, extra_ld=[crumbs([("Home", "/"), ("Particulier", "/particulier/")])])
 
 # ======================= OVER ONS =======================
-MISSIE = '''<section class="pb">
+MISSIE_WERK = '''<section class="pb">
 <div class="w">
 <div class="dark" style="padding:40px">
 <h2 class="acc" style="margin-top:0">Onze missie</h2>
@@ -422,13 +422,22 @@ MISSIE = '''<section class="pb">
 </div>
 </div>
 </section>'''
+MISSIE = '''<section class="pb">
+<div class="w">
+<div class="dark" style="padding:40px">
+<h2 class="acc" style="margin-top:0">Onze missie</h2>
+<p style="color:#E2E8EC;max-width:820px">Opdrachtgevers moeten erop kunnen rekenen dat het werk goed gebeurt, op het afgesproken moment en voor een eerlijke prijs. Daarom nemen we verantwoordelijkheid voor elke klus, van de eerste afspraak tot de oplevering, en staan we achter de kwaliteit van ons werk.</p>
+<p style="font-weight:700;font-size:18px;margin:18px 0 0">Ons uitgangspunt: <span class="acc">vakwerk leveren waar u op kunt bouwen, en iedere dag beter worden.</span></p>
+</div>
+</div>
+</section>'''
 over = f'''<section class="sec">
 <div class="w hero">
 <div>
 <span class="tag">Over ons</span>
-<h1>Jong, ambitieus en gedreven</h1>
-<p class="lead">Wij zijn een jong, ambitieus team met grote plannen. Niet stilstaan, maar iedere dag beter worden en blijven groeien.</p>
-<p class="muted">We werken hard, nemen verantwoordelijkheid en blijven leren.</p>
+<h1>Ervaren, betrouwbaar en altijd in ontwikkeling</h1>
+<p class="lead">JSTN Multidiensten is een ervaren team uit Groningen voor schoonmaak, ontruiming, verhuizen en het opleveren van woningen. We werken voor particulieren en voor zakelijke opdrachtgevers, waaronder meerdere makelaars. Niet stilstaan, maar iedere dag beter worden en blijven groeien.</p>
+<p class="muted">We nemen verantwoordelijkheid, garanderen kwaliteit en geven een scherpe, eerlijke prijsopgave.</p>
 {knoppen()}
 </div>
 <img class="photo" src="/img/team-jstn-multidiensten-teamfoto.jpg" width="2000" height="1333" style="object-position:50% 35%" alt="Justin en het team van JSTN Multidiensten in Groningen" loading="lazy">
@@ -437,9 +446,9 @@ over = f'''<section class="sec">
 
 <section class="pb">
 <div class="w g4">
-{card("users", "Goede sfeer", "Een team dat elkaar helpt en samen plezier heeft in het werk.", "h2")}
+{card("users", "Ervaren team", "Een vast team dat weet wat er komt kijken bij ontruimen, schoonmaken en opleveren.", "h2")}
 {card("heart", "Persoonlijke aandacht", "Voor iedere klant en iedere collega.", "h2")}
-{card("check", "Kwaliteit", "Netjes, vakkundig en met oog voor het eindresultaat.", "h2")}
+{card("check", "Kwaliteit gegarandeerd", "Netjes, vakkundig en met oog voor het eindresultaat. Niet goed? Dan lossen we het op.", "h2")}
 {card("home", "Samenwerking", "Korte lijnen en duidelijke afspraken.", "h2")}
 </div>
 </section>
@@ -448,7 +457,7 @@ over = f'''<section class="sec">
 
 {CTA}'''
 page("/over-ons/", "Over ons | JSTN Multidiensten Groningen",
-     "Maak kennis met JSTN Multidiensten: een jong, ambitieus team uit Groningen dat schoonmaakt, ontruimt, verhuist en schildert — met persoonlijke aandacht en kwaliteit als basis.",
+     "Maak kennis met JSTN Multidiensten: een ervaren team uit Groningen voor schoonmaak, ontruiming, verhuizen en woningoplevering. Betrouwbaar, met gegarandeerde kwaliteit en een eerlijke prijs.",
      "/over-ons/", over, extra_ld=[crumbs([("Home", "/"), ("Over ons", "/over-ons/")])])
 
 # ======================= WERKEN BIJ =======================
@@ -472,7 +481,7 @@ werk = f'''<section class="sec">
 </div>
 </section>
 
-{MISSIE}'''
+{MISSIE_WERK}'''
 page("/werken-bij/", "Werken bij JSTN Multidiensten | Vacatures Groningen",
      "Werken bij JSTN Multidiensten in Groningen? Wij zoeken enthousiaste collega’s voor schoonmaak, ontruiming, verhuizingen en schilderwerk. Stuur ons een berichtje!",
      "/werken-bij/", werk, extra_ld=[crumbs([("Home", "/"), ("Bij ons werken", "/werken-bij/")])])
