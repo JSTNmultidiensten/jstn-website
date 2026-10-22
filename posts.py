@@ -3,6 +3,74 @@
 
 POSTS = [
 {
+ "slug": "woning-ontruimen-na-overlijden-stappenplan",
+ "title": "Woning ontruimen na overlijden: stappenplan voor nabestaanden",
+ "seo_title": "Woning ontruimen na overlijden: stappenplan | JSTN",
+ "desc": "Moet je de woning van een overleden ouder of familielid leeghalen? Stappenplan: eerst de erfenis, dan de huur, uitzoeken, ontruimen en opleveren.",
+ "date": "2026-10-22", "modified": "2026-10-22", "date_nl": "22 oktober 2026",
+ "cat": "Ontruimen", "icon": "box",
+ "note": "Dit artikel is met AI-ondersteuning geschreven.",
+ "sources": [
+   ("Juridisch Loket — Dit moet u regelen na een overlijden", "https://www.juridischloket.nl/familie-en-relatie/erfenis/regelen-bij-overlijden/"),
+   ("Juridisch Loket — Erfenis aanvaarden of verwerpen?", "https://www.juridischloket.nl/familie-en-relatie/erfenis/erfenis-aanvaarden-of-verwerpen/"),
+   ("Juridisch Loket — Hoe werkt beneficiair aanvaarden van een erfenis?", "https://www.juridischloket.nl/familie-en-relatie/erfenis/beneficiair-aanvaarden/"),
+ ],
+ "faq": [
+   ("Mag ik spullen uit de woning halen voordat de erfenis geregeld is?",
+    "Wees daar voorzichtig mee. Volgens het Juridisch Loket kun je de erfenis automatisch aanvaarden als je waardevolle spullen uit het huis meeneemt of geld van de rekening van de overledene naar je eigen rekening overmaakt. Zaken die niet kunnen wachten, zoals de uitvaart, abonnementen opzeggen en opslag huren voor de spullen, mogen wel. Twijfel je of er schulden zijn, kies dan eerst hoe je de erfenis aanvaardt."),
+   ("Hoeveel tijd heb je om een huurwoning leeg te halen na een overlijden?",
+    "Woonde de overledene alleen, dan loopt de huur volgens het Juridisch Loket na twee maanden automatisch af, en kun je ook eerder opzeggen met een opzegtermijn van een maand. Daarna moet de woning leeg zijn. Spreek de precieze einddatum en de opleverafspraken altijd na met de verhuurder."),
+   ("Kun je een woning na overlijden ook zelf ontruimen?",
+    "Ja. Met een paar helpende handen, een bus of aanhanger en genoeg tijd kun je veel zelf. Veel families doen het uitzoeken zelf en besteden het zware werk uit: sjouwen, afvoeren, schoonmaken en herstellen. Dat is vooral prettig als je ver weg woont, als de deadline krap is of als het emotioneel zwaar is."),
+   ("Wat gebeurt er met spullen die niemand wil hebben?",
+    "Bruikbare spullen kunnen vaak nog een tweede leven krijgen, bijvoorbeeld via een kringloopwinkel of goed doel. Wat echt niet meer bruikbaar is, wordt gescheiden afgevoerd. Spreek met een ontruimingsbedrijf vooraf af wat er met de inboedel gebeurt, zodat je weet waar de spullen terechtkomen."),
+ ],
+ "html": """
+<p class="lead">Moet je de woning van een overleden ouder of familielid leeghalen, begin dan niet met dozen inpakken maar met twee beslissingen: hoe je de erfenis aanvaardt en wat er met de woning gebeurt. Pas daarna ga je uitzoeken, ontruimen en opleveren. Met deze volgorde voorkom je juridische verrassingen en hoef je niets twee keer te doen.</p>
+<p>Een woning ontruimen na een overlijden is iets anders dan een gewone verhuizing. Je doet het in een emotionele periode, vaak met meerdere familieleden die er allemaal iets van vinden, en meestal met een deadline van de verhuurder of de makelaar. Dit stappenplan helpt je om het overzichtelijk te houden.</p>
+
+<h2>Stap 1: Kies eerst hoe je de erfenis aanvaardt</h2>
+<p>Dit is de stap die het vaakst wordt overgeslagen, en juist daar kan het misgaan. Als erfgenaam kun je een erfenis zuiver aanvaarden, beneficiair aanvaarden (dan ben je niet met je eigen geld aansprakelijk voor schulden) of verwerpen. Volgens het Juridisch Loket kun je een erfenis ongemerkt al zuiver aanvaarden door bijvoorbeeld <strong>waardevolle spullen uit het huis mee te nemen</strong> of geld van de rekening van de overledene naar je eigen rekening over te maken. Dan ben je ook aansprakelijk voor eventuele schulden.</p>
+<p>Wat wel mag zonder dat je de erfenis aanvaardt: zaken regelen die niet kunnen wachten, zoals de uitvaart, abonnementen opzeggen en opslag huren voor de spullen. Weet je niet zeker of de overledene schulden had? Neem dan eerst die beslissing, eventueel met hulp van een notaris of het Juridisch Loket, voordat je de woning leeghaalt.</p>
+
+<h2>Stap 2: Bepaal wat er met de woning gebeurt</h2>
+<p><strong>Huurwoning.</strong> Woonde de overledene samen, dan kan de medebewoner meestal blijven wonen, maar niet altijd. Woonde de overledene alleen, dan kun je de huur volgens het Juridisch Loket opzeggen met een opzegtermijn van een maand. Doe je niets, dan stopt de huur automatisch twee maanden na het overlijden. Daarna moet de woning leeg zijn. Vraag de verhuurder meteen naar de precieze einddatum, of er een voorinspectie komt en in welke staat de woning opgeleverd moet worden.</p>
+<p><strong>Koopwoning.</strong> Hier is er meestal minder tijdsdruk vanuit een contract, maar lopen de vaste lasten wel door. Spreek met de andere erfgenamen af of de woning verkocht wordt en wanneer die leeg moet zijn voor bezichtigingen of de overdracht.</p>
+<p><strong>Zorgappartement.</strong> Ook hier geldt vaak een korte termijn. Vraag de zorginstelling wat er van de familie verwacht wordt en wat de instelling zelf regelt.</p>
+
+<h2>Stap 3: Maak afspraken met de familie</h2>
+<p>Ruzie over spullen ontstaat vaker door onduidelijkheid dan door hebzucht. Spreek daarom vooraf af:</p>
+<ul>
+<li>wie het aanspreekpunt is voor de verhuurder, makelaar en eventuele hulp;</li>
+<li>wanneer iedereen langs kan komen om te kiezen wat hij of zij wil bewaren;</li>
+<li>hoe je omgaat met spullen die meerdere mensen willen hebben;</li>
+<li>wat de datum is waarop alles wat overblijft de deur uit gaat.</li>
+</ul>
+<p>Maak voor het uitzoeken foto's van de kamers. Dat helpt familieleden die niet langs kunnen komen, en het is een fijne herinnering aan hoe het huis eruitzag.</p>
+
+<h2>Stap 4: Zoek eerst de belangrijke dingen uit</h2>
+<p>Begin niet bij de zolder, maar bij wat je niet kwijt wilt raken. Leg een vaste doos of kast aan voor:</p>
+<ul>
+<li>papieren en administratie: bankafschriften, polissen, contracten, het testament als dat in huis ligt;</li>
+<li>sleutels, pasjes, telefoons en laptops;</li>
+<li>foto's, brieven en andere dingen met emotionele waarde;</li>
+<li>sieraden en andere waardevolle spullen (en denk daarbij aan stap 1).</li>
+</ul>
+<p>Pas als dit veilig apart staat, ga je kamer voor kamer verder met de rest: bewaren, weggeven, naar de kringloop of afvoeren.</p>
+
+<h2>Stap 5: Ontruimen en afvoeren</h2>
+<p>Wat niemand wil hebben, moet de woning uit. Bruikbare meubels, servies en kleding kunnen vaak nog een tweede leven krijgen. Voor de rest kijk je op de website van je gemeente hoe je grofvuil laat ophalen of naar een afvalbrengpunt brengt. Houd rekening met wat je verhuurder verwacht: soms moeten ook vloerbedekking, gordijnen of zelf aangebrachte voorzieningen weg, soms mag dat juist blijven voor een volgende huurder.</p>
+<p>Je kunt dit zelf doen als je tijd, hulp en vervoer hebt. Woon je verder weg, is de termijn kort of is het simpelweg te zwaar, dan is het geen schande om het uit te besteden. Lees ook <a href="/post/zo-kies-je-een-bedrijf-voor-woningontruiming-in-groningen/">waar je op let bij het kiezen van een ontruimingsbedrijf</a>.</p>
+
+<h2>Stap 6: Schoonmaken, herstellen en opleveren</h2>
+<p>Een lege woning is nog geen opgeleverde woning. Na jaren bewoning zie je vaak pas als de meubels weg zijn hoe het ervoor staat: vuilranden langs plinten, vet in de keuken, kalk in de badkamer, gaten in de muur of verkleuring door rook. De logische volgorde is eerst leeghalen, dan grondig schoonmaken en pas daarna herstellen of schilderen. Zo hoef je niets dubbel te doen.</p>
+<p>Gaat het om een huurwoning, vergelijk dan met de afspraken uit de voorinspectie. Meer daarover lees je in ons <a href="/post/huurwoning-opleveren-stappenplan/">stappenplan voor het opleveren van een huurwoning</a>.</p>
+
+<h2>Hulp bij een woningontruiming in Groningen en omgeving</h2>
+<p>JSTN Multidiensten helpt nabestaanden in Groningen en tot ongeveer 50 km eromheen met <a href="/woningontruiming-groningen/">woningontruiming</a>, en waar nodig ook met dieptereiniging, schilderwerk en het <a href="/woning-opleveren-groningen/">opleveren van de huurwoning</a>. Je hebt één aanspreekpunt, bij een oplevering is een vaste prijs mogelijk en bruikbare spullen krijgen waar mogelijk een tweede leven. Wil je weten wat we voor je kunnen doen, neem dan <a href="/contact/">contact</a> op. Je krijgt binnen 12 uur een reactie, en we nemen de tijd om samen te kijken wat jij zelf wilt doen en waar je hulp bij kunt gebruiken.</p>
+""",
+},
+{
  "slug": "hoe-vaak-school-of-kantoorvloer-laten-reinigen",
  "title": "Hoe vaak moet je een school- of kantoorvloer laten reinigen?",
  "seo_title": "Hoe vaak een school- of kantoorvloer reinigen? | JSTN",
