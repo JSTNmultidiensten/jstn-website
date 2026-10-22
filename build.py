@@ -427,7 +427,7 @@ MISSIE = '''<section class="pb">
 <div class="dark" style="padding:40px">
 <h2 class="acc" style="margin-top:0">Onze missie</h2>
 <p style="color:#E2E8EC;max-width:820px">Opdrachtgevers moeten erop kunnen rekenen dat het werk goed gebeurt, op het afgesproken moment en voor een eerlijke prijs. Daarom nemen we verantwoordelijkheid voor elke klus, van de eerste afspraak tot de oplevering, en staan we achter de kwaliteit van ons werk.</p>
-<p style="font-weight:700;font-size:18px;margin:18px 0 0">Ons uitgangspunt: <span class="acc">vakwerk leveren waar u op kunt bouwen, en iedere dag beter worden.</span></p>
+<p style="font-weight:700;font-size:18px;margin:18px 0 0">Ons uitgangspunt: <span class="acc">vakwerk leveren waar u op kunt bouwen.</span></p>
 </div>
 </div>
 </section>'''
@@ -436,7 +436,7 @@ over = f'''<section class="sec">
 <div>
 <span class="tag">Over ons</span>
 <h1>Ervaren, professioneel en betrouwbaar</h1>
-<p class="lead">JSTN Multidiensten is een ervaren team uit Groningen voor schoonmaak, ontruiming, verhuizen en het opleveren van woningen. We werken voor particulieren en voor zakelijke opdrachtgevers, waaronder meerdere makelaars. Niet stilstaan, maar iedere dag beter worden en blijven groeien.</p>
+<p class="lead">JSTN Multidiensten is een ervaren team uit Groningen voor schoonmaak, ontruiming, verhuizen en het opleveren van woningen. We werken voor particulieren en voor zakelijke opdrachtgevers, waaronder meerdere makelaars.</p>
 <p class="muted">We nemen verantwoordelijkheid, garanderen kwaliteit en geven een scherpe, eerlijke prijsopgave.</p>
 {knoppen()}
 </div>
