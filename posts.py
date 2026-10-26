@@ -3,6 +3,85 @@
 
 POSTS = [
 {
+ "slug": "bouwschoonmaak-bij-oplevering-checklist",
+ "title": "Bouwschoonmaak bij oplevering: wat moet er schoon voordat de sleutel over gaat?",
+ "seo_title": "Bouwschoonmaak bij oplevering: checklist | JSTN",
+ "desc": "Nieuwbouw of verbouwing opleveren? Zo plan je de bouwschoonmaak, dit hoort bij opleverschoon en hier gaat het vaak mis. Met checklist.",
+ "date": "2026-10-26", "modified": "2026-10-26", "date_nl": "26 oktober 2026",
+ "cat": "Zakelijk", "icon": "sparkle",
+ "note": "Dit artikel is met AI-ondersteuning geschreven.",
+ "sources": [
+   ("Volandis — Kwartsstof: informatie voor werknemers", "https://www.volandis.nl/media/udqm4q3i/260302_kwartsstof-werknemer.pdf"),
+ ],
+ "faq": [
+   ("Wat is het verschil tussen bezemschoon en opleverschoon?",
+    "Bezemschoon betekent meestal dat puin, verpakkingen en grof vuil weg zijn en de vloer is aangeveegd. Opleverschoon gaat veel verder: alle oppervlakken zijn stofvrij, ramen, sanitair en keuken zijn schoon en folie, stickers en spatten van verf, kit en cement zijn verwijderd. Omdat deze begrippen niet overal hetzelfde betekenen, leg je het gewenste niveau het best schriftelijk vast."),
+   ("Wanneer moet de bouwschoonmaak gepland worden?",
+    "Plan de opleverschoonmaak pas als alle vakmensen klaar zijn, ook de schilder, de kitter en de installateur. Houd een paar dagen ruimte voor de oplevering of keuring, zodat er tijd is om fijn stof dat later neerdaalt nog een keer weg te halen en eventuele opmerkingen op te lossen."),
+   ("Kan ik bouwstof gewoon wegvegen?",
+    "Liever niet. Bouwstof kan kwartsstof bevatten, dat schadelijk is voor de longen. Volandis adviseert om geen bezem of perslucht te gebruiken, omdat die het stof juist verspreiden, maar een industriële stofzuiger. Daarna neem je de oppervlakken vochtig af."),
+   ("Kan ik de schoonmaak na een verbouwing ook zelf doen?",
+    "Na een kleine verbouwing in je eigen huis kan dat prima, als je de tijd neemt, in rondes werkt en het juiste materiaal gebruikt. Bij een nieuwbouwproject, meerdere woningen of een harde opleverdatum is uitbesteden vaak handiger, omdat het in korte tijd en in één keer goed moet."),
+ ],
+ "html": """
+<p class="lead">Bij een bouwschoonmaak haal je alles weg wat de bouw heeft achtergelaten: bouwstof, puinresten, beschermfolie, stickers en spatten van verf, kit en cement. Het doel is een ruimte die de koper, huurder of gebruiker direct in gebruik kan nemen. Dat lukt het best als je de schoonmaak in fases plant, pas begint als alle vakmensen klaar zijn en vooraf vastlegt welk schoonmaakniveau je bedoelt.</p>
+<p>Of je nu aannemer, projectontwikkelaar of beheerder bent, of zelf net een verbouwing achter de rug hebt: de laatste schoonmaak bepaalt voor een groot deel de eerste indruk bij de oplevering. Een strak afgewerkte woning met stof op de vensterbanken en verfspatten op het glas voelt als werk dat nog niet af is.</p>
+
+<h2>Bezemschoon of opleverschoon: spreek het niveau af</h2>
+<p>Op de bouwplaats worden verschillende woorden door elkaar gebruikt. Grofweg zijn er twee niveaus:</p>
+<ul>
+<li><strong>Bezemschoon (bouwschoon):</strong> puin, verpakkingen en grof afval zijn weg en de vloeren zijn aangeveegd of gezogen. Prima tussen de fases door, of als er na de oplevering nog verder gebouwd wordt.</li>
+<li><strong>Opleverschoon:</strong> de ruimte is stofvrij en direct bruikbaar. Ramen, kozijnen, sanitair, keuken en vloeren zijn schoon en alle folie, stickers en spatten zijn verwijderd.</li>
+</ul>
+<p>Omdat deze begrippen niet overal hetzelfde betekenen, is het verstandig om in de opdracht op te schrijven wat er wel en niet onder valt. Bijvoorbeeld: worden de ramen ook aan de buitenkant gedaan? Gaan de keukenkastjes ook binnenin mee? Dat voorkomt discussie bij de oplevering.</p>
+
+<h2>Wanneer plan je de bouwschoonmaak?</h2>
+<p>De meest gemaakte fout is te vroeg schoonmaken. Komt de kitter of de installateur daarna nog langs, dan begin je opnieuw. Een werkbare volgorde:</p>
+<ol>
+<li><strong>Tussendoor:</strong> grof opruimen en bezemschoon maken, zodat de vakmensen veilig en netjes kunnen werken.</li>
+<li><strong>Na de laatste werkzaamheden:</strong> de opleverschoonmaak, als schilder, kitter, installateur en vloerenlegger echt klaar zijn.</li>
+<li><strong>Vlak voor de oplevering:</strong> een korte nacontrole. Fijn bouwstof blijft nog dagen in de lucht hangen en daalt later weer neer op vensterbanken en vloeren.</li>
+</ol>
+<p>Houd daarom een paar dagen ruimte tussen de grote schoonmaak en de oplevering of keuring. Dan is er ook tijd om opmerkingen op te lossen.</p>
+
+<h2>Checklist opleverschoon</h2>
+<p>Gebruik deze lijst als basis voor je afspraken of om zelf na te lopen:</p>
+<ul>
+<li>wanden, plafonds en hoeken stofvrij, inclusief spinnenwebben en stof in plafondranden;</li>
+<li>kozijnen, vensterbanken, deuren, deurlijsten en de bovenkant van deuren afgenomen;</li>
+<li>ramen binnen en buiten schoon, met folie, stickers en verf- of kitspatten verwijderd;</li>
+<li>sanitair, tegels en voegen vrij van cementsluier, kalk en kitresten;</li>
+<li>keukenkastjes binnen en buiten, apparatuur en werkblad schoon;</li>
+<li>stopcontacten, schakelaars, radiatoren, ventilatieroosters en de meterkast stofvrij;</li>
+<li>trappen, leuningen en plinten afgenomen;</li>
+<li>vloeren gezogen en, afhankelijk van het type vloer, gedweild of behandeld;</li>
+<li>entree, balkon of buitenruimte vrij van bouwafval.</li>
+</ul>
+
+<h2>Waar het vaak misgaat</h2>
+<p><strong>Krassen op glas.</strong> Verf- en cementspatten krab je niet zomaar weg met een droge schraper of schuurspons. Zand en gruis onder het mes maken krassen die niet meer weggaan. Maak het glas eerst nat en werk met een schone, scherpe schraper, of laat het over aan een <a href="/glazenwasser-groningen/">glazenwasser</a> die dit vaker doet.</p>
+<p><strong>Cementsluier op tegels.</strong> Een grijze waas op nieuwe tegels komt vaak van voegmiddel dat niet goed is afgewassen. Gewoon sop haalt dat meestal niet weg. Gebruik een middel dat geschikt is voor het type tegel en de voeg, en test het eerst op een onopvallende plek.</p>
+<p><strong>Eén ronde is niet genoeg.</strong> Wie alleen van boven naar beneden afneemt en dan dweilt, ziet een dag later toch weer een laagje stof. Werk van hoog naar laag, zuig eerst, neem daarna vochtig af en plan die nacontrole.</p>
+
+<h2>Let op met bouwstof</h2>
+<p>Bouwstof is meer dan gewoon vuil. Bij zagen, schuren en boren in beton, cement, mortel of kalkzandsteen komt kwartsstof vrij. Volgens Volandis, het kennisinstituut voor de bouw, kunnen die fijne deeltjes diep in de longen blijvende schade veroorzaken. Volandis adviseert om gruis direct op te ruimen voordat het opdroogt en opwaait, en om <strong>geen bezem of perslucht</strong> te gebruiken maar een industriële stofzuiger. Dat geldt dus ook voor de schoonmaak achteraf: eerst zuigen, dan vochtig afnemen.</p>
+
+<h2>Zelf doen of uitbesteden?</h2>
+<p>Heb je thuis een badkamer of een paar kamers laten verbouwen, dan kun je de schoonmaak goed zelf doen. Neem er de tijd voor, werk in rondes en gebruik een goede stofzuiger met een fijn filter. Bij een nieuwbouwproject, een bedrijfspand of meerdere woningen tegelijk ligt dat anders. Dan moet het in korte tijd, op een vaste datum en overal op hetzelfde niveau gebeuren. Uitbesteden scheelt dan vooral planning en gedoe.</p>
+<p>Spreek bij uitbesteden in elk geval af:</p>
+<ul>
+<li>welk niveau je verwacht (bezemschoon of opleverschoon) en wat er precies onder valt;</li>
+<li>wanneer de ruimte vrij is van andere vakmensen;</li>
+<li>of er water en stroom beschikbaar is;</li>
+<li>wie het bouwafval afvoert;</li>
+<li>of er een nacontrole vlak voor de oplevering bij hoort.</li>
+</ul>
+
+<h2>Hulp bij bouwschoonmaak in Groningen en omgeving</h2>
+<p>JSTN Multidiensten verzorgt de <a href="/schoonmaak-groningen/">schoonmaak en dieptereiniging</a> bij bouwopleveringen in Groningen en tot ongeveer 50 km eromheen, ook met glasbewassing en vloerreiniging erbij. Je hebt één aanspreekpunt, we plannen flexibel rond je opleverdatum en bij opleveringen is een vaste prijs mogelijk. Benieuwd naar het resultaat van eerdere klussen? Kijk in ons <a href="/portfolio/">portfolio</a>, of neem <a href="/contact/">contact</a> op voor je project. Je krijgt binnen 12 uur een reactie.</p>
+""",
+},
+{
  "slug": "woning-ontruimen-na-overlijden-stappenplan",
  "title": "Woning ontruimen na overlijden: stappenplan voor nabestaanden",
  "seo_title": "Woning ontruimen na overlijden: stappenplan | JSTN",
