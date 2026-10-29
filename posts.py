@@ -3,6 +3,77 @@
 
 POSTS = [
 {
+ "slug": "ramen-wassen-zonder-strepen-zelf-of-glazenwasser",
+ "title": "Ramen wassen zonder strepen: zo doe je het zelf, en wanneer laat je een glazenwasser komen?",
+ "seo_title": "Ramen wassen zonder strepen: zelf of glazenwasser? | JSTN",
+ "desc": "Streeploze ramen met simpel materiaal: de juiste volgorde, het beste moment en wanneer je het beter aan een glazenwasser overlaat.",
+ "date": "2026-10-29", "modified": "2026-10-29", "date_nl": "29 oktober 2026",
+ "cat": "Glasbewassing", "icon": "window",
+ "note": "Dit artikel is met AI-ondersteuning geschreven.",
+ "faq": [
+   ("Waarom krijg ik strepen op mijn ramen?",
+    "De meest voorkomende oorzaken zijn te veel zeep in het water, ramen wassen in de volle zon zodat het water opdroogt voordat je het wegtrekt, een vuile of versleten wisserrubber en het nadrogen met een pluizende of vette doek. Werk met weinig zeep, op een bewolkt moment en droog de randen na met een schone microvezeldoek."),
+   ("Is een spons en een krant genoeg om ramen te wassen?",
+    "Voor een klein raam kan het, maar een krant laat makkelijk inkt en pluisjes achter. Met een inwasser, een raamwisser met goede rubber en een schone microvezeldoek werk je sneller en houd je minder strepen over."),
+   ("Hoe vaak moet je de ramen laten wassen?",
+    "Dat hangt af van de ligging. Ramen aan een drukke weg, bij bomen of in de wind van open land worden sneller vuil dan ramen in een rustige straat. Kijk vooral of het zicht en de lichtinval je nog bevallen, en plan het op een vast ritme als je het niet steeds wilt hoeven onthouden."),
+   ("Wanneer kan ik mijn ramen beter niet zelf wassen?",
+    "Als je hoog op een ladder moet staan, ramen boven een serre, schuin dak of trapgat zitten, of het glas onbereikbaar is vanaf binnen en buiten. Ook bij verf-, kit- of cementspatten na een verbouwing is het verstandig een glazenwasser te vragen, omdat je met verkeerd schrapen makkelijk krassen maakt die niet meer weggaan."),
+ ],
+ "html": """
+<p class="lead">Streeploze ramen krijg je met weinig zeep, een goede raamwisser en het juiste moment: niet in de volle zon, maar op een droge, bewolkte dag. Werk van boven naar beneden, trek het water in één beweging weg en droog alleen de randen na. Ramen die je veilig vanaf de grond of binnen bereikt, kun je prima zelf doen. Moet je hoog op een ladder, boven een dak of na een verbouwing aan de slag, dan is een glazenwasser vaak de veiligere en snellere keuze.</p>
+
+<h2>Wat heb je nodig?</h2>
+<p>Je hoeft geen dure middelen te kopen. Met dit basispakket kom je ver:</p>
+<ul>
+<li>een emmer lauw water met een klein scheutje afwasmiddel (te veel zeep is de grootste oorzaak van strepen);</li>
+<li>een inwasser of zachte spons om het vuil los te maken;</li>
+<li>een raamwisser met een rubber zonder beschadigingen of hardgeworden randen;</li>
+<li>twee schone, droge microvezeldoeken: één voor de randen en één voor de laatste puntjes;</li>
+<li>eventueel een telescoopsteel, zodat je minder vaak op een trap hoeft.</li>
+</ul>
+<p>Een krant of keukenpapier werkt minder goed: ze laten pluisjes en soms inkt achter. Een wasverzachter-doek of een doek die net uit de droger komt, kan juist een vettig laagje geven.</p>
+
+<h2>Het beste moment</h2>
+<p>Was je ramen niet als de zon er vol op staat. Het water droogt dan op voordat je het kunt wegtrekken en laat kringen en strepen achter. Een droge, bewolkte dag of een moment waarop dat raam in de schaduw ligt, werkt het best. Bij vorst of harde wind wacht je beter even: water bevriest op het glas of waait over je werk heen.</p>
+<p>Plan de ramen ook als laatste in je schoonmaakronde. Eerst afstoffen, vensterbanken afnemen en de vloer doen, anders waait er weer stof tegen het schone glas.</p>
+
+<h2>Stap voor stap streeploos</h2>
+<ol>
+<li><strong>Kozijnen eerst.</strong> Neem eerst het kozijn en de rand rond het glas af. Anders loopt er vuil water over je net gewassen raam.</li>
+<li><strong>Inwassen.</strong> Maak het hele raam nat met de inwasser en wrijf het vuil los, ook in de hoeken. Vogelpoep en vliegjes laat je even weken voordat je verder gaat.</li>
+<li><strong>Wegtrekken.</strong> Zet de wisser bovenaan en trek in banen naar beneden, of werk in een S-beweging over het raam. Laat elke baan een paar centimeter overlappen.</li>
+<li><strong>Rubber droog houden.</strong> Veeg na elke baan het rubber af met je doek. Een nat rubber trekt nieuwe strepen.</li>
+<li><strong>Randen nadrogen.</strong> Droog alleen de randen en hoeken na met een schone microvezeldoek. Over het hele raam heen wrijven geeft vaak meer strepen dan het oplost.</li>
+</ol>
+<p>Zie je toch nog een streep? Kijk of hij binnen of buiten zit door van beide kanten te kijken. Een tip die veel glazenwassers gebruiken: wis binnen horizontaal en buiten verticaal, dan zie je meteen aan welke kant je moet bijwerken.</p>
+
+<h2>Lastige plekken en aanslag</h2>
+<p>Niet elk vuil verdwijnt met water en zeep.</p>
+<ul>
+<li><strong>Kalkvlekken</strong> van een lekkende dakgoot of sproeier: behandel ze met een mild kalkoplossend middel en spoel goed na. Gebruik geen schuurspons.</li>
+<li><strong>Stickers en lijmresten:</strong> eerst week maken met warm water of een beetje olie, daarna voorzichtig verwijderen en het glas ontvetten.</li>
+<li><strong>Verf-, kit- of cementspatten</strong> na een verbouwing: maak het glas altijd nat en werk met een schone, scherpe schraper onder een vlakke hoek. Droog schrapen of een korrel zand onder het mes geeft krassen die niet meer weggaan.</li>
+<li><strong>Groene aanslag op kozijnen of dakkapellen:</strong> die komt vaak terug op plekken waar het lang vochtig blijft. Voor gevels en terrassen is <a href="/hogedrukreiniging-groningen/">hogedrukreiniging</a> een optie, maar richt een harde straal nooit op glas, rubbers of kitnaden.</li>
+</ul>
+
+<h2>Wanneer laat je het beter over aan een glazenwasser?</h2>
+<p>Ramen op de begane grond en ramen die je vanaf binnen kunt kantelen, zijn met het stappenplan hierboven goed zelf te doen. Het wordt een ander verhaal als:</p>
+<ul>
+<li>je hoog op een ladder moet staan, of de ladder niet stevig op een vlakke ondergrond kan staan;</li>
+<li>ramen boven een serre, schuin dak, trapgat of vide zitten;</li>
+<li>er veel glas is, zoals bij een winkelpui, kantoor of een woning met grote glazen wanden;</li>
+<li>er bouwvuil of spatten op het glas zitten na nieuwbouw of een verbouwing;</li>
+<li>je de woning moet opleveren en alles in één keer goed moet zijn, zoals bij een <a href="/woning-opleveren-groningen/">huurwoning die je oplevert</a>.</li>
+</ul>
+<p>Twijfel je over een ladder, ga er dan niet aan beginnen. Een val van een trap of ladder is snel gebeurd, zeker met een emmer in je hand en nat glas onder je handen.</p>
+<p>Ook een vast ritme kan een reden zijn om het uit te besteden. Dan hoef je er niet meer aan te denken en blijft het glas het hele jaar door helder, zonder dat je er een vrije zaterdag aan kwijt bent.</p>
+
+<h2>Hulp nodig in Groningen en omgeving?</h2>
+<p>JSTN Multidiensten verzorgt <a href="/glazenwasser-groningen/">glasbewassing</a> voor woningen en bedrijven in Groningen en tot ongeveer 50 km eromheen, zoals Haren, Zuidhorn, Leek en Assen. Dat kan los, maar ook gecombineerd met een schoonmaak of oplevering, met één aanspreekpunt. Je krijgt binnen 12 uur een reactie en we plannen flexibel in. Wil je eerst zien hoe we werken? Kijk in ons <a href="/portfolio/">portfolio</a> of neem <a href="/contact/">contact</a> op.</p>
+""",
+},
+{
  "slug": "bouwschoonmaak-bij-oplevering-checklist",
  "title": "Bouwschoonmaak bij oplevering: wat moet er schoon voordat de sleutel over gaat?",
  "seo_title": "Bouwschoonmaak bij oplevering: checklist | JSTN",
