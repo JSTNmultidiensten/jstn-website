@@ -3,6 +3,74 @@
 
 POSTS = [
 {
+ "slug": "muren-schilderen-huurwoning-terugzetten-bij-vertrek",
+ "title": "Muren schilderen in je huurwoning: mag dat, en moet je ze bij vertrek weer wit maken?",
+ "seo_title": "Muren schilderen in een huurwoning: mag dat? | JSTN",
+ "desc": "Een kleur op de muur in je huurwoning: wat mag zonder toestemming, wanneer moet je bij vertrek terugschilderen en hoe pak je dat goed aan?",
+ "date": "2026-11-02", "modified": "2026-11-02", "date_nl": "2 november 2026",
+ "cat": "Schilderwerk", "icon": "roller",
+ "note": "Dit artikel is met AI-ondersteuning geschreven.",
+ "sources": [
+   ("Rijksoverheid — Mag ik mijn huurwoning verbouwen of renoveren?", "https://www.rijksoverheid.nl/onderwerpen/woning-huren/vraag-en-antwoord/mag-ik-mijn-huurwoning-verbouwen-of-renoveren"),
+   ("Juridisch Loket — Hoe moet ik mijn huurwoning opleveren?", "https://www.juridischloket.nl/wonen-en-buren/huurwoning/huurwoning-opleveren/"),
+   ("Huurcommissie — Bijlage II Besluit kleine herstellingen", "https://www.huurcommissie.nl/support/beleidsboeken/gebreken/bijlage-ii-besluit-kleine-herstellingen"),
+ ],
+ "faq": [
+   ("Heb ik toestemming nodig om een muur in mijn huurwoning te verven?",
+    "Voor kleine veranderingen die je zonder veel kosten kunt terugdraaien, heb je volgens de Rijksoverheid geen toestemming nodig. Een binnenmuur in een andere kleur valt daar meestal onder. Kijk wel in je huurcontract of algemene voorwaarden: daar kunnen afspraken over kleuren of behang in staan. Twijfel je, vraag het dan vooraf schriftelijk aan je verhuurder."),
+   ("Moet ik een gekleurde muur terugschilderen als ik verhuis?",
+    "Meestal lever je de woning op zoals die bij het begin van de huur was. Staat in het opnamerapport dat de muren wit waren, dan moeten ze weer wit. Heb je schriftelijke toestemming gekregen voor de kleur, dan hoef je die alleen terug te draaien als dat in de toestemming is afgesproken. Bij een voorinspectie hoor je welke veranderingen je moet terugdraaien."),
+   ("Wat als er bij het begin van de huur geen opnamerapport is gemaakt?",
+    "Voor huurcontracten vanaf 1 augustus 2003 geldt volgens het Juridisch Loket dat je de woning dan mag opleveren zoals hij nu is, schoon en met het kleine onderhoud gedaan. De verhuurder moet dan aantonen dat je iets hebt veranderd waardoor de woning slechter is geworden. Voor oudere contracten gaat de wet ervan uit dat de woning in goede staat was."),
+   ("Hoeveel lagen verf heb ik nodig om een donkere muur weer wit te krijgen?",
+    "Over een donkere of felle kleur dekt één laag witte muurverf bijna nooit. Reken op een grondlaag of dekkende primer en daarna één of twee lagen wit. Werk bij daglicht en kijk na het drogen schuin langs de muur, dan zie je meteen of de oude kleur nog doorschemert."),
+ ],
+ "html": """
+<p class="lead">Een muur in je huurwoning een andere kleur geven mag in de meeste gevallen zonder toestemming, omdat het een kleine verandering is die je makkelijk kunt terugdraaien. Bij vertrek lever je de woning meestal op zoals je hem kreeg: waren de muren wit volgens het opnamerapport, dan moeten ze weer wit. Heb je schriftelijke toestemming gekregen of is er nooit een opnamerapport gemaakt, dan kan het anders liggen. Hieronder lees je hoe het zit en hoe je een gekleurde muur netjes terugschildert.</p>
+
+<h2>Wat mag je zonder toestemming veranderen?</h2>
+<p>De Rijksoverheid maakt onderscheid tussen kleine en grote veranderingen. Kleine aanpassingen die je zonder veel kosten kunt terugdraaien, mag je zonder toestemming van de verhuurder doen. Het voorbeeld dat de overheid zelf geeft, is gaatjes boren in de muur. Een binnenmuur verven of behangen valt doorgaans in dezelfde categorie.</p>
+<p>Voor grotere veranderingen, zoals een nieuwe keuken, badkamer of het weghalen van een muur, heb je wél toestemming nodig. Aan de buitenkant van de woning mag je niets veranderen zonder overleg.</p>
+<p>Lees daarnaast je huurcontract en de algemene voorwaarden. Sommige verhuurders hebben afspraken opgenomen over kleuren, structuurverf of behang. Twijfel je, vraag het dan per mail aan je verhuurder. Een schriftelijk antwoord helpt je straks bij de oplevering.</p>
+
+<h2>Binnenschilderwerk is sowieso een taak van de huurder</h2>
+<p>Volgens het Besluit kleine herstellingen, dat de Huurcommissie gebruikt, zijn het witten van binnenmuren en plafonds, het schilderen van binnenhoutwerk en zo nodig het behangen van binnenmuren voor rekening van de huurder. Het buitenschilderwerk is voor de verhuurder.</p>
+<p>Dat betekent: ook als je niets aan de kleur hebt veranderd, ben jij verantwoordelijk voor muren die er na jaren grauw, vlekkerig of vergeeld uitzien. Je hoeft niet elk jaar te verven, maar bij vertrek moet het kleine onderhoud gedaan zijn.</p>
+
+<h2>Moet de kleur weg als je verhuist?</h2>
+<p>Dat hangt vooral af van drie dingen:</p>
+<ul>
+<li><strong>Het opnamerapport.</strong> Meestal lever je de woning op zoals hij eruitzag bij het begin van je huurcontract. Staat in het rapport dat je de woning kreeg met witte muren zonder gaten, dan lever je ook witte muren zonder gaten op. Een vage zin als "de woning is in goede staat" telt volgens het Juridisch Loket niet als opnamerapport.</li>
+<li><strong>Toestemming.</strong> Heeft de verhuurder schriftelijk ingestemd met je verandering, dan hoef je die alleen terug te draaien als dat in de toestemming staat.</li>
+<li><strong>Geen opnamerapport.</strong> Bij contracten vanaf 1 augustus 2003 mag je de woning dan opleveren zoals hij nu is, mits schoon en met het kleine onderhoud gedaan. De verhuurder moet aantonen dat je iets hebt veranderd waardoor de woning slechter is geworden. Bij oudere contracten gaat de wet ervan uit dat de woning in goede staat was toen je erin trok.</li>
+</ul>
+<p>In de praktijk vragen veel verhuurders om een neutrale, lichte kleur, omdat de woning dan sneller opnieuw te verhuren is. Een donkere slaapkamermuur of een felle kinderkamer komt dus vaak op de lijst.</p>
+
+<h2>De voorinspectie: je lijst met klussen</h2>
+<p>Veel verhuurders plannen een voorinspectie, meestal twee weken of langer voor het einde van het huurcontract. Je krijgt daarna een rapport met de veranderingen die je moet terugdraaien, vaak met de kosten als je het niet zelf doet. Je hebt tot de laatste dag van je huurcontract de tijd. Ben je het niet eens met het rapport, teken het dan niet en vraag advies bij het Juridisch Loket.</p>
+<p>Doet de verhuurder geen voorinspectie, dan mag hij volgens het Juridisch Loket alleen rekenen wat het jou zelf gekost zou hebben: wel de verf, maar niet de kosten van een schilder.</p>
+<p>Wil je weten wat er verder bij de oplevering komt kijken? In ons stappenplan voor het <a href="/post/huurwoning-opleveren-stappenplan/">opleveren van een huurwoning</a> staat alles van opzegging tot sleuteloverdracht.</p>
+
+<h2>Zo schilder je een gekleurde muur terug naar wit</h2>
+<p>Een kleur wegwerken is goed zelf te doen, als je de tijd neemt:</p>
+<ol>
+<li><strong>Ruim en dek af.</strong> Meubels van de muur, vloer afdekken met stucloper, plinten, kozijnen en stopcontacten afplakken.</li>
+<li><strong>Repareer gaten.</strong> Haal pluggen eruit, vul gaatjes met vulmiddel en schuur ze na het drogen vlak.</li>
+<li><strong>Maak de muur schoon.</strong> Vet en vuil, bijvoorbeeld bij lichtknoppen of in de keuken, zorgen dat verf slecht hecht. Ontvet en laat goed drogen.</li>
+<li><strong>Gebruik een grondlaag bij donkere kleuren.</strong> Wit over donkerblauw of rood dekt in één laag bijna nooit. Een dekkende primer scheelt je extra lagen.</li>
+<li><strong>Twee lagen wit.</strong> Zet eerst de hoeken en randen in met een kwast en rol daarna de vlakken nat-in-nat in banen. Laat de eerste laag volgens het blik drogen voor je de tweede zet.</li>
+<li><strong>Controleer bij daglicht.</strong> Kijk schuin langs de muur. Schemert de oude kleur nog door of zie je randen, dan is een extra laag nodig.</li>
+</ol>
+<p>Let op dat je dezelfde soort verf gebruikt als de rest van de woning, en geen glanzende verf op een matte muur. Anders zie je vlekken in het tegenlicht, ook als de kleur klopt.</p>
+
+<h2>Wanneer laat je het beter doen?</h2>
+<p>Eén muur terugzetten is een prima zaterdagklus. Het wordt lastiger als het om meerdere kamers gaat, hoge plafonds of een trapgat, behang dat eerst verwijderd moet worden, of als je weinig tijd hebt tussen sleuteloverdracht en verhuizing. Dan is het fijn als schilderwerk, schoonmaak en oplevering in één hand liggen.</p>
+
+<h2>Hulp bij schilderen en opleveren</h2>
+<p>JSTN Multidiensten doet <a href="/schilder-groningen/">schilder- en behangwerk</a> in Groningen en tot ongeveer 50 km eromheen, ook als onderdeel van het <a href="/woning-opleveren-groningen/">opleveren van je huurwoning</a>. Je hebt één aanspreekpunt, bij opleveringen is een vaste prijs mogelijk en je krijgt binnen 12 uur een reactie. Neem gerust <a href="/contact/">contact</a> op als je wilt overleggen wat er nodig is.</p>
+""",
+},
+{
  "slug": "ramen-wassen-zonder-strepen-zelf-of-glazenwasser",
  "title": "Ramen wassen zonder strepen: zo doe je het zelf, en wanneer laat je een glazenwasser komen?",
  "seo_title": "Ramen wassen zonder strepen: zelf of glazenwasser? | JSTN",
