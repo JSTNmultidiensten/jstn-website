@@ -3,6 +3,82 @@
 
 POSTS = [
 {
+ "slug": "kalk-op-douchewand-verwijderen-en-voorkomen",
+ "title": "Kalk op de douchewand: zo krijg je het weg en zo voorkom je dat het terugkomt",
+ "seo_title": "Kalk op de douchewand verwijderen en voorkomen | JSTN",
+ "desc": "Witte kalkaanslag op je douchewand of glazen deur? Zo verwijder je het veilig, welke middelen je beter niet gebruikt en hoe je het voorkomt.",
+ "date": "2026-11-05", "modified": "2026-11-05", "date_nl": "5 november 2026",
+ "cat": "Schoonmaak", "icon": "sparkle",
+ "note": "Dit artikel is met AI-ondersteuning geschreven.",
+ "sources": [
+   ("Waterbedrijf Groningen — Folder waterontharder", "https://waterbedrijfgroningen.nl/wp-content/uploads/2024/02/WATB-231107_Folder-Waterontharder.pdf"),
+ ],
+ "faq": [
+   ("Waarmee haal ik kalk van een glazen douchewand?",
+    "Een mengsel van schoonmaakazijn en warm water (ongeveer half om half) of een citroenzuuroplossing werkt goed op glas. Laat het een paar minuten inwerken, wrijf met een zachte spons en spoel goed na met water. Droog daarna af met een trekker of microvezeldoek, anders ontstaan meteen nieuwe kalkvlekken."),
+   ("Mag ik azijn gebruiken op natuursteen of marmer?",
+    "Nee. Azijn, citroenzuur en andere zure ontkalkers tasten kalkhoudende steen zoals marmer, travertin en kalksteen aan: het oppervlak wordt dof of ruw. Gebruik op natuursteen een pH-neutraal middel dat voor die steensoort bedoeld is en voorkom aanslag vooral door na het douchen af te drogen."),
+   ("Hoe voorkom ik dat de kalk steeds terugkomt?",
+    "Het meest effectieve is de wand en deur na elke douchebeurt kort droog te trekken met een douchetrekker. Kalk ontstaat doordat druppels opdrogen en het kalk achterblijft. Zet daarnaast na het douchen het raam open of de ventilatie aan, en ontkalk eens per week of twee lichtjes in plaats van eens per jaar zwaar."),
+   ("Is het water in Groningen hard?",
+    "Waterbedrijf Groningen levert volgens eigen informatie drinkwater met een gemiddelde hardheid. De precieze hardheid op jouw adres kun je opzoeken op de website van het waterbedrijf. Ook bij gemiddeld hard water ontstaat kalkaanslag als druppels op glas en tegels opdrogen."),
+ ],
+ "html": """
+<p class="lead">Kalk op een douchewand krijg je het makkelijkst weg met een zuur middel, zoals schoonmaakazijn of citroenzuur, dat je een paar minuten laat inwerken en daarna goed naspoelt. Let wel op: op natuursteen en sommige kranen doet zuur meer kwaad dan goed. Terugkomen doet de kalk vooral als druppels opdrogen, dus wie na het douchen even de wand droogtrekt, hoeft daarna nog maar zelden te ontkalken.</p>
+
+<h2>Waarom krijg je kalk op je douchewand?</h2>
+<p>In kraanwater zitten opgeloste mineralen, vooral kalk. Zolang het water stroomt, zie je daar niets van. Maar blijft een druppel op het glas of de tegel staan en verdampt het water, dan blijft de kalk achter als een wit randje. Na een paar weken worden die randjes een doffe, grijswitte laag die je met een gewone doek niet meer weg krijgt.</p>
+<p>Waterbedrijf Groningen levert drinkwater met een gemiddelde hardheid; op de website van het waterbedrijf kun je de hardheid op je eigen adres opzoeken. Ook bij gemiddeld hard water bouwt kalk zich op, zeker op glas en donkere tegels, waar je het het eerst ziet. Zeep en huidvet hechten zich bovendien aan de kalk, waardoor de laag sneller groeit.</p>
+
+<h2>Eerst kijken: welk materiaal heb je?</h2>
+<p>Voordat je begint, is het belangrijk te weten waar je mee werkt. Niet elk oppervlak kan tegen dezelfde middelen.</p>
+<ul>
+<li><strong>Glas (douchewand, deur):</strong> kan prima tegen azijn en citroenzuur. Heeft je glas een fabrieks- of anti-kalkcoating, kijk dan in de onderhoudsvoorschriften; schuurmiddelen kunnen die coating beschadigen.</li>
+<li><strong>Geglazuurde tegels:</strong> kunnen tegen een zuur middel, maar de voegen niet altijd. Spoel daarom goed na en laat zuur niet lang op voegen staan.</li>
+<li><strong>Natuursteen (marmer, travertin, kalksteen):</strong> nooit azijn of citroenzuur gebruiken. Zuur lost de steen zelf op, waardoor die dof of ruw wordt. Gebruik een pH-neutraal middel voor natuursteen.</li>
+<li><strong>Kranen en douchekop:</strong> verchroomd metaal kan meestal kort tegen azijn. Bij gekleurde, geborstelde of matzwarte kranen is het verstandig eerst de handleiding van de fabrikant te checken.</li>
+<li><strong>Acryl douchebak of kunststof wand:</strong> geen schuurspons of schuurmiddel, want daar krijg je krassen van waar vuil zich daarna juist in nestelt.</li>
+</ul>
+
+<h2>Stappenplan: kalk van glas en tegels verwijderen</h2>
+<ol>
+<li><strong>Spoel de wand nat met warm water.</strong> Dat maakt losse zeepresten zacht.</li>
+<li><strong>Breng het middel aan.</strong> Meng schoonmaakazijn en warm water ongeveer half om half in een plantenspuit, of los citroenzuur op in warm water. Spuit de wand royaal in.</li>
+<li><strong>Laat het inwerken.</strong> Vijf tot tien minuten is meestal genoeg. Bij een dikke laag kun je keukenpapier gedrenkt in het mengsel tegen het glas plakken, zodat het niet direct wegloopt.</li>
+<li><strong>Wrijf met een zachte spons of microvezeldoek.</strong> Gebruik geen staalwol of de groene kant van een schuurspons op glas.</li>
+<li><strong>Spoel grondig na met schoon water.</strong> Achtergebleven zuur kan voegen en kitnaden aantasten.</li>
+<li><strong>Trek de wand droog</strong> met een douchetrekker en poets na met een droge microvezeldoek. Sla je deze stap over, dan zie je bij de volgende douchebeurt alweer nieuwe vlekken.</li>
+</ol>
+<p>Zit er na één keer nog een waas op het glas, herhaal het dan liever een paar keer dan dat je harder gaat schuren. Kalk die jaren heeft kunnen groeien, gaat zelden in één beurt weg.</p>
+
+<h2>Douchekop en kraan ontkalken</h2>
+<p>Een verstopte douchekop herken je aan stralen die alle kanten op spuiten. Schroef de kop los en leg hem een uur in een bak met azijn of een citroenzuuroplossing, of bind er een plastic zakje met het mengsel omheen als hij niet los kan. Wrijf de gaatjes daarna met een oude tandenborstel schoon en spoel na. Veel douchekoppen hebben rubberen nopjes: als je daar met je vinger overheen wrijft, breekt de kalk vaak al los.</p>
+
+<h2>Wat je beter niet doet</h2>
+<ul>
+<li><strong>Middelen mengen.</strong> Combineer nooit een zuur middel (azijn, ontkalker) met chloor of bleekmiddel. Daarbij kunnen schadelijke dampen vrijkomen.</li>
+<li><strong>Krabben met een mes.</strong> Een glasschraper kan op onbehandeld glas, maar op gecoat glas of tegels krijg je snel krassen.</li>
+<li><strong>Alleen ontkalken als het echt erg is.</strong> Hoe dikker de laag, hoe meer middel en moeite het kost. Een kleine beurt per week of twee werkt beter dan één grote schoonmaak per jaar.</li>
+</ul>
+
+<h2>Zo voorkom je dat de kalk terugkomt</h2>
+<p>Preventie kost minder tijd dan je denkt:</p>
+<ul>
+<li>Hang een douchetrekker in de douche en trek na elke beurt wand en deur in een halve minuut droog.</li>
+<li>Zet na het douchen het raam open of laat de ventilatie een tijdje draaien, zodat de ruimte sneller opdroogt.</li>
+<li>Laat de douchedeur na gebruik open staan, dan kan het vocht weg.</li>
+<li>Kies een milde douchegel; zeep met veel olie laat sneller een film achter waar kalk zich aan hecht.</li>
+</ul>
+<p>Een waterontharder is niet nodig, maar sommige mensen kiezen er wel voor om kalkaanslag te verminderen. Volgens Waterbedrijf Groningen mag je water daarbij niet verder ontharden dan tot 5,6 °dH.</p>
+
+<h2>Wanneer schakel je hulp in?</h2>
+<p>Gewoon onderhoud doe je prima zelf. Hulp is handig als de kalk er al jaren zit en niet meer weg lijkt te gaan, als je niet zeker weet welk middel je steen of coating verdraagt, of als de badkamer in één keer helemaal schoon moet, bijvoorbeeld bij een verhuizing of het <a href="/woning-opleveren-groningen/">opleveren van een huurwoning</a>. Een verhuurder kijkt bij de eindinspectie vaak juist naar de badkamer.</p>
+
+<h2>Hulp van JSTN Multidiensten</h2>
+<p>JSTN Multidiensten verzorgt <a href="/schoonmaak-groningen/">schoonmaak en dieptereiniging</a> in Groningen en tot ongeveer 50 km eromheen, van een losse badkamer tot een complete woning. In ons <a href="/portfolio/">portfolio</a> zie je voor- en na-foto's van eerdere klussen. Wil je weten wat er bij jou mogelijk is? Neem <a href="/contact/">contact</a> op; je krijgt binnen 12 uur een reactie.</p>
+""",
+},
+{
  "slug": "muren-schilderen-huurwoning-terugzetten-bij-vertrek",
  "title": "Muren schilderen in je huurwoning: mag dat, en moet je ze bij vertrek weer wit maken?",
  "seo_title": "Muren schilderen in een huurwoning: mag dat? | JSTN",
