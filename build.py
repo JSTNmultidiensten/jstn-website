@@ -707,6 +707,7 @@ for _x in PF: PF_BY.setdefault(_x["dienst"], []).append(_x)
 BYSLUG = {d["slug"]: d for d in D.DIENSTEN}
 PLAATS_TXT = ", ".join(D.PLAATSEN[:-1]) + " en " + D.PLAATSEN[-1]
 HERO_FOTO = {"woningontruiming-groningen": ("/img/ontruiming-volle-berging.jpg", 900, 1200, "Volle berging met fietsen en oud papier, vóór de ontruiming door JSTN", "object-position:50% 58%"),
+             "vloerreiniging-groningen": ("/img/vloerreiniging-keukenvloer.jpg", 900, 1200, "Keukenvloer wordt dieptereinigd met de schrobmachine door JSTN", "object-position:50% 42%"),
              "woning-opleveren-groningen": ("/img/leeg-appartement-1200.webp", 1200, 800, "Lege, opgeruimde woning", "")}
 for d in D.DIENSTEN:
     path = f"/{d['slug']}/"
