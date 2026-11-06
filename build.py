@@ -241,21 +241,21 @@ svc_cards = "".join(
 
 GREVIEWS = "https://www.google.com/maps/search/?api=1&query=JSTN+Multidiensten+Zernikepark+4+Groningen"
 REVIEWS = [
- ("E. Romée", "We hadden met spoed een ontruiming en schoonmaak nodig van het huis van mijn moeder. Er was veel gerookt en het huis was erg vies. Alles is super snel en netjes gedaan, echt heel blij mee. Er was niks meer van te zien en het huis kon daarna verkocht worden. Ik zal dit bedrijf zeker aanraden!!"),
- ("Olga M.", "Snelle reactie gekregen op mijn vraag. Duidelijke afspraken en via de app op de hoogte gehouden. Binnen een paar dagen mijn grofvuil opgehaald en ze wouden zelfs alles stofzuigen. Ben dik tevreden."),
- ("Dominika F.", "Jongens zijn professioneel en hebben netjes werk geleverd. Huis is ontruimt en super goed schoon gemaakt, zelfs met hoge druk de oprit. Goed bezig jongens."),
+ ("E. Romée, Groningen", "We hadden met spoed een ontruiming en schoonmaak nodig van het huis van mijn moeder. Er was veel gerookt en het huis was erg vies. Alles is super snel en netjes gedaan, echt heel blij mee. Er was niks meer van te zien en het huis kon daarna verkocht worden. Ik zal dit bedrijf zeker aanraden!!"),
+ ("Olga M., Vinkhuizen", "Snelle reactie gekregen op mijn vraag. Duidelijke afspraken en via de app op de hoogte gehouden. Binnen een paar dagen mijn grofvuil opgehaald en ze wouden zelfs alles stofzuigen. Ben dik tevreden."),
+ ("Dominika F., Vinkhuizen", "Jongens zijn professioneel en hebben netjes werk geleverd. Huis is ontruimt en super goed schoon gemaakt, zelfs met hoge druk de oprit. Goed bezig jongens."),
  ("Erick", "Super tevreden met de dieptereiniging van onze vloeren! Ze zijn ontzettend mooi en grondig gereinigd en zien er weer als nieuw uit. Het verschil vóór en na de reiniging was echt goed zichtbaar. Alles werd netjes en professioneel aangepakt!"),
  ("Rini H.", "Wij zijn heel tevreden over de service van JSTN Multidiensten! Zij hebben onze horecakeuken grondig en professioneel diep gereinigd. Alles is weer fris, schoon en hygiënisch."),
  ("Milan, Froombosch", "Zeer tevreden over JSTN Multidiensten! Alles werd netjes en vakkundig uitgevoerd. De communicatie was duidelijk, afspraken werden goed nagekomen en het resultaat was precies zoals gehoopt. Zeker een aanrader als je op zoek bent naar een betrouwbare en professionele service!"),
  ("Luca, Groningen", "Service was top notch. My partner and I just moved to a new home and it was dirty! Sent a message to Justin and asked him if the day after he could come and do an urgency deep clean and he did it for less than i was expecting even if the work-load was more than he expected, excellent service overall will call again."),
- ("Kyle M.", "Great experience with Justin. Super professional and takes a lot of pride in his work. Success for the future!"),
- ("Katharina M.", "Harde en nette werkers. Ik ben heel tevreden!"),
- ("Daniël H.", "Justin kwam ontzettend professioneel en vriendelijk over! Eerlijke prijzen en goeie service"),
+ ("Kyle M., Herewegbuurt", "Great experience with Justin. Super professional and takes a lot of pride in his work. Success for the future!"),
+ ("Katharina M., Beijum", "Harde en nette werkers. Ik ben heel tevreden!"),
+ ("Daniël H., Paddepoel", "Justin kwam ontzettend professioneel en vriendelijk over! Eerlijke prijzen en goeie service"),
  ("Matteo, Hoogezand", "Bij dit bedrijf kan je zeker terecht voor je reinigingsdiensten. Ze leveren grondig en goed werk. 5 sterren waard voor mij."),
- ("Ercan G.", "Contact opgenomen met JSTN. Ben vanaf daar enorm goed geholpen en erg tevreden!"),
- ("Fadi A.", "Goeie ervaring met vriendelijke personeel en top medewerking zeker een aanrader"),
- ("Ingmar B.", "Geweldige service en super vriendelijk!"),
- ("Mo E.", "Echt een top jonge man altijd vrolijk en vriendelijk dikke 5 sterren"),
+ ("Ercan G., Hoogezand", "Contact opgenomen met JSTN. Ben vanaf daar enorm goed geholpen en erg tevreden!"),
+ ("Fadi A., Assen", "Goeie ervaring met vriendelijke personeel en top medewerking zeker een aanrader"),
+ ("Ingmar B., Winschoten", "Geweldige service en super vriendelijk!"),
+ ("Mo E., Leeuwarden", "Echt een top jonge man altijd vrolijk en vriendelijk dikke 5 sterren"),
 ]
 import re as _re
 def kort_review(q, maxw=40):
