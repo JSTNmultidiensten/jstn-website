@@ -344,3 +344,16 @@ b,strong{font-weight:600}
 /* homepage-hero: staande foto (team laadt matras in bus) */
 .foto-home{object-position:50% 88%}
 @media (max-width:760px){.foto-eerst>.photo.foto-home{aspect-ratio:4/3;object-position:50% 66%}}
+
+/* reviews: schuifbare rij */
+.rv-wrap{position:relative}
+.rv-rij{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 40px)/3);gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px}
+.rv-rij::-webkit-scrollbar{display:none}
+.rv-rij .rv{scroll-snap-align:start}
+.rv-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:44px;height:44px;border-radius:50%;border:1px solid var(--rand);background:#fff;display:none;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.12);color:var(--grijs)}
+.rv-btn svg{width:20px;height:20px;fill:none;stroke:#3F3D3F;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.rv-btn.prev{left:-22px}.rv-btn.prev svg{transform:rotate(180deg)}
+.rv-btn.next{right:-22px}
+.rv-wrap.more-r .rv-btn.next,.rv-wrap.more-l .rv-btn.prev{display:flex}
+@media (max-width:900px){.rv-rij{grid-auto-columns:calc((100% - 20px)/2)}}
+@media (max-width:760px){.rv-rij{grid-auto-columns:86%;gap:10px}.rv-btn.prev{left:-10px}.rv-btn.next{right:-10px}.rv-btn{width:38px;height:38px}}

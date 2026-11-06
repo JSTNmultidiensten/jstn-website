@@ -76,10 +76,10 @@ ORG = {
   "email": MAIL,
   "address": {"@type": "PostalAddress", "streetAddress": "Zernikepark 4", "postalCode": "9747 AN",
               "addressLocality": "Groningen", "addressCountry": "NL"},
-  "areaServed": [{"@type": "City", "name": n} for n in D.PLAATSEN] + [{"@type": "AdministrativeArea", "name": "Provincie Groningen"}],
+  "areaServed": [{"@type": "City", "name": n} for n in D.PLAATSEN] + [{"@type": "AdministrativeArea", "name": n} for n in ("Provincie Groningen", "Provincie Friesland", "Provincie Drenthe")],
   "openingHours": "Mo-Sa 07:00-18:00",
   "slogan": "Alles onder één dak: van schoonmaak tot oplevering.",
-  "description": "Schoonmaak en desinfectie, vloerreiniging, glasbewassing, ontruimen, verhuizen, schilder- en behangwerk, opleveren van zorg-appartementen en hogedrukreiniging in Groningen en omgeving.",
+  "description": "Schoonmaak en desinfectie, vloerreiniging, glasbewassing, ontruimen, verhuizen, schilder- en behangwerk, opleveren van zorg-appartementen en hogedrukreiniging in Groningen, Friesland en Drenthe.",
 }
 
 NAV = [("/", "Home"), ("/zakelijk/", "Zakelijk"), ("/particulier/", "Particulier"),
@@ -241,14 +241,27 @@ svc_cards = "".join(
 
 GREVIEWS = "https://www.google.com/maps/search/?api=1&query=JSTN+Multidiensten+Zernikepark+4+Groningen"
 REVIEWS = [
- ("Matteo, Hoogezand", "Bij dit bedrijf kan je zeker terecht voor je reinigingsdiensten. Ze leveren grondig en goed werk. 5 sterren waard voor mij."),
- ("Luca, Groningen", "Service was top notch. My partner and I just moved to a new home and it was dirty! Sent a message to Justin and asked him if the day after he could come and do an urgency deep clean and he did it for less than i was expecting even if the work-load was more than he expected, excellent service overall will call again."),
+ ("E. Romée", "We hadden met spoed een ontruiming en schoonmaak nodig van het huis van mijn moeder. Er was veel gerookt en het huis was erg vies. Alles is super snel en netjes gedaan, echt heel blij mee. Er was niks meer van te zien en het huis kon daarna verkocht worden. Ik zal dit bedrijf zeker aanraden!!"),
+ ("Olga M.", "Snelle reactie gekregen op mijn vraag. Duidelijke afspraken en via de app op de hoogte gehouden. Binnen een paar dagen mijn grofvuil opgehaald en ze wouden zelfs alles stofzuigen. Ben dik tevreden."),
+ ("Dominika F.", "Jongens zijn professioneel en hebben netjes werk geleverd. Huis is ontruimt en super goed schoon gemaakt, zelfs met hoge druk de oprit. Goed bezig jongens."),
+ ("Erick", "Super tevreden met de dieptereiniging van onze vloeren! Ze zijn ontzettend mooi en grondig gereinigd en zien er weer als nieuw uit. Het verschil vóór en na de reiniging was echt goed zichtbaar. Alles werd netjes en professioneel aangepakt!"),
+ ("Rini H.", "Wij zijn heel tevreden over de service van JSTN Multidiensten! Zij hebben onze horecakeuken grondig en professioneel diep gereinigd. Alles is weer fris, schoon en hygiënisch."),
  ("Milan, Froombosch", "Zeer tevreden over JSTN Multidiensten! Alles werd netjes en vakkundig uitgevoerd. De communicatie was duidelijk, afspraken werden goed nagekomen en het resultaat was precies zoals gehoopt. Zeker een aanrader als je op zoek bent naar een betrouwbare en professionele service!"),
+ ("Luca, Groningen", "Service was top notch. My partner and I just moved to a new home and it was dirty! Sent a message to Justin and asked him if the day after he could come and do an urgency deep clean and he did it for less than i was expecting even if the work-load was more than he expected, excellent service overall will call again."),
+ ("Kyle M.", "Great experience with Justin. Super professional and takes a lot of pride in his work. Success for the future!"),
+ ("Katharina M.", "Harde en nette werkers. Ik ben heel tevreden!"),
+ ("Daniël H.", "Justin kwam ontzettend professioneel en vriendelijk over! Eerlijke prijzen en goeie service"),
+ ("Matteo, Hoogezand", "Bij dit bedrijf kan je zeker terecht voor je reinigingsdiensten. Ze leveren grondig en goed werk. 5 sterren waard voor mij."),
+ ("Ercan G.", "Contact opgenomen met JSTN. Ben vanaf daar enorm goed geholpen en erg tevreden!"),
+ ("Fadi A.", "Goeie ervaring met vriendelijke personeel en top medewerking zeker een aanrader"),
+ ("Ingmar B.", "Geweldige service en super vriendelijk!"),
+ ("Mo E.", "Echt een top jonge man altijd vrolijk en vriendelijk dikke 5 sterren"),
+ ("Alex V.", "Goed en vriendelijk personeel, aanrader !"),
 ]
 import re as _re
 def kort_review(q):
     # v4: reviews langer dan 25 woorden -> eerste 2 zinnen + " ..."
-    if len(q.split()) <= 25: return q
+    if len(q.split()) <= 60: return q
     zinnen = _re.findall(r'[^.!?]+[.!?]+', q)
     return " ".join(z.strip() for z in zinnen[:2]) + " ..."
 # alle reviews tonen (nov 2026)
@@ -256,7 +269,8 @@ rev_cards = "".join(f'<figure class="card rv">{glogo("g-rv")}{STARS}<blockquote>
 REVIEWS_SEC = f'''<section class="sec" id="reviews">
 <div class="w">
 <div class="head"><span class="tag">Google Reviews</span><h2>Wat klanten over ons zeggen</h2><p class="lead glead">{glogo()}<b>5,0 ★</b> gemiddeld op Google · <a class="link" style="display:inline-flex" href="{GREVIEWS}" target="_blank" rel="noopener">Bekijk alle reviews{ic("arrow")}</a></p></div>
-<div class="g3">{rev_cards}</div>
+<div class="rv-wrap"><button type="button" class="rv-btn prev" aria-label="Vorige reviews">{ic("arrow")}</button><div class="rv-rij">{rev_cards}</div><button type="button" class="rv-btn next" aria-label="Volgende reviews">{ic("arrow")}</button></div>
+<script>(function(){{var w=document.currentScript.previousElementSibling,r=w.querySelector('.rv-rij');function u(){{var m=r.scrollWidth-r.clientWidth;w.classList.toggle('more-r',r.scrollLeft<m-4);w.classList.toggle('more-l',r.scrollLeft>4);}}r.addEventListener('scroll',u,{{passive:true}});window.addEventListener('resize',u);w.querySelector('.next').onclick=function(){{r.scrollBy({{left:r.clientWidth*.9,behavior:'smooth'}})}};w.querySelector('.prev').onclick=function(){{r.scrollBy({{left:-r.clientWidth*.9,behavior:'smooth'}})}};u();}})();</script>
 </div>
 </section>'''
 
@@ -264,12 +278,12 @@ home = f'''<section class="sec">
 <div class="w hero foto-eerst">
 <div>
 <span class="tag">Alles onder één dak</span>
-<h1>Schoonmaak, ontruiming en opleveren in Groningen.</h1>
+<h1>Schoonmaak, ontruiming en opleveren in Groningen, Friesland en Drenthe.</h1>
 <p class="lead">Voor bedrijven en particulieren. Eén vast aanspreekpunt, van begin tot eind.</p>
 {chips([(i, t, u) for i, t, d, u in SERVICES])}
 {knoppen()}
 </div>
-<img class="photo foto-home" src="/img/jstn-team-matras-ophalen.jpg" width="867" height="1534" alt="Team van JSTN Multidiensten laadt een matras in de bus bij een ontruiming in Groningen" fetchpriority="high">
+<img class="photo foto-home" src="/img/jstn-team-matras-ophalen.jpg" width="867" height="1534" alt="Team van JSTN Multidiensten laadt een matras in de bus bij een ontruiming" fetchpriority="high">
 </div>
 </section>
 
@@ -303,7 +317,7 @@ home = f'''<section class="sec">
 
 <section class="sec">
 <div class="w">
-<div class="head"><h2>Ons werk</h2><p class="lead">Een paar klussen van de afgelopen tijd, in Groningen en omgeving.</p></div>
+<div class="head"><h2>Ons werk</h2><p class="lead">Een paar klussen van de afgelopen tijd, in Groningen, Friesland en Drenthe.</p></div>
 <div class="pfg">
 <figure><img src="/portfolio/img/glasbewassing-kantoor.jpg" width="900" height="1200" alt="Glasbewassing bij de oplevering van een kantoorpand" loading="lazy"><figcaption>Glasbewassing bij een kantooroplevering</figcaption></figure>
 <figure><img src="/portfolio/img/vloerreiniging-schrobmachine.jpg" width="900" height="1200" alt="Vloerreiniging met de schrobmachine" loading="lazy"><figcaption>Vloerreiniging met de schrobmachine</figcaption></figure>
@@ -317,8 +331,8 @@ home = f'''<section class="sec">
 {REVIEWS_SEC}
 
 {CTA}'''
-page("/", "Schoonmaak, ontruiming & verhuizen in Groningen | JSTN Multidiensten",
-     "JSTN Multidiensten in Groningen: schoonmaak, vloerreiniging, ontruimen, verhuizen, schilderwerk en zorg-appartementen opleveren. Eén aanspreekpunt, reactie binnen 12 uur.",
+page("/", "Schoonmaak, ontruiming & verhuizen in Groningen, Friesland & Drenthe | JSTN",
+     "JSTN Multidiensten in Groningen, Friesland en Drenthe: schoonmaak, vloerreiniging, ontruimen, verhuizen, schilderwerk en zorg-appartementen opleveren. Eén aanspreekpunt, reactie binnen 12 uur.",
      "/", home, extra_ld=[{"@context": "https://schema.org", "@type": "WebSite", "name": "JSTN Multidiensten", "url": BASE + "/"}])
 
 # ======================= ZAKELIJK =======================
@@ -342,7 +356,7 @@ zak = f'''<section class="sec">
 <div class="w hero">
 <div>
 <span class="tag">Zakelijk · B2B</span>
-<h1>Zakelijke dienstverlening in Groningen</h1>
+<h1>Zakelijke dienstverlening in Groningen, Friesland en Drenthe</h1>
 <p class="lead">Voor makelaars, woningcorporaties, zorginstellingen, scholen en bedrijven. Vaste aanspreekpunten en korte lijnen.</p>
 {chips([(i, t, "/" + ANCHOR2SLUG[a] + "/") for i, t, a, p in zak_svcs])}
 {knoppen()}
@@ -362,8 +376,8 @@ zak = f'''<section class="sec">
 </section>
 
 {CTA}'''
-page("/zakelijk/", "Zakelijke schoonmaak, vloerreiniging & ontruiming Groningen | JSTN",
-     "Zakelijke dienstverlening in Groningen: schoonmaak en desinfectie, vloerreiniging voor scholen en kantoren, ontruimen, schilderwerk en zorg-appartementen binnen 3 werkdagen opgeleverd.",
+page("/zakelijk/", "Zakelijke schoonmaak, vloerreiniging & ontruiming in Groningen, Friesland & Drenthe | JSTN",
+     "Zakelijke dienstverlening in Groningen, Friesland en Drenthe: schoonmaak en desinfectie, vloerreiniging voor scholen en kantoren, ontruimen, schilderwerk en zorg-appartementen binnen 3 werkdagen opgeleverd.",
      "/zakelijk/", zak, extra_ld=[crumbs([("Home", "/"), ("Zakelijk", "/zakelijk/")])])
 
 # ======================= PARTICULIER =======================
@@ -385,7 +399,7 @@ par = f'''<section class="sec">
 <div class="w hero">
 <div>
 <span class="tag">Particulier · B2C</span>
-<h1>Particuliere dienstverlening in Groningen</h1>
+<h1>Particuliere dienstverlening in Groningen, Friesland en Drenthe</h1>
 <p class="lead">Verhuizen, leegruimen, opleveren of opknappen. Eén vast contactpersoon van begin tot eind.</p>
 {chips([(i, t, "/" + ANCHOR2SLUG[a] + "/") for i, t, a, p in par_svcs])}
 {knoppen()}
@@ -407,8 +421,8 @@ par = f'''<section class="sec">
 {REVIEWS_SEC}
 
 {CTA}'''
-page("/particulier/", "Verhuizen, leegruimen & woning opleveren in Groningen | JSTN",
-     "Particuliere dienstverlening in Groningen: verhuizingen (ook voor senioren), woning leegruimen, opleveren aan verhuurder of corporatie, schilderwerk en hogedrukreiniging. Eén vast aanspreekpunt.",
+page("/particulier/", "Verhuizen, leegruimen & woning opleveren in Groningen, Friesland & Drenthe | JSTN",
+     "Particuliere dienstverlening in Groningen, Friesland en Drenthe: verhuizingen (ook voor senioren), woning leegruimen, opleveren aan verhuurder of corporatie, schilderwerk en hogedrukreiniging. Eén vast aanspreekpunt.",
      "/particulier/", par, extra_ld=[crumbs([("Home", "/"), ("Particulier", "/particulier/")])])
 
 # ======================= OVER ONS =======================
@@ -435,7 +449,7 @@ over = f'''<section class="sec">
 <div>
 <span class="tag">Over ons</span>
 <h1>Ervaren, professioneel en betrouwbaar</h1>
-<p class="lead">JSTN Multidiensten is een ervaren team uit Groningen voor schoonmaak, ontruiming, verhuizen en het opleveren van woningen. We werken voor particulieren en voor zakelijke opdrachtgevers, waaronder meerdere makelaars.</p>
+<p class="lead">JSTN Multidiensten is een ervaren team uit Groningen, actief in heel Groningen, Friesland en Drenthe, voor schoonmaak, ontruiming, verhuizen en het opleveren van woningen. We werken voor particulieren en voor zakelijke opdrachtgevers, waaronder meerdere makelaars.</p>
 <p class="muted">We nemen verantwoordelijkheid, garanderen kwaliteit en geven een scherpe, eerlijke prijsopgave.</p>
 {knoppen()}
 </div>
@@ -455,8 +469,8 @@ over = f'''<section class="sec">
 {MISSIE}
 
 {CTA}'''
-page("/over-ons/", "Over ons | JSTN Multidiensten Groningen",
-     "Maak kennis met JSTN Multidiensten: een ervaren team uit Groningen voor schoonmaak, ontruiming, verhuizen en woningoplevering. Betrouwbaar, met gegarandeerde kwaliteit en een eerlijke prijs.",
+page("/over-ons/", "Over ons | JSTN Multidiensten Groningen, Friesland & Drenthe",
+     "Maak kennis met JSTN Multidiensten: een ervaren team uit Groningen, actief in Groningen, Friesland en Drenthe, voor schoonmaak, ontruiming, verhuizen en woningoplevering. Betrouwbaar, met gegarandeerde kwaliteit en een eerlijke prijs.",
      "/over-ons/", over, extra_ld=[crumbs([("Home", "/"), ("Over ons", "/over-ons/")])])
 
 # ======================= WERKEN BIJ =======================
@@ -481,8 +495,8 @@ werk = f'''<section class="sec">
 </section>
 
 {MISSIE_WERK}'''
-page("/werken-bij/", "Werken bij JSTN Multidiensten | Vacatures Groningen",
-     "Werken bij JSTN Multidiensten in Groningen? Wij zoeken enthousiaste collega’s voor schoonmaak, ontruiming, verhuizingen en schilderwerk. Stuur ons een berichtje!",
+page("/werken-bij/", "Werken bij JSTN Multidiensten | Vacatures Groningen, Friesland & Drenthe",
+     "Werken bij JSTN Multidiensten in Groningen, Friesland en Drenthe? Wij zoeken enthousiaste collega’s voor schoonmaak, ontruiming, verhuizingen en schilderwerk. Stuur ons een berichtje!",
      "/werken-bij/", werk, extra_ld=[crumbs([("Home", "/"), ("Bij ons werken", "/werken-bij/")])])
 
 # ======================= CONTACT =======================
@@ -570,8 +584,8 @@ contact = f'''<section class="sec">
 </div>
 </section>
 <script src="/contact.js" defer></script>'''
-page("/contact/", "Contact & offerte aanvragen | JSTN Multidiensten Groningen",
-     "Neem contact op met JSTN Multidiensten in Groningen via WhatsApp, telefoon (+31 6 36179549) of e-mail. Vraag vrijblijvend een offerte aan — reactie binnen 12 uur.",
+page("/contact/", "Contact & offerte aanvragen | JSTN Multidiensten",
+     "Neem contact op met JSTN Multidiensten (Groningen, Friesland en Drenthe) via WhatsApp, telefoon (+31 6 36179549) of e-mail. Vraag vrijblijvend een offerte aan — reactie binnen 12 uur.",
      "/contact/", contact, extra_ld=[crumbs([("Home", "/"), ("Contact", "/contact/")])])
 
 # ======================= PRIVACY =======================
@@ -624,14 +638,14 @@ for p in sorted(posts.POSTS, key=lambda x: x["date"], reverse=True):
 
 blog = f'''<section class="sec">
 <div class="w">
-<div class="head"><span class="tag">Blog</span><h1>Tips &amp; advies</h1><p class="lead">Praktische artikelen over schoonmaak, ontruimen, verhuizen en opleveren in Groningen en omgeving.</p>
+<div class="head"><span class="tag">Blog</span><h1>Tips &amp; advies</h1><p class="lead">Praktische artikelen over schoonmaak, ontruimen, verhuizen en opleveren in Groningen, Friesland en Drenthe.</p>
 {knoppen()}</div>
 <div class="g2">{blog_cards}</div>
 </div>
 </section>
 {CTA}'''
 page("/blog/", "Blog: tips over schoonmaak, ontruimen & verhuizen | JSTN Multidiensten",
-     "Tips en advies van JSTN Multidiensten over zakelijke schoonmaak, woningontruiming, verhuizen en opleveren in Groningen.",
+     "Tips en advies van JSTN Multidiensten over zakelijke schoonmaak, woningontruiming, verhuizen en opleveren in Groningen, Friesland en Drenthe.",
      "/blog/", blog, extra_ld=[crumbs([("Home", "/"), ("Blog", "/blog/")])])
 
 
@@ -672,7 +686,7 @@ def pf_card(pr):
     return f'<article class="card pf"><span class="tag">{pr["label"]}</span><h2 class="h3">{pr["titel"]}</h2><p class="muted">{eerste_zin(pr["tekst"])}</p>{media}<a class="link" href="/{d["slug"]}/">Meer over {d["kort"].lower()}{ic("arrow")}</a></article>'
 pf = f"""<section class="sec">
 <div class="w">
-<div class="head"><span class="tag">Portfolio</span><h1>Ons werk in Groningen en omgeving</h1><p class="lead">Echte foto's van ons eigen werk, voor en na.</p>
+<div class="head"><span class="tag">Portfolio</span><h1>Ons werk in Groningen, Friesland en Drenthe</h1><p class="lead">Echte foto's van ons eigen werk, voor en na.</p>
 {knoppen()}</div>
 <div class="pfl">{"".join(pf_card(x) for x in PF)}</div>
 </div>
@@ -682,7 +696,7 @@ pf = f"""<section class="sec">
 
 {CTA}"""
 page("/portfolio/", "Portfolio: voor en na foto's van ons werk | JSTN Multidiensten",
-     "Bekijk voor- en na-foto's van klussen van JSTN Multidiensten in Groningen: eindschoonmaak, bouwoplevering, ontkalken, vloerreiniging met schrobmachine, glasbewassing en hogedrukreiniging.",
+     "Bekijk voor- en na-foto's van klussen van JSTN Multidiensten in Groningen, Friesland en Drenthe: eindschoonmaak, bouwoplevering, ontkalken, vloerreiniging met schrobmachine, glasbewassing en hogedrukreiniging.",
      "/portfolio/", pf, extra_ld=[crumbs([("Home", "/"), ("Portfolio", "/portfolio/")])])
 PF_BY = {}
 for _x in PF: PF_BY.setdefault(_x["dienst"], []).append(_x)
@@ -720,7 +734,7 @@ for d in D.DIENSTEN:
 <div class="w hero">
 <div>
 <nav class="bc" aria-label="Kruimelpad"><a href="/">Home</a> › <span>{d["kort"]}</span></nav>
-<span class="tag">Groningen en omgeving</span>
+<span class="tag">Groningen, Friesland &amp; Drenthe</span>
 <h1>{d["h1"]}</h1>
 <p class="lead">{d["lead"]}</p>
 {knoppen(WA + "?text=" + quote('Hallo JSTN Multidiensten, ik heb een vraag over ' + d['kort'].lower() + ': '))}

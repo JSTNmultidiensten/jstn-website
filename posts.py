@@ -213,7 +213,7 @@ POSTS = [
 <p>Twijfel je over een ladder, ga er dan niet aan beginnen. Een val van een trap of ladder is snel gebeurd, zeker met een emmer in je hand en nat glas onder je handen.</p>
 <p>Ook een vast ritme kan een reden zijn om het uit te besteden. Dan hoef je er niet meer aan te denken en blijft het glas het hele jaar door helder, zonder dat je er een vrije zaterdag aan kwijt bent.</p>
 
-<h2>Hulp nodig in Groningen en omgeving?</h2>
+<h2>Hulp nodig in Groningen, Friesland en Drenthe?</h2>
 <p>JSTN Multidiensten verzorgt <a href="/glazenwasser-groningen/">glasbewassing</a> voor woningen en bedrijven in Groningen en tot ongeveer 50 km eromheen, zoals Haren, Zuidhorn, Leek en Assen. Dat kan los, maar ook gecombineerd met een schoonmaak of oplevering, met één aanspreekpunt. Je krijgt binnen 12 uur een reactie en we plannen flexibel in. Wil je eerst zien hoe we werken? Kijk in ons <a href="/portfolio/">portfolio</a> of neem <a href="/contact/">contact</a> op.</p>
 """,
 },
@@ -292,7 +292,7 @@ POSTS = [
 <li>of er een nacontrole vlak voor de oplevering bij hoort.</li>
 </ul>
 
-<h2>Hulp bij bouwschoonmaak in Groningen en omgeving</h2>
+<h2>Hulp bij bouwschoonmaak in Groningen, Friesland en Drenthe</h2>
 <p>JSTN Multidiensten verzorgt de <a href="/schoonmaak-groningen/">schoonmaak en dieptereiniging</a> bij bouwopleveringen in Groningen en tot ongeveer 50 km eromheen, ook met glasbewassing en vloerreiniging erbij. Je hebt één aanspreekpunt, we plannen flexibel rond je opleverdatum en bij opleveringen is een vaste prijs mogelijk. Benieuwd naar het resultaat van eerdere klussen? Kijk in ons <a href="/portfolio/">portfolio</a>, of neem <a href="/contact/">contact</a> op voor je project. Je krijgt binnen 12 uur een reactie.</p>
 """,
 },
@@ -360,7 +360,7 @@ POSTS = [
 <p>Een lege woning is nog geen opgeleverde woning. Na jaren bewoning zie je vaak pas als de meubels weg zijn hoe het ervoor staat: vuilranden langs plinten, vet in de keuken, kalk in de badkamer, gaten in de muur of verkleuring door rook. De logische volgorde is eerst leeghalen, dan grondig schoonmaken en pas daarna herstellen of schilderen. Zo hoef je niets dubbel te doen.</p>
 <p>Gaat het om een huurwoning, vergelijk dan met de afspraken uit de voorinspectie. Meer daarover lees je in ons <a href="/post/huurwoning-opleveren-stappenplan/">stappenplan voor het opleveren van een huurwoning</a>.</p>
 
-<h2>Hulp bij een woningontruiming in Groningen en omgeving</h2>
+<h2>Hulp bij een woningontruiming in Groningen, Friesland en Drenthe</h2>
 <p>JSTN Multidiensten helpt nabestaanden in Groningen en tot ongeveer 50 km eromheen met <a href="/woningontruiming-groningen/">woningontruiming</a>, en waar nodig ook met dieptereiniging, schilderwerk en het <a href="/woning-opleveren-groningen/">opleveren van de huurwoning</a>. Je hebt één aanspreekpunt, bij een oplevering is een vaste prijs mogelijk en bruikbare spullen krijgen waar mogelijk een tweede leven. Wil je weten wat we voor je kunnen doen, neem dan <a href="/contact/">contact</a> op. Je krijgt binnen 12 uur een reactie, en we nemen de tijd om samen te kijken wat jij zelf wilt doen en waar je hulp bij kunt gebruiken.</p>
 """,
 },
@@ -439,7 +439,7 @@ POSTS = [
 </ul>
 <p>Het dagelijkse werk kan prima door je eigen schoonmaakdienst of een vaste schoonmaker. Voor de periodieke grondige beurt van grote oppervlakken heb je professionele apparatuur nodig; die hoef je als school of kantoor niet zelf in huis te hebben.</p>
 
-<h2>Vloerreiniging in Groningen en omgeving</h2>
+<h2>Vloerreiniging in Groningen, Friesland en Drenthe</h2>
 <p>JSTN Multidiensten verzorgt <a href="/vloerreiniging-groningen/">vloerreiniging voor scholen, kantoren en bedrijfspanden</a> in Groningen en tot ongeveer 50 km eromheen, als eenmalige grondige reiniging of als periodiek onderhoud volgens een vast schema. We zijn flexibel in te plannen, ook in schoolvakanties en buiten kantoortijden, en je hebt één aanspreekpunt. Zoek je ook iemand voor de dagelijkse of wekelijkse <a href="/schoonmaak-groningen/">schoonmaak</a>, dan kan dat in dezelfde afspraak. Wil je overleggen wat bij jouw gebouw past? Neem <a href="/contact/">contact</a> op; je krijgt binnen 12 uur een reactie.</p>
 """,
 },
@@ -726,7 +726,7 @@ POSTS = [
 <p>Volgens de <a href="https://www.rijksoverheid.nl/onderwerpen/woning-huren/vraag-en-antwoord/woning-huren-waarborgsom" target="_blank" rel="noopener">Rijksoverheid</a> moet de verhuurder de borg binnen 14 dagen na het einde van de huur terugbetalen. Worden er kosten verrekend, zoals schade of een huurachterstand, dan moet het restant binnen 30 dagen terug zijn. Krijg je onterecht kosten in rekening gebracht, dan helpen je foto's en de lijst van de voorinspectie om dat te onderbouwen.</p>
 
 <h2>Lukt het niet zelf? Zo kunnen wij helpen</h2>
-<p>Heb je weinig tijd, woon je al ergens anders of gaat het om de woning van een ouder? JSTN Multidiensten kan het <a href="/woning-opleveren-groningen/">opleveren van je huurwoning</a> in Groningen en omgeving van begin tot eind regelen: leeghalen, schoonmaken en waar nodig schilderen, afgestemd op de lijst van je verhuurder. Je hebt één aanspreekpunt en we kunnen vooraf een vaste prijs afspreken. Op ons <a href="/portfolio/">portfolio</a> zie je voor- en na-foto's van eerdere klussen. Wil je weten wat er bij jouw woning nodig is? Neem <a href="/contact/">contact</a> op; je hoort binnen 12 uur van ons.</p>
+<p>Heb je weinig tijd, woon je al ergens anders of gaat het om de woning van een ouder? JSTN Multidiensten kan het <a href="/woning-opleveren-groningen/">opleveren van je huurwoning</a> in Groningen, Friesland en Drenthe van begin tot eind regelen: leeghalen, schoonmaken en waar nodig schilderen, afgestemd op de lijst van je verhuurder. Je hebt één aanspreekpunt en we kunnen vooraf een vaste prijs afspreken. Op ons <a href="/portfolio/">portfolio</a> zie je voor- en na-foto's van eerdere klussen. Wil je weten wat er bij jouw woning nodig is? Neem <a href="/contact/">contact</a> op; je hoort binnen 12 uur van ons.</p>
 """,
 },
 {

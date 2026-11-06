@@ -20,7 +20,7 @@ DIENSTEN = [
   ("Wat kost een dieptereiniging?", "Dat hangt af van de grootte van de ruimte, de staat waarin deze verkeert en wat er precies moet gebeuren. Stuur ons een korte omschrijving (eventueel met foto's) via WhatsApp of het contactformulier, dan ontvangt u binnen 12 uur een reactie."),
   ("Kunnen jullie schoonmaken in combinatie met andere klussen?", "Zeker. Omdat wij ook ontruimen, schilderen en opleveren, kunnen we alles in één keer regelen. U heeft dan één aanspreekpunt in plaats van meerdere partijen."),
   ("Doen jullie ook schoonmaak bij een bouwoplevering?", "Ja. Na een (ver)bouw maken wij het complete pand schoon voor de oplevering, inclusief glasbewassing van ramen en glazen wanden. Zo kan het pand netjes en direct bruikbaar worden opgeleverd."),
-  ("Werken jullie ook buiten Groningen-stad?", "Ja, wij werken in de stad Groningen en in de omgeving, tot ongeveer 50 kilometer rondom de stad."),
+  ("Werken jullie ook buiten Groningen-stad?", "Ja, wij werken in heel Groningen, Friesland en Drenthe."),
  ],
  "verwant": ["vloerreiniging-groningen", "glazenwasser-groningen", "woning-opleveren-groningen"],
 },
