@@ -279,9 +279,10 @@ REVIEWS_SEC = f'''<section class="sec" id="reviews">
 home = f'''<section class="sec">
 <div class="w hero foto-eerst">
 <div>
-<span class="tag">Alles onder één dak</span>
+<span class="tag">Ons werkgebied</span>
 <h1>Groningen, Friesland en Drenthe</h1>
-<p class="lead">Voor bedrijven en particulieren. Eén vast aanspreekpunt, van begin tot eind.</p>
+<p class="lead">Wij ruimen woningen leeg, maken schoon en helpen met verhuizen. Voor particulieren en bedrijven, met één vast aanspreekpunt.</p>
+<p class="chips-kop">Onze diensten <span>(klik voor meer informatie)</span></p>
 {chips([(i, t, u) for i, t, d, u in SERVICES])}
 {knoppen()}
 </div>

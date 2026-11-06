@@ -357,3 +357,19 @@ b,strong{font-weight:600}
 .rv-wrap.more-r .rv-btn.next,.rv-wrap.more-l .rv-btn.prev{display:flex}
 @media (max-width:900px){.rv-rij{grid-auto-columns:calc((100% - 20px)/2)}}
 @media (max-width:760px){.rv-rij{grid-auto-columns:86%;gap:10px}.rv-btn.prev{left:-10px}.rv-btn.next{right:-10px}.rv-btn{width:38px;height:38px}}
+
+/* leesbaarheid (ook voor oudere bezoekers) */
+.chips-kop{margin:20px 0 0;font-weight:700;font-size:15px;color:var(--grijs)}
+.chips-kop span{font-weight:400;color:var(--tekst2);font-size:14px}
+.chips-kop+.diensten-chips{margin-top:10px}
+.diensten-chips a{font-size:15px;padding:7px 15px 7px 7px}
+.muted,.svc p{font-size:16px}
+.lead{font-size:18px}
+@media (max-width:760px){
+  .lead{font-size:16.5px}
+  .chips-kop{margin-top:16px;font-size:14.5px}
+  main nav.diensten-chips{gap:8px}
+  main nav.diensten-chips a{font-size:14px;padding:8px 8px 8px 7px;min-height:44px}
+  main nav.diensten-chips .ci{width:26px;height:26px}main nav.diensten-chips svg{width:14px;height:14px}
+  .foto-eerst>.photo.foto-home{aspect-ratio:3/2;object-position:50% 64%}
+}
