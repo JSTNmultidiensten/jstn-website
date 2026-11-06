@@ -227,9 +227,9 @@ def chips(items):
 # ======================= HOME =======================
 SERVICES = [
  ("sparkle", "Schoonmaak &amp; desinfectie", "Reguliere schoonmaak en grondige dieptereiniging met professionele apparatuur.", "/schoonmaak-groningen/"),
+ ("box", "Ontruimen &amp; leegruimen", "Snel, zorgvuldig en duurzaam — ook spoedontruimingen.", "/woningontruiming-groningen/"),
  ("floor", "Vloerreiniging", "Grote vloeren in scholen, kantoren en bedrijfspanden grondig schoon — ook in vakanties.", "/vloerreiniging-groningen/"),
  ("window", "Glasbewassing", "Streeploos schone ramen voor woningen en bedrijfspanden.", "/glazenwasser-groningen/"),
- ("box", "Ontruimen &amp; leegruimen", "Snel, zorgvuldig en duurzaam — ook spoedontruimingen.", "/woningontruiming-groningen/"),
  ("truck", "Verhuizen", "Inpakken, uitpakken en alles weer op zijn plek — met extra aandacht voor senioren.", "/verhuizen-groningen/"),
  ("roller", "Schilder- &amp; behangwerk", "Strak eindresultaat, netjes en vakkundig uitgevoerd.", "/schilder-groningen/"),
  ("key", "Zorg-appartementen", "Binnen maximaal 3 werkdagen weer beschikbaar voor een nieuwe cliënt.", "/zorgappartementen-opleveren/"),
@@ -256,14 +256,16 @@ REVIEWS = [
  ("Fadi A.", "Goeie ervaring met vriendelijke personeel en top medewerking zeker een aanrader"),
  ("Ingmar B.", "Geweldige service en super vriendelijk!"),
  ("Mo E.", "Echt een top jonge man altijd vrolijk en vriendelijk dikke 5 sterren"),
- ("Alex V.", "Goed en vriendelijk personeel, aanrader !"),
 ]
 import re as _re
-def kort_review(q):
-    # v4: reviews langer dan 25 woorden -> eerste 2 zinnen + " ..."
-    if len(q.split()) <= 60: return q
-    zinnen = _re.findall(r'[^.!?]+[.!?]+', q)
-    return " ".join(z.strip() for z in zinnen[:2]) + " ..."
+def kort_review(q, maxw=40):
+    # lange reviews: zoveel hele zinnen als binnen ~40 woorden past + " ..."
+    if len(q.split()) <= maxw: return q
+    uit = []
+    for z in _re.findall(r'[^.!?]+[.!?]+', q):
+        if uit and len(" ".join(uit + [z]).split()) > maxw: break
+        uit.append(z.strip())
+    return " ".join(uit) + " ..."
 # alle reviews tonen (nov 2026)
 rev_cards = "".join(f'<figure class="card rv">{glogo("g-rv")}{STARS}<blockquote>“{kort_review(q)}”</blockquote><figcaption>{n}</figcaption></figure>' for n, q in REVIEWS)
 REVIEWS_SEC = f'''<section class="sec" id="reviews">
@@ -278,7 +280,7 @@ home = f'''<section class="sec">
 <div class="w hero foto-eerst">
 <div>
 <span class="tag">Alles onder één dak</span>
-<h1>Schoonmaak, ontruiming en opleveren in Groningen, Friesland en Drenthe.</h1>
+<h1>Groningen, Friesland en Drenthe</h1>
 <p class="lead">Voor bedrijven en particulieren. Eén vast aanspreekpunt, van begin tot eind.</p>
 {chips([(i, t, u) for i, t, d, u in SERVICES])}
 {knoppen()}
