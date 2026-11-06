@@ -65,11 +65,12 @@ DIENSTEN = [
 },
 {
  "slug": "woningontruiming-groningen", "icon": "box", "kort": "Ontruiming",
+ "intro": "<b>Spoed?</b> Wij staan binnen 24 uur bij u op de stoep.",
  "h1": "Ontruimingen in Groningen, Friesland en Drenthe",
  "title": "Ontruiming Groningen | Woning, bedrijfspand & berging leegruimen | JSTN",
  "desc": "Ontruimingen in Groningen, Friesland en Drenthe: woningen, bedrijfspanden, zorg- en studentenkamers, bergingen, schuren en zolders. Alles netjes afgevoerd en desgewenst bezemschoon opgeleverd.",
  "lead": "Woningen, bedrijfspanden, zorg- en studentenkamers, bergingen, schuren en zolders: wij ruimen alles leeg en voeren het netjes af. Een woningontruiming kan al vanaf €300.",
- "pts": ["Alle soorten ontruimingen, groot en klein", "Ook spoedontruimingen", "Bruikbare spullen krijgen een tweede leven", "Bezemschoon of verkoopklaar opgeleverd"],
+ "pts": ["Alle soorten ontruimingen, groot en klein", "Spoed? Binnen 24 uur op de stoep", "Bruikbare spullen krijgen een tweede leven", "Bezemschoon of verkoopklaar opgeleverd"],
  "blokken": [
   ("home", "Woningontruiming", "Na een overlijden, een verhuizing naar een zorginstelling of de verkoop van een huis. Wij werken zorgvuldig en met respect voor de situatie en de spullen."),
   ("office", "Bedrijfspanden en kantoren", "Kantoren, winkels, opslagruimtes en bedrijfspanden leeg en klaar voor de volgende huurder of eigenaar."),
@@ -80,7 +81,7 @@ DIENSTEN = [
  ],
  "faq": [
   ("Wat voor ontruimingen doen jullie?", "Alle soorten: woningen, bedrijfspanden, kantoren, zorgkamers, studentenkamers, bergingen, schuren, zolders en tuinen. Groot of klein, particulier of zakelijk."),
-  ("Hoe snel kunnen jullie ontruimen?", "Dat hangt af van de omvang en onze planning, maar we zijn flexibel inzetbaar, ook voor spoedontruimingen. Neem contact op, dan kijken we samen wat mogelijk is."),
+  ("Hoe snel kunnen jullie ontruimen?", "Bij spoed staan wij binnen 24 uur bij u op de stoep. Verder hangt het af van de omvang en onze planning. Neem contact op, dan plannen we het samen in."),
   ("Wat gebeurt er met de spullen?", "Bruikbare spullen geven we waar mogelijk een tweede leven. De rest voeren we netjes en gescheiden af."),
   ("Kan de ruimte daarna ook opgeleverd worden?", "Ja. Wij kunnen de woning of ruimte bezemschoon opleveren aan een woningcorporatie of verhuurder, of volledig verkoopklaar maken."),
   ("Hoe bepalen jullie de prijs van een ontruiming?", "Op basis van de grootte van de ruimte, de hoeveelheid inboedel en wat er na de ontruiming nog moet gebeuren. Vooraf spreken we duidelijk af wat er gebeurt; indien gewenst kunnen we een vaste prijs afspreken."),

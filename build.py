@@ -749,7 +749,7 @@ for d in D.DIENSTEN:
 
 <section class="sec band">
 <div class="w">
-<div class="head"><span class="tag">Wat wij doen</span><h2>{d["kort"]} door JSTN Multidiensten</h2></div>
+<div class="head"><span class="tag">Wat wij doen</span><h2>{d["kort"]} door JSTN Multidiensten</h2>{('<p class="lead spoed">' + d["intro"] + '</p>') if d.get("intro") else ""}</div>
 <div class="{'g2x' if len(d['blokken']) % 2 == 0 else 'g3'}">{blok}</div>
 </div>
 </section>
