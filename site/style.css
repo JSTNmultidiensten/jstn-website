@@ -373,3 +373,6 @@ b,strong{font-weight:600}
   main nav.diensten-chips .ci{width:26px;height:26px}main nav.diensten-chips svg{width:14px;height:14px}
   .foto-eerst>.photo.foto-home{aspect-ratio:3/2;object-position:50% 64%}
 }
+
+/* lange homepage-kop iets kleiner op laptop/desktop */
+@media (min-width:761px){.h1-home{font-size:clamp(30px,2.6vw,36px);line-height:1.18}}
