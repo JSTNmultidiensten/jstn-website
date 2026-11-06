@@ -270,7 +270,7 @@ home = f'''<section class="sec">
 {chips([(i, t, u) for i, t, d, u in SERVICES])}
 {knoppen()}
 </div>
-<img class="photo" src="/img/team-jstn-multidiensten-teamfoto.jpg" width="2000" height="1333" style="object-position:50% 35%" alt="Justin en het team van JSTN Multidiensten in Groningen" fetchpriority="high">
+<img class="photo foto-home" src="/img/jstn-team-matras-ophalen.jpg" width="867" height="1534" alt="Team van JSTN Multidiensten laadt een matras in de bus bij een ontruiming in Groningen" fetchpriority="high">
 </div>
 </section>
 
