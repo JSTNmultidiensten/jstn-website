@@ -282,7 +282,6 @@ home = f'''<section class="sec">
 <span class="tag">Alles onder één dak</span>
 <h1 class="h1-home">Schoonmaak, ontruiming en opleveren in Groningen, Friesland en Drenthe.</h1>
 <p class="lead">Voor bedrijven en particulieren. Eén vast aanspreekpunt, van begin tot eind.</p>
-<p class="chips-kop">Onze diensten <span>(klik voor meer informatie)</span></p>
 {chips([(i, t, u) for i, t, d, u in SERVICES])}
 {knoppen()}
 </div>
