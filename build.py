@@ -711,8 +711,9 @@ HERO_FOTO = {"woningontruiming-groningen": ("/img/ontruiming-volle-berging.jpg",
              "schoonmaak-groningen": ("/portfolio/img/douchewand-na.jpg", 900, 1200, "Schone, ontkalkte badkamer na een eindschoonmaak door JSTN", "object-position:50% 50%"),
              "glazenwasser-groningen": ("/portfolio/img/glasbewassing-kantoor.jpg", 900, 1200, "Team van JSTN wast de glazen wanden van een kantoor", "object-position:50% 35%"),
              "hogedrukreiniging-groningen": ("/portfolio/img/hogedrukreiniging-tegels.jpg", 900, 1200, "Tegels worden schoongespoten met de hogedrukreiniger", "object-position:50% 60%"),
-             "verhuizen-groningen": ("/img/jstn-team-matras-ophalen.jpg", 867, 1534, "Team van JSTN laadt een matras in de bus", "object-position:50% 62%"),
-             "woning-opleveren-groningen": ("/img/leeg-appartement-1200.webp", 1200, 800, "Lege, opgeruimde woning", "")}
+             "verhuizen-groningen": ("/img/verhuizen-jstn-team.jpg", 835, 1383, "Team van JSTN draagt een kast naar buiten bij een verhuizing", "object-position:50% 38%"),
+             "zorgappartementen-opleveren": ("/img/zorgappartement-opgeleverd.jpg", 768, 1024, "Leeg en schoon opgeleverd zorgappartement, klaar voor een nieuwe cliënt", "object-position:50% 60%"),
+             "woning-opleveren-groningen": ("/img/woning-opleveren-keuken.jpg", 768, 1024, "Schone keuken van een opgeleverde huurwoning", "object-position:50% 55%")}
 for d in D.DIENSTEN:
     path = f"/{d['slug']}/"
     pts = "".join(f"<li>{ic('check')}{x}</li>" for x in d["pts"])
