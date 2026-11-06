@@ -83,7 +83,7 @@ ORG = {
 }
 
 NAV = [("/", "Home"), ("/zakelijk/", "Zakelijk"), ("/particulier/", "Particulier"),
-       ("/over-ons/", "Over ons"), ("/portfolio/", "Portfolio"), ("/werken-bij/", "Vacatures"), ("/blog/", "Blog"), ("/contact/", "Contact")]
+       ("/over-ons/", "Over ons"), ("/portfolio/", "Portfolio"), ("/reviews/", "Reviews"), ("/werken-bij/", "Vacatures"), ("/blog/", "Blog"), ("/contact/", "Contact")]
 
 def header(active):
     links = "".join(f'<a href="{u}"{" class=on aria-current=page" if u == active else ""}>{t}</a>' for u, t in NAV)
@@ -501,6 +501,24 @@ page("/werken-bij/", "Werken bij JSTN Multidiensten | Vacatures Groningen, Fries
      "Werken bij JSTN Multidiensten in Groningen, Friesland en Drenthe? Wij zoeken enthousiaste collega’s voor schoonmaak, ontruiming, verhuizingen en schilderwerk. Stuur ons een berichtje!",
      "/werken-bij/", werk, extra_ld=[crumbs([("Home", "/"), ("Bij ons werken", "/werken-bij/")])])
 
+# ======================= REVIEWS =======================
+GREVIEW_SCHRIJF = "https://g.page/r/Cef8mzmoVPq6EBM/review"
+alle_rv = "".join(f'<figure class="card rv">{glogo("g-rv")}{STARS}<blockquote>“{q}”</blockquote><figcaption>{n}</figcaption></figure>' for n, q in REVIEWS)
+rev_page = f'''<section class="sec">
+<div class="w">
+<div class="head"><span class="tag">Google Reviews</span><h1>Wat klanten over ons zeggen</h1>
+<p class="lead glead">{glogo()}<b>5,0 ★</b> gemiddeld op Google</p>
+<div class="row" style="margin-top:16px"><a class="btn" href="{GREVIEWS}" target="_blank" rel="noopener">Bekijk alle reviews op Google</a><a class="btn btn-light" href="{GREVIEW_SCHRIJF}" target="_blank" rel="noopener">Schrijf zelf een review</a></div>
+</div>
+<div class="g3 rv-alle">{alle_rv}</div>
+</div>
+</section>
+
+{CTA}'''
+page("/reviews/", "Reviews | JSTN Multidiensten Groningen, Friesland & Drenthe",
+     "Lees wat klanten zeggen over JSTN Multidiensten: 5,0 gemiddeld op Google voor schoonmaak, ontruiming, vloerreiniging, glasbewassing en verhuizen.",
+     "/reviews/", rev_page, extra_ld=[crumbs([("Home", "/"), ("Reviews", "/reviews/")])])
+
 # ======================= CONTACT =======================
 DIENSTEN_OPT = "".join(f"<option>{d}</option>" for d in [
     "Schoonmaak / dieptereiniging", "Vloerreiniging", "Glasbewassing", "Ontruiming / leegruimen", "Verhuizen",
@@ -837,7 +855,7 @@ open(fn404, "w", encoding="utf-8").write(s)
 
 # ======================= sitemap / robots / redirects =======================
 pages_sm = [("/", "1.0"), ("/zakelijk/", "0.9"), ("/particulier/", "0.9"), ("/contact/", "0.8"), ("/over-ons/", "0.6"),
-            ("/werken-bij/", "0.5"), ("/blog/", "0.7"), ("/portfolio/", "0.8"), ("/privacy/", "0.2")] + [(f"/{d['slug']}/", "0.9") for d in D.DIENSTEN] + [(f"/post/{p['slug']}/", "0.6", p.get("modified", p["date"])) for p in posts.POSTS]
+            ("/werken-bij/", "0.5"), ("/blog/", "0.7"), ("/portfolio/", "0.8"), ("/reviews/", "0.6"), ("/privacy/", "0.2")] + [(f"/{d['slug']}/", "0.9") for d in D.DIENSTEN] + [(f"/post/{p['slug']}/", "0.6", p.get("modified", p["date"])) for p in posts.POSTS]
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
 for u, pr, *lm in pages_sm:
     sm += f"  <url><loc>{BASE}{u}</loc><lastmod>{lm[0] if lm else '2026-10-04'}</lastmod><priority>{pr}</priority></url>\n"
