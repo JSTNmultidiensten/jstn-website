@@ -706,7 +706,8 @@ for _x in PF: PF_BY.setdefault(_x["dienst"], []).append(_x)
 # ======================= DIENSTPAGINA'S =======================
 BYSLUG = {d["slug"]: d for d in D.DIENSTEN}
 PLAATS_TXT = ", ".join(D.PLAATSEN[:-1]) + " en " + D.PLAATSEN[-1]
-HERO_FOTO = {"woningontruiming-groningen": "Lege, opgeruimde woning", "woning-opleveren-groningen": "Lege, opgeruimde woning"}
+HERO_FOTO = {"woningontruiming-groningen": ("/img/ontruiming-volle-berging.jpg", 900, 1200, "Volle berging met fietsen en oud papier, vóór de ontruiming door JSTN", "object-position:50% 58%"),
+             "woning-opleveren-groningen": ("/img/leeg-appartement-1200.webp", 1200, 800, "Lege, opgeruimde woning", "")}
 for d in D.DIENSTEN:
     path = f"/{d['slug']}/"
     pts = "".join(f"<li>{ic('check')}{x}</li>" for x in d["pts"])
@@ -729,14 +730,14 @@ for d in D.DIENSTEN:
 </div>'''
     # v4: foto bovenaan rechts op Woningontruiming en Woning opleveren (stockfoto, bewust geen Voor/Na-label)
     if d["slug"] in HERO_FOTO:
-        zij = f'<div class="hero-zij"><img class="photo hero-foto" src="/img/leeg-appartement-1200.webp" width="1200" height="800" alt="{HERO_FOTO[d["slug"]]}" fetchpriority="high">{waarom}</div>'
+        zij = f'<div class="hero-zij"><img class="photo hero-foto" src="{HERO_FOTO[d["slug"]][0]}" width="{HERO_FOTO[d["slug"]][1]}" height="{HERO_FOTO[d["slug"]][2]}" style="{HERO_FOTO[d["slug"]][4]}" alt="{HERO_FOTO[d["slug"]][3]}" fetchpriority="high">{waarom}</div>'
     else:
         zij = waarom
     body = f"""<section class="sec">
 <div class="w hero">
 <div>
 <nav class="bc" aria-label="Kruimelpad"><a href="/">Home</a> › <span>{d["kort"]}</span></nav>
-<span class="tag">Groningen, Friesland &amp; Drenthe</span>
+<span class="tag">Alles onder één dak</span>
 <h1>{d["h1"]}</h1>
 <p class="lead">{d["lead"]}</p>
 {knoppen(WA + "?text=" + quote('Hallo JSTN Multidiensten, ik heb een vraag over ' + d['kort'].lower() + ': '))}
