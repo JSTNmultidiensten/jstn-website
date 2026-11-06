@@ -708,6 +708,10 @@ BYSLUG = {d["slug"]: d for d in D.DIENSTEN}
 PLAATS_TXT = ", ".join(D.PLAATSEN[:-1]) + " en " + D.PLAATSEN[-1]
 HERO_FOTO = {"woningontruiming-groningen": ("/img/ontruiming-volle-berging.jpg", 900, 1200, "Volle berging met fietsen en oud papier, vóór de ontruiming door JSTN", "object-position:50% 58%"),
              "vloerreiniging-groningen": ("/img/vloerreiniging-keukenvloer.jpg", 900, 1200, "Keukenvloer wordt dieptereinigd met de schrobmachine door JSTN", "object-position:50% 42%"),
+             "schoonmaak-groningen": ("/portfolio/img/douchewand-na.jpg", 900, 1200, "Schone, ontkalkte badkamer na een eindschoonmaak door JSTN", "object-position:50% 50%"),
+             "glazenwasser-groningen": ("/portfolio/img/glasbewassing-kantoor.jpg", 900, 1200, "Team van JSTN wast de glazen wanden van een kantoor", "object-position:50% 35%"),
+             "hogedrukreiniging-groningen": ("/portfolio/img/hogedrukreiniging-tegels.jpg", 900, 1200, "Tegels worden schoongespoten met de hogedrukreiniger", "object-position:50% 60%"),
+             "verhuizen-groningen": ("/img/jstn-team-matras-ophalen.jpg", 867, 1534, "Team van JSTN laadt een matras in de bus", "object-position:50% 62%"),
              "woning-opleveren-groningen": ("/img/leeg-appartement-1200.webp", 1200, 800, "Lege, opgeruimde woning", "")}
 for d in D.DIENSTEN:
     path = f"/{d['slug']}/"
@@ -729,7 +733,7 @@ for d in D.DIENSTEN:
 <h2 class="h3">Waarom JSTN Multidiensten</h2>
 <ul class="pts" style="margin-top:12px">{pts}</ul>
 </div>'''
-    # v4: foto bovenaan rechts op Woningontruiming en Woning opleveren (stockfoto, bewust geen Voor/Na-label)
+    # foto bovenaan rechts per dienst (eigen foto's waar beschikbaar)
     if d["slug"] in HERO_FOTO:
         zij = f'<div class="hero-zij"><img class="photo hero-foto" src="{HERO_FOTO[d["slug"]][0]}" width="{HERO_FOTO[d["slug"]][1]}" height="{HERO_FOTO[d["slug"]][2]}" style="{HERO_FOTO[d["slug"]][4]}" alt="{HERO_FOTO[d["slug"]][3]}" fetchpriority="high">{waarom}</div>'
     else:

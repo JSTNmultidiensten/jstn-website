@@ -377,4 +377,4 @@ b,strong{font-weight:600}
 /* lange homepage-kop iets kleiner op laptop/desktop */
 @media (min-width:761px){.h1-home{font-size:clamp(30px,2.6vw,36px);line-height:1.18}}
 
-.lead.spoed{display:inline-block;margin-top:10px;background:#fff;border:1px solid var(--blauw);border-left:5px solid var(--blauw);border-radius:10px;padding:10px 16px;color:var(--grijs)}
+.lead.spoed{display:inline-block;margin-top:8px;background:#fff;border:1px solid var(--blauw);border-left:4px solid var(--blauw);border-radius:8px;padding:6px 12px;font-size:15px;color:var(--grijs)}
