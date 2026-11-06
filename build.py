@@ -281,7 +281,6 @@ home = f'''<section class="sec">
 <div>
 <span class="tag">Ons werkgebied</span>
 <h1>Groningen, Friesland en Drenthe</h1>
-<p class="lead">Wij ruimen woningen leeg, maken schoon en helpen met verhuizen. Voor particulieren en bedrijven, met één vast aanspreekpunt.</p>
 <p class="chips-kop">Onze diensten <span>(klik voor meer informatie)</span></p>
 {chips([(i, t, u) for i, t, d, u in SERVICES])}
 {knoppen()}
