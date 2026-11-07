@@ -306,6 +306,8 @@ home = f'''<section class="sec">
 </div>
 </section>
 
+{REVIEWS_SEC}
+
 <section class="sec band">
 <div class="w">
 <div class="head">
@@ -329,8 +331,6 @@ home = f'''<section class="sec">
 <p style="margin-top:18px"><a class="link" href="/portfolio/">Bekijk meer in ons portfolio{ic("arrow")}</a></p>
 </div>
 </section>
-
-{REVIEWS_SEC}
 
 {CTA}'''
 page("/", "Schoonmaak, ontruiming & verhuizen in Groningen, Friesland & Drenthe | JSTN",
