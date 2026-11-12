@@ -3,6 +3,75 @@
 
 POSTS = [
 {
+ "slug": "verhuizen-binnenstad-groningen-verhuiswagen-parkeren",
+ "title": "Verhuizen in de binnenstad van Groningen: zo regel je de verhuiswagen, ontheffing en parkeren",
+ "seo_title": "Verhuizen in binnenstad Groningen: wagen & parkeren | JSTN",
+ "desc": "Verhuis je in of naar de binnenstad van Groningen? Wanneer mag je laden en lossen, wanneer heb je een ontheffing nodig en hoe zit het met parkeren?",
+ "date": "2026-11-12", "modified": "2026-11-12", "date_nl": "12 november 2026",
+ "cat": "Verhuizen", "icon": "truck",
+ "note": "Dit artikel is met AI-ondersteuning geschreven.",
+ "sources": [
+   ("Gemeente Groningen — Rijden en parkeren in het centrum", "https://gemeente.groningen.nl/rijden-en-parkeren-in-het-centrum"),
+   ("Gemeente Groningen — Veelgestelde vragen over parkeren", "https://gemeente.groningen.nl/veelgestelde-vragen-over-parkeren"),
+   ("Rijksoverheid — Hoe kan ik mijn verhuizing doorgeven aan de gemeente?", "https://www.rijksoverheid.nl/vraag-en-antwoord/gemeenten/hoe-kan-ik-mijn-verhuizing-doorgeven-aan-de-gemeente"),
+ ],
+ "faq": [
+   ("Mag ik met een verhuisbusje de binnenstad van Groningen in?",
+    "Ja, maar met een bedrijfs- of vrachtauto alleen tussen 05:00 en 12:00 uur en alleen om te laden en te lossen. In het autovrije deel geldt dat tijdvenster voor alle motorvoertuigen. Wil je buiten die tijden het gebied in, dan heb je een dagontheffing nodig, die je volgens de gemeente vóór 23:59 uur op de dag zelf aanvraagt via aanvraagparkeren.groningen.nl."),
+   ("Mag ik met een ontheffing ook parkeren?",
+    "Nee. Een ontheffing geeft je alleen toestemming om het gebied in en uit te rijden. Wil je de auto op een openbare plek laten staan, dan heb je daarnaast een parkeervergunning nodig of betaal je parkeergeld, bijvoorbeeld via een automaat, een app of een dagvergunning."),
+   ("Is een gehuurde bestelbus een bedrijfsauto?",
+    "Dat hangt af van hoe het voertuig bij de RDW geregistreerd staat. De gemeente Groningen verwijst hiervoor naar de kentekencheck van de RDW. Controleer het kenteken van je huurbus dus vooraf, want dat bepaalt welke regels in de binnenstad voor jou gelden."),
+   ("Wanneer moet ik mijn verhuizing doorgeven aan de gemeente?",
+    "Volgens de Rijksoverheid kun je je verhuizing vanaf 4 weken vóór de verhuisdatum doorgeven en moet dat uiterlijk 5 dagen na de verhuizing gebeuren. Je geeft het door aan de gemeente waar je gaat wonen, online, per post of aan de balie."),
+ ],
+ "html": """
+<p class="lead">Verhuis je in of naar de binnenstad van Groningen, dan mag je met een bestelbus of vrachtwagen alleen tussen 05:00 en 12:00 uur het centrum in om te laden en te lossen. Wil je later op de dag verhuizen, dan vraag je een dagontheffing aan. Let op: die ontheffing is geen parkeervergunning. Wie dat vooraf goed regelt, voorkomt een boete en een verhuisdag die vastloopt op een volle straat.</p>
+
+<h2>Waarom verhuizen in het centrum extra voorbereiding vraagt</h2>
+<p>De binnenstad van Groningen is grotendeels autoluw. Er zijn smalle straten, veel fietsers en voetgangers, en een deel van het centrum is helemaal autovrij. Camera's registreren de kentekens van voertuigen die het gebied in- en uitrijden. Daar komt bij dat veel woningen in de binnenstad boven winkels of in oude panden liggen, met steile trappen en zonder lift. Een verhuizing kost daar dus meer tijd dan in een nieuwbouwwijk, terwijl je juist minder tijd hebt om met een busje voor de deur te staan.</p>
+
+<h2>Venstertijden: wanneer mag je laden en lossen?</h2>
+<p>De gemeente Groningen werkt met twee soorten gebieden in het centrum:</p>
+<ul>
+<li><strong>Venstertijdengebied:</strong> bedrijfs- en vrachtauto's mogen hier alleen tussen 05:00 en 12:00 uur rijden, en alleen om te laden, lossen of een dienst te verlenen. Gewone personenauto's mogen er altijd in.</li>
+<li><strong>Autovrij gebied:</strong> hier mogen álle motorvoertuigen alleen tussen 05:00 en 12:00 uur rijden, en alleen om te laden en te lossen. Tussen 12:00 en 05:00 uur mag het niet zonder ontheffing.</li>
+</ul>
+<p>Op de website van de gemeente staat een kaart waarop je ziet in welk gebied je oude en nieuwe adres liggen. Check dat voor beide adressen, want het kan zijn dat je op de ene plek geen beperking hebt en op de andere wel.</p>
+
+<h2>Is jouw verhuisbus een bedrijfsauto?</h2>
+<p>Veel mensen huren voor een verhuizing een bestelbus. Of die voor de regels als bedrijfsauto geldt, hangt af van hoe het voertuig bij de RDW geregistreerd staat. De gemeente raadt aan dit te controleren met de kentekencheck van de RDW. Vraag het kenteken dus op bij de verhuurder zodra je reserveert. Geldt de bus als bedrijfsauto, dan vallen je laad- en loswerkzaamheden in het venstertijdengebied ook onder het tijdvenster van 05:00 tot 12:00 uur.</p>
+
+<h2>Buiten de venstertijden: een dagontheffing aanvragen</h2>
+<p>Lukt het niet om vóór 12:00 uur klaar te zijn, bijvoorbeeld omdat je pas 's middags de sleutel krijgt, dan heb je een ontheffing nodig. Zo werkt dat volgens de gemeente:</p>
+<ol>
+<li><strong>Met een privéauto</strong> (als inwoner of bezoeker) vraag je een dagontheffing aan via aanvraagparkeren.groningen.nl, waarbij je inlogt met DigiD.</li>
+<li><strong>Met een bedrijfsauto</strong> heb je eerst een bedrijfsaccount nodig. De inloggegevens krijg je meestal binnen 1 werkdag. Vraag dat account dus ruim voor de verhuisdag aan.</li>
+<li><strong>Timing:</strong> de ontheffing moet zijn aangevraagd vóór 23:59 uur op de dag dat je het gebied binnenrijdt. Wacht daar toch liever niet mee tot het laatste moment.</li>
+</ol>
+<p>De gemeente rekent een klein bedrag per dag voor een ontheffing; de actuele tarieven staan op de gemeentelijke website. Voor de zero-emissiezone in de binnenstad geldt een aparte ontheffing. Rijd je met een bus die daaronder valt, kijk dan ook daar naar.</p>
+
+<h2>Ontheffing is geen parkeervergunning</h2>
+<p>Dit is waar het vaak misgaat. Een ontheffing geeft je toestemming om het gebied in en uit te rijden, niet om er te parkeren. Staat de bus op een openbare parkeerplek, dan heb je daarnaast een parkeervergunning nodig of betaal je parkeergeld, via een automaat, een app of een dagvergunning. Bedrijven kunnen een dagvergunning aanvragen om een werkvoertuig bij een klus te parkeren.</p>
+<p>Heb je vragen over het tijdelijk reserveren van parkeerruimte of over een container voor de deur, dan kun je volgens de gemeente terecht bij Loket Parkeren via telefoonnummer 14 050.</p>
+
+<h2>Praktische tips voor de verhuisdag</h2>
+<ul>
+<li><strong>Begin vroeg.</strong> Wie om 07:00 uur begint met laden, heeft binnen het tijdvenster vijf uur de tijd. Dat is voor een studio of klein appartement vaak genoeg.</li>
+<li><strong>Zet alles klaar bij de voordeur.</strong> Pak de dag ervoor alles in en zet dozen zo dicht mogelijk bij de uitgang. Zo staat de bus zo kort mogelijk op straat.</li>
+<li><strong>Meet trappen en deuren op.</strong> In oude binnenstadspanden past een bank of kast niet altijd door het trappenhuis. Haal grote meubels zo nodig uit elkaar of overleg of ze via een raam naar buiten kunnen.</li>
+<li><strong>Waarschuw de buren.</strong> Zeker in een gedeeld trappenhuis voorkomt een briefje vooraf veel ergernis.</li>
+<li><strong>Regel de adreswijziging.</strong> Je kunt je verhuizing volgens de Rijksoverheid vanaf 4 weken van tevoren doorgeven aan je nieuwe gemeente, en uiterlijk 5 dagen na de verhuizing.</li>
+</ul>
+
+<h2>Zelf doen of laten doen?</h2>
+<p>Een kleine verhuizing met een paar dozen en weinig meubels doe je prima zelf, zeker als je vroeg begint en de ontheffing en het parkeren vooraf hebt geregeld. Hulp inschakelen is vooral handig als je veel spullen hebt, als er zware meubels over smalle trappen moeten, of als je oude woning ook nog schoon en leeg moet worden <a href="/woning-opleveren-groningen/">opgeleverd</a>. Dan scheelt het veel als één partij zowel de verhuizing als het opleveren regelt.</p>
+
+<h2>Hulp van JSTN Multidiensten</h2>
+<p>JSTN Multidiensten helpt bij <a href="/verhuizen-groningen/">verhuizingen in Groningen</a> en tot ongeveer 50 km eromheen, ook voor senioren. Je hebt één aanspreekpunt, we plannen flexibel in en spullen die je niet meeneemt, krijgen waar mogelijk een tweede leven. Wil je overleggen wat er bij jouw verhuizing komt kijken? Neem <a href="/contact/">contact</a> op; je krijgt binnen 12 uur een reactie.</p>
+""",
+},
+{
  "slug": "kalk-op-douchewand-verwijderen-en-voorkomen",
  "title": "Kalk op de douchewand: zo krijg je het weg en zo voorkom je dat het terugkomt",
  "seo_title": "Kalk op de douchewand verwijderen en voorkomen | JSTN",
