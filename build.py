@@ -616,6 +616,16 @@ page("/privacy/", "Privacyverklaring | JSTN Multidiensten",
 
 # ======================= BLOG =======================
 import posts
+# Cluster: bij welke dienstpagina hoort een blog (veld "dienst" in posts.py gaat voor)
+CLUSTER_CAT = {"Ontruimen": "woningontruiming-groningen", "Vloerreiniging": "vloerreiniging-groningen",
+               "Opleveren": "woning-opleveren-groningen", "Schoonmaak": "schoonmaak-groningen",
+               "Zakelijke schoonmaak": "schoonmaak-groningen", "Verhuizen": "verhuizen-groningen",
+               "Glasbewassing": "glazenwasser-groningen", "Hogedrukreiniging": "hogedrukreiniging-groningen",
+               "Schilderwerk": "schilder-groningen"}
+CLUSTER_SLUG = {"bouwschoonmaak-bij-oplevering-checklist": "schoonmaak-groningen",
+                "zorgappartement-opleveren-leegstand-kort-houden": "zorgappartementen-opleveren"}
+def post_dienst(p):
+    return p.get("dienst") or CLUSTER_SLUG.get(p["slug"]) or CLUSTER_CAT.get(p["cat"])
 blog_cards = ""
 for p in sorted(posts.POSTS, key=lambda x: x["date"], reverse=True):
     blog_cards += f'''<a class="card post-card" href="/post/{p["slug"]}/"><div class="ic">{ic(p["icon"])}</div><p class="meta">{p["date_nl"]} · {p["cat"]}</p><h2 class="h3">{p["title"]}</h2><p class="muted">{eerste_zin(p["desc"])}</p><span class="link">Lees verder{ic("arrow")}</span></a>'''
@@ -634,7 +644,8 @@ for p in sorted(posts.POSTS, key=lambda x: x["date"], reverse=True):
     src_html = ""
     if p.get("sources"):
         src_html = '<h2>Bronnen</h2><ul>' + "".join(f'<li><a href="{u}" target="_blank" rel="noopener">{t}</a></li>' for t, u in p["sources"]) + '</ul>'
-    others = [o for o in posts.POSTS if o["slug"] != p["slug"]]
+    _alle = sorted([o for o in posts.POSTS if o["slug"] != p["slug"]], key=lambda x: x["date"], reverse=True)
+    others = ([o for o in _alle if post_dienst(o) and post_dienst(o) == post_dienst(p)] + [o for o in _alle if not post_dienst(o) or post_dienst(o) != post_dienst(p)])[:6]
     more = "".join(f'<a class="card post-card" href="/post/{o["slug"]}/"><p class="meta">{o["date_nl"]}</p><h3>{o["title"]}</h3><span class="link">Lees verder{ic("arrow")}</span></a>' for o in others)
     body = f'''<section class="sec">
 <div class="w narrow">
@@ -739,10 +750,14 @@ for d in D.DIENSTEN:
     faq = "".join(f'<details class="faq"><summary>{q}</summary><p>{a}</p></details>' for q, a in d["faq"])
     verw = "".join(f'<a class="card svc-link" href="/{v}/"><div class="ic">{ic(BYSLUG[v]["icon"])}</div><h3>{BYSLUG[v]["kort"]}</h3></a>' for v in d["verwant"])
     blog = ""
-    if d.get("blog"):
-        bp = next((p for p in posts.POSTS if p["slug"] == d["blog"]), None)
-        if bp:
-            blog = f'<p class="muted" style="margin-top:18px">Lees ook: <a class="link" style="display:inline-flex" href="/post/{bp["slug"]}/">{bp["title"]}{ic("arrow")}</a></p>'
+    cl = sorted([p for p in posts.POSTS if post_dienst(p) == d["slug"]], key=lambda x: x["date"], reverse=True)[:6]
+    if cl:
+        kaarten = "".join(f'<a class="card post-card" href="/post/{p["slug"]}/"><div class="ic">{ic(p["icon"])}</div><p class="meta">{p["date_nl"]}</p><h3>{p["title"]}</h3><span class="link">Lees verder{ic("arrow")}</span></a>' for p in cl)
+        blogsec = f'''<section class="sec"><div class="w"><div class="head"><span class="tag">Blog</span><h2>Meer over {d["kort"].lower()}</h2></div><div class="g2">{kaarten}</div><p style="margin-top:18px"><a class="link" href="/blog/">Alle artikelen{ic("arrow")}</a></p></div></section>
+
+'''
+    else:
+        blogsec = ""
     pfsec = ""
     if d["slug"] in PF_BY:
         pfsec = f'''<section class="sec band"><div class="w"><div class="head"><span class="tag">Uit ons werk</span><h2>Voor en na</h2></div><div class="pfl">{"".join(pf_card(x) for x in PF_BY[d["slug"]])}</div><p style="margin-top:18px"><a class="link" href="/portfolio/">Bekijk het hele portfolio{ic("arrow")}</a></p></div></section>
@@ -788,7 +803,7 @@ for d in D.DIENSTEN:
 </div>
 </section>
 
-{pfsec}{REVIEWS_SEC}
+{blogsec}{pfsec}{REVIEWS_SEC}
 
 <section class="pb">
 <div class="w">
