@@ -621,7 +621,7 @@ CLUSTER_CAT = {"Ontruimen": "woningontruiming-groningen", "Vloerreiniging": "vlo
                "Opleveren": "woning-opleveren-groningen", "Schoonmaak": "schoonmaak-groningen",
                "Zakelijke schoonmaak": "schoonmaak-groningen", "Verhuizen": "verhuizen-groningen",
                "Glasbewassing": "glazenwasser-groningen", "Hogedrukreiniging": "hogedrukreiniging-groningen",
-               "Schilderwerk": "schilder-groningen"}
+               "Schilderwerk": "schilder-groningen", "Zakelijk": "zorgappartementen-opleveren"}
 CLUSTER_SLUG = {"bouwschoonmaak-bij-oplevering-checklist": "schoonmaak-groningen",
                 "zorgappartement-opleveren-leegstand-kort-houden": "zorgappartementen-opleveren"}
 def post_dienst(p):
