@@ -3,6 +3,83 @@
 
 POSTS = [
 {
+ "slug": "wat-bepaalt-de-prijs-van-een-woningontruiming",
+ "title": "Wat bepaalt de prijs van een woningontruiming? Dit zijn de factoren die meetellen",
+ "seo_title": "Wat bepaalt de prijs van een woningontruiming? | JSTN",
+ "desc": "Waarom kost de ene ontruiming meer dan de andere? De hoeveelheid spullen, bereikbaarheid, afvoer, schoonmaak en tijdsdruk bepalen de prijs. Zo houd je grip.",
+ "date": "2026-11-16", "modified": "2026-11-16", "date_nl": "16 november 2026",
+ "cat": "Ontruimen", "icon": "box",
+ "note": "Dit artikel is met AI-ondersteuning geschreven.",
+ "sources": [
+   ("Juridisch Loket — Kan ik na het overlijden van de huurder in de huurwoning blijven?", "https://www.juridischloket.nl/wonen-en-buren/huurwoning/overlijden-huurder/"),
+   ("Rijksoverheid — Hoe zeg ik de huur van mijn woning op?", "https://www.rijksoverheid.nl/onderwerpen/woning-huren/vraag-en-antwoord/huur-opzeggen-woning"),
+ ],
+ "faq": [
+   ("Waarom noemt een ontruimingsbedrijf niet meteen een prijs aan de telefoon?",
+    "Omdat de prijs vooral afhangt van dingen die je pas ziet als je de woning kent: hoeveel spullen er zijn, hoe bereikbaar de woning is, wat er naast het leegruimen moet gebeuren en in welke staat de woning is. Een bezichtiging of een goede set foto's per ruimte maakt een offerte betrouwbaar en voorkomt verrassingen achteraf."),
+   ("Wordt een ontruiming goedkoper als spullen naar de kringloop gaan?",
+    "Vaak scheelt het, omdat er minder als afval hoeft te worden afgevoerd. Het hangt wel af van de staat van de spullen: kringloopwinkels nemen niet alles aan. Bij JSTN Multidiensten krijgen bruikbare spullen waar mogelijk een tweede leven via kringloop, winkels of verkoop."),
+   ("Kan ik een vaste prijs afspreken?",
+    "Bij opleveringen is een vaste prijs mogelijk. Dan spreek je vooraf precies af wat er moet gebeuren, bijvoorbeeld leegruimen, schoonmaken en klaarmaken voor de inspectie, zodat je weet waar je aan toe bent."),
+   ("Hoeveel tijd heb ik om een huurwoning leeg te maken na een overlijden?",
+    "Volgens het Juridisch Loket stopt het huurcontract van een huurder die alleen woonde automatisch aan het einde van de tweede maand na het overlijden. Voor bewoners die met de huurder een duurzame gemeenschappelijke huishouding hadden, gelden andere regels. Check de precieze situatie bij de verhuurder of het Juridisch Loket."),
+ ],
+ "html": """
+<p class="lead">De prijs van een woningontruiming hangt vooral af van vijf dingen: hoeveel spullen er zijn, hoe goed de woning bereikbaar is, wat er met de spullen moet gebeuren, wat er na het leegruimen nog moet gebeuren (zoals schoonmaken en opleveren) en hoeveel tijd er is. Wie die punten vooraf helder heeft, krijgt een offerte die klopt en vergelijkbaar is met andere aanbieders.</p>
+
+<p>Een vast bedrag per woning bestaat eigenlijk niet. Twee appartementen van dezelfde grootte kunnen totaal verschillend uitpakken: het ene is halfleeg en ligt op de begane grond, het andere staat vol en ligt op de derde verdieping zonder lift. Hieronder lees je per factor waarom die meetelt en wat je er zelf aan kunt doen.</p>
+
+<h2>1. De hoeveelheid en het soort spullen</h2>
+<p>Dit is de grootste factor. Meer inboedel betekent meer handen, meer ritten en meer tijd. Maar het gaat niet alleen om volume. Zware of grote stukken, zoals een eiken kast, een bed met lattenbodem of een volle boekenkast, kosten meer moeite dan dozen met kleine spullen. Ook een volle zolder, schuur of berging telt mee, en die worden bij het opgeven van de woning nog weleens vergeten.</p>
+<p>Geef daarom bij een aanvraag alle ruimtes door, ook kelder, tuin en garage. Wat niet genoemd wordt, kan niet in de offerte staan.</p>
+
+<h2>2. Bereikbaarheid van de woning</h2>
+<p>Een woning op de begane grond met de bus voor de deur is sneller leeg dan een bovenwoning met een smalle, steile trap. Dit soort dingen bepaalt hoeveel tijd het sjouwen kost:</p>
+<ul>
+<li>op welke verdieping de woning ligt en of er een lift is (en of meubels erin passen);</li>
+<li>hoe breed het trappenhuis is;</li>
+<li>hoe ver de bus van de voordeur kan staan, bijvoorbeeld in een autoluwe binnenstad of een woonzorgcomplex met een aparte ingang;</li>
+<li>of er tijden zijn waarop wel of niet gewerkt mag worden, zoals in een appartementencomplex met huisregels.</li>
+</ul>
+
+<h2>3. Wat er met de spullen gebeurt</h2>
+<p>Spullen die nog bruikbaar zijn, hoeven niet als afval te worden afgevoerd. Bij JSTN Multidiensten sorteren we daarom eerst. Bruikbare spullen krijgen waar mogelijk een tweede leven via de kringloop, winkels of verkoop. Wat overblijft, wordt gescheiden afgevoerd. Hoe meer er hergebruikt kan worden, hoe minder afval er overblijft, en dat scheelt vaak in de kosten.</p>
+<p>Andersom geldt ook: spullen die kapot, vervuild of muf zijn, kunnen alleen nog weg als afval. Bij een woning waar lang weinig is opgeruimd, is het aandeel afval meestal groter.</p>
+
+<h2>4. Wat er na het leegruimen nog moet gebeuren</h2>
+<p>Hier zitten de grootste verschillen tussen offertes. Het ene bedrijf rekent alleen het leeghalen, het andere levert de woning direct klaar voor de verhuurder of koper. Denk aan:</p>
+<ul>
+<li>vloerbedekking, laminaat, gordijnen, rails en lampen verwijderen;</li>
+<li>gaatjes van pluggen en spijkers dichtmaken;</li>
+<li>de woning bezemschoon maken, of grondig schoonmaken met ontvetten van de keuken en ontkalken van het sanitair;</li>
+<li>muren en plafonds schilderen, bijvoorbeeld bij nicotineaanslag;</li>
+<li>de woning klaarmaken voor de eindinspectie volgens de eisen van de verhuurder.</li>
+</ul>
+<p>Vraag bij een huurwoning altijd vooraf aan de verhuurder wat er bij de oplevering verwacht wordt. Staat er in de opleverstaat dat de vloerbedekking eruit moet of dat de muren licht van kleur moeten zijn, dan wil je dat in de offerte terugzien. Laat je ontruimen en <a href="/woning-opleveren-groningen/">opleveren</a> door één partij doen, dan voorkom je dat je twee bedrijven op elkaar moet afstemmen.</p>
+
+<h2>5. De staat van de woning</h2>
+<p>Een normaal bewoonde woning is iets anders dan een woning met veel vet, rookaanslag, schimmel of een sterke vervuiling. Hoe zwaarder de vervuiling, hoe meer tijd de schoonmaak kost en hoe vaker er speciale middelen nodig zijn. Wees hier eerlijk over bij de aanvraag. Een bedrijf dat de echte situatie kent, kan een prijs geven die standhoudt, en werkt discreet en zonder oordeel.</p>
+
+<h2>6. Tijdsdruk</h2>
+<p>Moet een woning binnen een paar dagen leeg zijn, dan is er minder ruimte om in te plannen en om rustig te sorteren wat nog bruikbaar is. Bij huurwoningen ligt de deadline meestal vast. Bij gewone opzegging staat de opzegtermijn in het huurcontract, volgens de Rijksoverheid is die meestal een maand. Na een overlijden stopt het huurcontract van een huurder die alleen woonde volgens het Juridisch Loket automatisch aan het einde van de tweede maand na het overlijden. Neem op tijd contact op met een ontruimer, dan is er meer keuze in data en blijft er tijd over voor de familie om eerst zelf door de spullen te gaan. Meer over die volgorde lees je in ons <a href="/post/woning-ontruimen-na-overlijden-stappenplan/">stappenplan voor ontruimen na overlijden</a>.</p>
+
+<h2>Zo krijg je een offerte die klopt</h2>
+<ol>
+<li><strong>Laat de woning bekijken of stuur foto's van elke ruimte</strong>, inclusief zolder, berging en tuin.</li>
+<li><strong>Markeer wat er moet blijven</strong>, bijvoorbeeld met gekleurde stickers, en haal waardevolle spullen en papieren er vooraf uit.</li>
+<li><strong>Noem de deadline</strong> en wat er bij de oplevering van je gevraagd wordt.</li>
+<li><strong>Vraag wat er wel en niet in de prijs zit</strong>: afvoer, schoonmaak, vloerbedekking, schilderwerk. Bij opleveringen is een vaste prijs mogelijk.</li>
+</ol>
+<p>Twijfel je tussen aanbieders, lees dan ook <a href="/post/zo-kies-je-een-bedrijf-voor-woningontruiming-in-groningen/">waar je op let bij het kiezen van een ontruimingsbedrijf</a>.</p>
+
+<h2>Wat je zelf kunt doen om kosten te beperken</h2>
+<p>Heb je tijd en hulp uit de familie, dan kun je zelf al veel doen. Neem eerst mee wat je wilt houden, verkoop of verschenk meubels die nog goed zijn, en breng kleine spullen zelf naar de kringloop. Een kleine woning met weinig inboedel kun je met een gehuurde bus soms prima zelf leeghalen. Uitbesteden loont vooral bij een volle woning, bij zware meubels en trappen, bij een krappe deadline of als je ver weg woont.</p>
+
+<h2>Hulp bij een ontruiming in Groningen en omgeving</h2>
+<p>JSTN Multidiensten doet <a href="/woningontruiming-groningen/">woningontruimingen</a> in Groningen, Friesland en Drenthe, en levert de woning desgewenst ook schoon en klaar op. Je hebt één aanspreekpunt en we plannen flexibel in. Wil je weten wat er bij jouw woning komt kijken? Neem <a href="/contact/">contact</a> op; je krijgt binnen 12 uur een reactie. Voorbeelden van eerder werk zie je in ons <a href="/portfolio/">portfolio</a>.</p>
+""",
+},
+{
  "slug": "verhuizen-binnenstad-groningen-verhuiswagen-parkeren",
  "title": "Verhuizen in de binnenstad van Groningen: zo regel je de verhuiswagen, ontheffing en parkeren",
  "seo_title": "Verhuizen in binnenstad Groningen: wagen & parkeren | JSTN",
