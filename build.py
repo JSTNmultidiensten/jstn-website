@@ -653,6 +653,7 @@ CLUSTER_CAT = {"Ontruimen": "woningontruiming-groningen", "Vloerreiniging": "vlo
                "Glasbewassing": "glazenwasser-groningen", "Hogedrukreiniging": "hogedrukreiniging-groningen",
                "Schilderwerk": "schilder-groningen", "Zakelijk": "zorgappartementen-opleveren"}
 CLUSTER_SLUG = {"bouwschoonmaak-bij-oplevering-checklist": "schoonmaak-groningen",
+                "verhuizen-voor-senioren-checklist": "seniorenverhuizing-groningen",
                 "zorgappartement-opleveren-leegstand-kort-houden": "zorgappartementen-opleveren"}
 def post_dienst(p):
     return p.get("dienst") or CLUSTER_SLUG.get(p["slug"]) or CLUSTER_CAT.get(p["cat"])
@@ -777,6 +778,7 @@ HERO_FOTO = {"woningontruiming-groningen": ("/img/ontruiming-volle-berging.jpg",
              "glazenwasser-groningen": ("/portfolio/img/glasbewassing-kantoor.jpg", 900, 1200, "Team van JSTN wast de glazen wanden van een kantoor", "object-position:50% 35%"),
              "hogedrukreiniging-groningen": ("/portfolio/img/hogedrukreiniging-tegels.jpg", 900, 1200, "Tegels worden schoongespoten met de hogedrukreiniger", "object-position:50% 60%"),
              "verhuizen-groningen": ("/img/verhuizen-jstn-team.jpg", 835, 1383, "Team van JSTN draagt een kast naar buiten bij een verhuizing", "object-position:50% 38%"),
+             "seniorenverhuizing-groningen": ("/img/team-jstn-multidiensten-2026.jpg", 2000, 1333, "Drie teamleden van JSTN Multidiensten in bedrijfskleding", "object-position:50% 35%"),
              "zorgappartementen-opleveren": ("/img/zorgappartement-opgeleverd.jpg", 768, 1024, "Leeg en schoon opgeleverd zorgappartement, klaar voor een nieuwe cliënt", "object-position:50% 60%"),
              "woning-opleveren-groningen": ("/img/woning-opleveren-keuken.jpg", 768, 1024, "Schone keuken van een opgeleverde huurwoning", "object-position:50% 55%")}
 for d in D.DIENSTEN:
