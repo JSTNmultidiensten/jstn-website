@@ -80,8 +80,8 @@ ORG = {
   "openingHoursSpecification": [{"@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
       "opens": "07:00", "closes": "18:00"}],
-  # Google-score 5,0; aantal = de reviews die op de site staan (REVIEWS hieronder). Bijwerken als Google meer telt.
-  "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5.0", "bestRating": "5", "worstRating": "1", "reviewCount": "15"},  "slogan": "Alles onder één dak: van schoonmaak tot oplevering.",
+  # Google-score 5,0 met 19 reviews (19-11-2026). Een te laag aantal is geen probleem (het groeit alleen), een te hoog wel.
+  "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5.0", "bestRating": "5", "worstRating": "1", "reviewCount": "19"},  "slogan": "Alles onder één dak: van schoonmaak tot oplevering.",
   "description": "Schoonmaak en desinfectie, vloerreiniging, glasbewassing, ontruimen, verhuizen, schilder- en behangwerk, opleveren van zorg-appartementen en hogedrukreiniging in Groningen, Friesland en Drenthe.",
 }
 
