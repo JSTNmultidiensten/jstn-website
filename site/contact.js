@@ -59,7 +59,7 @@
       if (!res.ok) throw new Error();
       window.location.href = "/bedankt/formulier/";
     }).catch(function () {
-      melding.innerHTML = 'Versturen lukte niet. Mail ons direct via <a href="mailto:' + MAIL + '">' + MAIL + '</a> of bel +31 6 36179549.';
+      melding.innerHTML = 'Versturen lukte niet. Mail ons direct via <a href="mailto:' + MAIL + '">' + MAIL + '</a> of bel 06 36179549.';
       melding.className = "msg err";
     }).then(function () {
       knop.disabled = false; knop.textContent = "Verstuur aanvraag";

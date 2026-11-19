@@ -5,8 +5,8 @@ DIENSTEN = [
 {
  "slug": "schoonmaak-groningen", "icon": "sparkle", "kort": "Schoonmaak & dieptereiniging",
  "h1": "Schoonmaak en dieptereiniging in Groningen, Friesland en Drenthe",
- "title": "Schoonmaakbedrijf Groningen | Dieptereiniging & desinfectie | JSTN",
- "desc": "Schoonmaakbedrijf in Groningen voor bedrijven en particulieren: reguliere schoonmaak, dieptereiniging en desinfectie met professionele apparatuur. Reactie binnen 12 uur.",
+ "title": "Schoonmaakbedrijf Groningen, Friesland & Drenthe | JSTN",
+ "desc": "Schoonmaak, dieptereiniging en desinfectie voor bedrijven en particulieren in Groningen, Friesland en Drenthe. Reactie binnen 12 uur.",
  "lead": "Reguliere schoonmaak of een grondige dieptereiniging, met professionele apparatuur en middelen.",
  "pts": ["Zakelijk én particulier", "Eenmalig of periodiek", "Ook na verhuizing, ontruiming of verbouwing"],
  "blokken": [
@@ -27,8 +27,8 @@ DIENSTEN = [
 {
  "slug": "vloerreiniging-groningen", "icon": "floor", "kort": "Vloerreiniging",
  "h1": "Vloerreiniging in Groningen, Friesland en Drenthe",
- "title": "Vloerreiniging Groningen | Scholen, kantoren & bedrijfspanden | JSTN",
- "desc": "Professionele vloerreiniging in Groningen voor scholen, kantoren en bedrijfspanden. Eenmalige dieptereiniging of periodiek onderhoud, ook in (school)vakanties.",
+ "title": "Vloerreiniging Groningen, Friesland & Drenthe | JSTN",
+ "desc": "Vloerreiniging voor scholen, kantoren en bedrijfspanden in Groningen, Friesland en Drenthe. Eenmalig of periodiek, ook in (school)vakanties.",
  "lead": "Grote vloeren in scholen, kantoren en bedrijfspanden, grondig gereinigd met professionele apparatuur.",
  "pts": ["Ook in (school)vakanties", "Eenmalig of periodiek onderhoud", "Professionele apparatuur"],
  "blokken": [
@@ -47,8 +47,8 @@ DIENSTEN = [
 {
  "slug": "glazenwasser-groningen", "icon": "window", "kort": "Glasbewassing",
  "h1": "Glazenwasser in Groningen, Friesland en Drenthe",
- "title": "Glazenwasser Groningen | Glasbewassing woning & bedrijf | JSTN",
- "desc": "Glasbewassing in Groningen voor woningen, kantoren en bedrijfspanden. Streeploos schone ramen, eenmalig of periodiek en goed te combineren met schoonmaak.",
+ "title": "Glazenwasser Groningen, Friesland & Drenthe | JSTN",
+ "desc": "Glasbewassing voor woningen en bedrijfspanden in Groningen, Friesland en Drenthe. Streeploos met osmosewater, eenmalig of periodiek.",
  "lead": "Streeploos schone ramen voor woningen, kantoren en bedrijfspanden. Binnen met de hand, buiten met osmosewater, telescoopstok en borstel. Eenmalig of periodiek.",
  "pts": ["Osmose: streeploos, ook hoge ramen", "Woningen en bedrijfspanden", "Eenmalig of periodiek", "Te combineren met schoonmaak"],
  "blokken": [
@@ -69,8 +69,8 @@ DIENSTEN = [
  "slug": "woningontruiming-groningen", "icon": "box", "kort": "Ontruiming",
  "intro": "<b>Spoed?</b> Wij staan binnen 24 uur bij u op de stoep.",
  "h1": "Ontruimingen in Groningen, Friesland en Drenthe",
- "title": "Ontruiming Groningen | Woning, bedrijfspand & berging leegruimen | JSTN",
- "desc": "Ontruimingen in Groningen, Friesland en Drenthe: woningen, bedrijfspanden, zorg- en studentenkamers, bergingen, schuren en zolders. Alles netjes afgevoerd en desgewenst bezemschoon opgeleverd.",
+ "title": "Woningontruiming Groningen, Friesland & Drenthe | JSTN",
+ "desc": "Woning, bedrijfspand of berging leeg in Groningen, Friesland en Drenthe. Netjes afgevoerd en bezemschoon opgeleverd. Spoed: binnen 24 uur.",
  "lead": "Woningen, bedrijfspanden, zorg- en studentenkamers, bergingen, schuren en zolders: wij ruimen alles leeg en voeren het netjes af. Een woningontruiming kan al vanaf €300.",
  "pts": ["Alle soorten ontruimingen, groot en klein", "Spoed? Binnen 24 uur op de stoep", "Bruikbare spullen krijgen een tweede leven", "Bezemschoon of verkoopklaar opgeleverd"],
  "blokken": [
@@ -92,31 +92,34 @@ DIENSTEN = [
  "blog": "zo-kies-je-een-bedrijf-voor-woningontruiming-in-groningen",
 },
 {
- "slug": "verhuizen-groningen", "icon": "truck", "kort": "Verhuizen voor senioren",
+ "slug": "verhuizen-groningen", "icon": "truck", "kort": "Verhuizen",
  "h1": "Verhuizen in Groningen, Friesland en Drenthe",
- "title": "Verhuizen Groningen | Seniorenverhuizing, in- en uitpakken | JSTN",
- "desc": "Verhuisservice in Groningen voor particulieren en senioren: inpakken, verhuizen, uitpakken, kasten inrichten en schilderijen ophangen. Verhuisdozen beschikbaar.",
- "lead": "Wij zorgen dat uw verhuizing soepel verloopt, met extra aandacht voor senioren.",
- "pts": ["Inpakken én uitpakken", "Verhuisdozen en inpakmateriaal beschikbaar", "Ook op korte termijn"],
+ "title": "Verhuizen in Groningen, Friesland & Drenthe | JSTN",
+ "desc": "Verhuizen in Groningen, Friesland en Drenthe: inpakken, verhuizen, uitpakken en inrichten, met extra zorg voor senioren. Verhuisdozen beschikbaar.",
+ "lead": "Van inpakken tot uitpakken: wij regelen uw verhuizing van begin tot eind. Voor iedere particulier, met extra aandacht voor senioren.",
+ "pts": ["Inpakken, verhuizen én uitpakken", "Extra zorg bij seniorenverhuizingen", "Verhuisdozen en inpakmateriaal beschikbaar", "Ook op korte termijn"],
  "blokken": [
   ("box", "Inpakken", "Wij pakken uw spullen zorgvuldig in. Verhuisdozen en inpakmateriaal stellen wij beschikbaar."),
-  ("truck", "Verhuizen", "Meubels en spullen veilig naar uw nieuwe woning, ook naar een seniorenwoning of zorginstelling."),
+  ("truck", "Verhuizen", "Meubels en spullen veilig van uw oude naar uw nieuwe woning, in heel Groningen, Friesland en Drenthe."),
   ("home", "Uitpakken en inrichten", "We richten uw kasten weer in, hangen schilderijen en klokken op en sluiten indien gewenst uw apparatuur weer aan. Zo voelt u zich snel weer thuis."),
+  ("heart", "Seniorenverhuizing", "Naar een kleinere woning, seniorenwoning of zorginstelling? Wij nemen de tijd, gaan zorgvuldig om met persoonlijke bezittingen en richten de nieuwe woning zo in dat het direct vertrouwd voelt."),
   ("clip", "Oude woning opleveren", "Ook de oude woning kunnen wij leegruimen, schoonmaken en opleveren aan de verhuurder of corporatie."),
+  ("roller", "Nieuwe woning opknappen", "Moet er in de nieuwe woning eerst geschilderd of schoongemaakt worden? Dat nemen we mee in dezelfde planning."),
  ],
  "faq": [
+  ("Wat doen jullie allemaal bij een verhuizing?", "Inpakken, verhuizen, uitpakken, kasten inrichten, schilderijen ophangen en apparatuur aansluiten. U bepaalt zelf welke onderdelen u uit handen geeft."),
   ("Helpen jullie ook senioren met verhuizen?", "Ja, daar zijn we in gespecialiseerd. We nemen de tijd, gaan zorgvuldig om met persoonlijke bezittingen en richten de nieuwe woning zo in dat het direct vertrouwd voelt."),
-  ("Pakken jullie ook in en uit?", "Ja. Van inpakken tot uitpakken, kasten inrichten en schilderijen ophangen: wij nemen het werk volledig uit handen."),
   ("Kan een verhuizing op korte termijn?", "Ook als u op korte termijn hulp nodig heeft, denken we graag mee. Neem contact op, dan kijken we wat er in de planning past."),
   ("Kunnen jullie ook de oude woning opleveren?", "Ja, we kunnen de oude woning leegruimen, schoonmaken en opleveren volgens de voorwaarden van uw verhuurder of corporatie."),
+  ("Wat kost een verhuizing?", "Dat hangt af van de hoeveelheid spullen, de afstand en welke onderdelen u uit handen geeft. Stuur ons een korte omschrijving, dan krijgt u binnen 12 uur een reactie en vooraf een vaste prijs."),
  ],
  "verwant": ["woningontruiming-groningen", "woning-opleveren-groningen", "schilder-groningen"],
 },
 {
  "slug": "woning-opleveren-groningen", "icon": "clip", "kort": "Woning opleveren",
  "h1": "Huurwoning opleveren in Groningen, Friesland en Drenthe",
- "title": "Huurwoning opleveren Groningen | Opleveringsschoonmaak | JSTN",
- "desc": "Uw huurwoning opleveren in Groningen aan corporatie, verhuurder of zorginstelling: vloeren, gordijnen en lampen verwijderen, tuin opruimen, schoonmaken en bezemschoon opleveren.",
+ "title": "Huurwoning opleveren Groningen, Friesland & Drenthe | JSTN",
+ "desc": "Huurwoning opleveren in Groningen, Friesland en Drenthe: leeghalen, schoonmaken en herstellen volgens de eisen van uw verhuurder. Vaste prijs.",
  "lead": "Uw woning netjes opgeleverd, volgens de voorwaarden van de corporatie of verhuurder.",
  "pts": ["Volgens de opleveringsvoorwaarden", "Vaste prijs mogelijk", "Van begin tot eind geregeld"],
  "blokken": [
@@ -134,8 +137,8 @@ DIENSTEN = [
 {
  "slug": "zorgappartementen-opleveren", "icon": "key", "kort": "Zorg-appartementen opleveren",
  "h1": "Zorg-appartementen opleveren binnen 3 werkdagen",
- "title": "Zorgappartementen opleveren Groningen | Binnen 3 werkdagen | JSTN",
- "desc": "Voor zorginstellingen in Groningen: bij vertrek van een bewoner leveren wij het zorgappartement binnen maximaal 3 werkdagen op — ontruimen, herstellen, schilderen en schoonmaken.",
+ "title": "Zorgappartement opleveren Groningen, Friesland & Drenthe",
+ "desc": "Voor zorginstellingen in Groningen, Friesland en Drenthe: zorgappartement binnen 3 werkdagen opgeleverd. Ontruimen, opknappen en schoonmaken.",
  "lead": "Bij vertrek van een bewoner is het appartement binnen 3 werkdagen klaar voor een nieuwe cliënt.",
  "pts": ["Binnen maximaal 3 werkdagen", "Eén partij voor het hele proces", "Op uw opleverniveau"],
  "blokken": [
@@ -154,8 +157,8 @@ DIENSTEN = [
 {
  "slug": "schilder-groningen", "icon": "roller", "kort": "Schilder- & behangwerk",
  "h1": "Schilder- en behangwerk in Groningen, Friesland en Drenthe",
- "title": "Schilder Groningen | Schilder- & behangwerk binnen | JSTN",
- "desc": "Schilder- en behangwerk in Groningen voor woningen en zorgappartementen: wanden en plafonds bijwerken of volledig opnieuw schilderen en behangen. Eén aanspreekpunt.",
+ "title": "Schilder Groningen, Friesland & Drenthe | Binnenwerk | JSTN",
+ "desc": "Schilder- en behangwerk binnen voor woningen en zorgappartementen in Groningen, Friesland en Drenthe. Wanden en plafonds strak afgewerkt.",
  "lead": "Wanden en plafonds bijwerken, opnieuw schilderen of behangen. Netjes en strak afgewerkt.",
  "pts": ["Woningen en zorgappartementen", "Strak en netjes afgewerkt", "Eén vast aanspreekpunt"],
  "blokken": [
@@ -174,8 +177,8 @@ DIENSTEN = [
 {
  "slug": "hogedrukreiniging-groningen", "icon": "drop", "kort": "Hogedrukreiniging",
  "h1": "Hogedrukreiniging in Groningen, Friesland en Drenthe",
- "title": "Hogedrukreiniging Groningen | Oprit, terras, dak & gevel | JSTN",
- "desc": "Hogedrukreiniging in Groningen voor opritten, terrassen, daken, gevels en bedrijfsterreinen. Mos en aanslag weg, voegen opnieuw ingevuld. Particulier en zakelijk.",
+ "title": "Hogedrukreiniging Groningen, Friesland & Drenthe | JSTN",
+ "desc": "Hogedrukreiniging van opritten, terrassen, daken en gevels in Groningen, Friesland en Drenthe. Mos en aanslag weg, voegen opnieuw gevuld.",
  "lead": "Mos op de oprit of een glad tuinpad? Met hogedruk maken wij het weer schoon en veilig.",
  "pts": ["Opritten, terrassen, daken en gevels", "Voegen opnieuw gevuld", "Eenmalig of als onderhoud"],
  "blokken": [
