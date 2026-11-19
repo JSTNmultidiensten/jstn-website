@@ -3,6 +3,78 @@
 
 POSTS = [
 {
+ "slug": "wat-bepaalt-de-prijs-van-een-woningontruiming",
+ "title": "Wat bepaalt de prijs van een woningontruiming? Dit zijn de factoren die meetellen",
+ "seo_title": "Wat bepaalt de prijs van een woningontruiming? | JSTN",
+ "desc": "Waarom verschillen offertes voor een woningontruiming zo? Dit zijn de factoren die de prijs bepalen, en wat je zelf kunt doen om de kosten te beperken.",
+ "date": "2026-11-19", "modified": "2026-11-19", "date_nl": "19 november 2026",
+ "cat": "Ontruimen", "icon": "box",
+ "note": "Dit artikel is met AI-ondersteuning geschreven.",
+ "faq": [
+   ("Waarom noemen ontruimingsbedrijven niet meteen een prijs?",
+    "Omdat twee woningen met hetzelfde aantal kamers heel verschillend kunnen uitpakken. De hoeveelheid inboedel, de bereikbaarheid, wat er nog bruikbaar is en hoe de woning opgeleverd moet worden bepalen samen hoeveel werk het is. Een bedrijf dat zonder die informatie een vast bedrag noemt, moet gokken. Met foto's, een video of een bezichtiging kan er een offerte komen die klopt."),
+   ("Wordt een ontruiming goedkoper als er nog bruikbare spullen zijn?",
+    "Dat kan schelen. Spullen die naar de kringloop, een winkel of verkoop gaan, hoeven niet als afval te worden afgevoerd. Hoeveel dat uitmaakt, hangt af van de staat van de spullen en wat er echt nog gewild is. Oude, beschadigde of erg gedateerde meubels zijn vaak lastig te herplaatsen."),
+   ("Kan ik een deel van de ontruiming zelf doen om kosten te besparen?",
+    "Ja. Persoonlijke papieren, foto's en spullen die familie wil houden haal je het best zelf weg, en dat moet je eigenlijk altijd doen voordat er een bedrijf komt. Ook kleine spullen zelf naar de kringloop brengen scheelt werk. Spreek wel duidelijk af wat er overblijft voor het bedrijf, zodat de offerte daarop is gebaseerd."),
+   ("Is het goedkoper om ontruimen en opleveren door één partij te laten doen?",
+    "Vaak wel, omdat je geen wachttijd, dubbel werk en losse afspraken met verschillende partijen hebt. Vraag in dat geval één vaste prijs voor het hele pakket, zodat je vooraf weet waar je aan toe bent."),
+ ],
+ "html": """
+<p class="lead">De prijs van een woningontruiming hangt vooral af van vier dingen: hoeveel spullen er weg moeten, hoe goed de woning bereikbaar is, wat er met de spullen gebeurt en hoe de woning na afloop opgeleverd moet worden. Een rijtjeshuis met een volle zolder en schuur kost meer werk dan een opgeruimd appartement op de begane grond, ook al hebben ze hetzelfde aantal kamers. Wie die factoren kent, kan offertes beter vergelijken en weet waar zelf nog winst te halen is.</p>
+
+<p>Een vast bedrag per woning noemen we hier bewust niet: dat zegt weinig zonder de woning te kennen. Ter indicatie: bij ons begint een woningontruiming vanaf €300. Verder lees je wat een ontruimingsbedrijf meeweegt, zodat je weet welke informatie je vooraf geeft en waarom offertes soms flink uiteenlopen.</p>
+
+<h2>1. De hoeveelheid inboedel</h2>
+<p>Dit is de grootste factor. Het gaat niet om het aantal vierkante meters, maar om wat er in de woning staat. Een woning waar iemand lang heeft gewoond, heeft vaak meer spullen dan je op het eerste gezicht ziet: volle kasten, een kelderkast, een zolder, een schuur of een berging in de onderbouw.</p>
+<p>Vergeet die bijruimtes niet te noemen als je een offerte aanvraagt. Juist daar zit vaak het meeste werk, en het is vervelend voor beide kanten als dat pas op de dag zelf blijkt. Maak foto's van elke ruimte, ook van de inhoud van kasten, dan weet het bedrijf wat het kan verwachten.</p>
+
+<h2>2. Bereikbaarheid en logistiek</h2>
+<p>Hoe makkelijk komen de spullen van binnen naar de bus? Een woning op de begane grond met de bus voor de deur gaat sneller dan een bovenwoning zonder lift met een smalle, steile trap. Ook de afstand tussen de voordeur en de plek waar een bus kan staan telt mee.</p>
+<p>Denk daarbij aan:</p>
+<ul>
+<li>verdieping, lift en de breedte van trap en gangen;</li>
+<li>parkeermogelijkheden en eventuele regels voor laden en lossen, bijvoorbeeld in een binnenstad;</li>
+<li>grote of zware meubels die uit elkaar moeten om naar buiten te kunnen;</li>
+<li>of de woning op de afgesproken tijd vrij toegankelijk is, met sleutels en eventueel toegang tot berging of gemeenschappelijke ruimtes.</li>
+</ul>
+
+<h2>3. Wat er met de spullen gebeurt</h2>
+<p>Niet alles uit een woning is afval. Bij een ontruiming wordt eerst gesorteerd: wat kan nog gebruikt worden, wat gaat naar recycling en wat is echt afval. Bruikbare spullen krijgen waar mogelijk een tweede leven via de kringloop, winkels of verkoop. Wat niet hoeft te worden afgevoerd als afval, scheelt in de kosten.</p>
+<p>Sorteren kost wel tijd. Een inboedel met veel losse kleine spullen vraagt meer handwerk dan een woning met vooral grote meubels. Bijzondere afvalstromen, zoals restjes verf, schoonmaakmiddelen of chemicaliën uit de schuur, moeten apart worden afgevoerd. Meld het als je weet dat zulke dingen er staan.</p>
+<p>Hoe je zo'n ontruiming stap voor stap aanpakt na een overlijden, lees je in ons <a href="/post/woning-ontruimen-na-overlijden-stappenplan/">stappenplan voor nabestaanden</a>.</p>
+
+<h2>4. Het opleverniveau</h2>
+<p>Hier zit vaak het verschil tussen twee offertes die op het eerste gezicht hetzelfde lijken. De één rekent met een lege woning, de ander met een woning die direct terug kan naar de verhuurder of verkocht kan worden. Vraag jezelf daarom af wat er na het leegruimen moet gebeuren:</p>
+<ul>
+<li><strong>Leeg en bezemschoon:</strong> alle spullen eruit, vloeren geveegd.</li>
+<li><strong>Vloerbedekking, gordijnen en lampen verwijderen:</strong> veel verhuurders vragen dit, maar het is extra werk dat niet automatisch onder ontruimen valt.</li>
+<li><strong>Schoonmaak of dieptereiniging:</strong> keuken ontvetten, sanitair ontkalken, ramen, kozijnen en deuren. Bij een woning waar lang is gewoond of gerookt, is gewone schoonmaak vaak niet genoeg.</li>
+<li><strong>Herstel en schilderwerk:</strong> gaten dichten, muren terugzetten naar een neutrale kleur.</li>
+</ul>
+<p>Gaat het om een huurwoning, vraag dan eerst bij de verhuurder op wat er bij de oplevering verwacht wordt. Dan voorkom je dat je te weinig bestelt en achteraf alsnog moet bijbetalen, of juist werk laat doen dat niet nodig was. Meer daarover lees je op onze pagina over <a href="/woning-opleveren-groningen/">huurwoning opleveren</a>.</p>
+
+<h2>5. De staat van de woning en de planning</h2>
+<p>Een woning die sterk vervuild is, met bijvoorbeeld schimmel, ongedierte of veel aanslag, vraagt meer tijd en andere middelen. Dat geldt ook voor een woning die lang heeft leeggestaan.</p>
+<p>Ook de planning speelt mee. Moet de woning binnen een paar dagen leeg omdat de huur afloopt of de sleuteloverdracht vastligt, dan moet er meer capaciteit tegelijk worden ingezet. Hoe eerder je contact opneemt, hoe meer ruimte er is om het werk rustig in te plannen.</p>
+
+<h2>Zo houd je de kosten in de hand</h2>
+<p>Een deel van het werk kun je prima zelf doen. Eerlijk is eerlijk: is de woning klein en staat er weinig, dan kun je met een paar mensen en een aanhanger ook een heel eind komen. Bij een volle woning, een krappe deadline of als je ver weg woont, ligt dat anders. Wat in beide gevallen helpt:</p>
+<ul>
+<li>Haal persoonlijke papieren, foto's, sieraden en spullen die familie wil houden vooraf zelf weg.</li>
+<li>Spreek met familie af wie wat meeneemt, voordat er een bedrijf komt.</li>
+<li>Geef het bedrijf eerlijke en complete informatie: foto's van alle ruimtes, ook zolder en schuur, de verdieping en de deadline.</li>
+<li>Vraag op wat de verhuurder of koper verwacht bij de overdracht.</li>
+<li>Vergelijk offertes op inhoud: wat zit erin, wat niet, en hoe wordt de woning achtergelaten?</li>
+</ul>
+<p>Waar je verder op let bij het kiezen van een partij, lees je in <a href="/post/zo-kies-je-een-bedrijf-voor-woningontruiming-in-groningen/">zo kies je een bedrijf voor woningontruiming in Groningen</a>.</p>
+
+<h2>Hulp bij je ontruiming</h2>
+<p>JSTN Multidiensten verzorgt <a href="/woningontruiming-groningen/">woningontruimingen</a> in Groningen, Friesland en Drenthe. Desgewenst nemen we ook de schoonmaak, het schilderwerk en de oplevering mee, zodat je één aanspreekpunt hebt. Je krijgt vooraf een vaste prijs voor de hele klus, en bruikbare spullen krijgen waar mogelijk een tweede leven. Op ons <a href="/portfolio/">portfolio</a> zie je voor- en na-foto's van eerdere klussen. Wil je weten wat er bij jouw woning komt kijken? Neem <a href="/contact/">contact</a> op, je hoort binnen 12 uur van ons.</p>
+""",
+},
+
+{
  "slug": "verhuizen-binnenstad-groningen-verhuiswagen-parkeren",
  "title": "Verhuizen in de binnenstad van Groningen: zo regel je de verhuiswagen, ontheffing en parkeren",
  "seo_title": "Verhuizen in binnenstad Groningen: wagen & parkeren | JSTN",

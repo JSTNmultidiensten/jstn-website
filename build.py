@@ -138,6 +138,15 @@ CTA = f'''<section class="pb">
 </div>
 </section>'''
 
+def _webp(m):
+    # foto's als lichtere WebP tonen als die versie bestaat (jpg blijft als bestand bestaan)
+    p = m.group(1)
+    if p.startswith("/portfolio/img/"):
+        bestaat = os.path.exists(os.path.join(_HERE, "portfolio_img", os.path.basename(p) + ".webp"))
+    else:
+        bestaat = os.path.exists(os.path.join(OUT, p.lstrip("/") + ".webp"))
+    return f'src="{p}.webp"' if bestaat else m.group(0)
+
 def page(path, title, desc, active, body, extra_ld=None, og_type="website", og_img=None, head_extra=""):
     url = BASE + path
     lds = [ORG] + (extra_ld or [])
@@ -178,6 +187,7 @@ def page(path, title, desc, active, body, extra_ld=None, og_type="website", og_i
 </body>
 </html>
 '''
+    doc = re.sub(r'src="(/(?:img|portfolio/img)/[^"]+)\.jpg"', _webp, doc)
     d = os.path.join(OUT, path.strip("/"))
     fn = os.path.join(d, "index.html") if not path.endswith(".html") else os.path.join(OUT, path.strip("/"))
     os.makedirs(os.path.dirname(fn), exist_ok=True)
@@ -284,6 +294,11 @@ REVIEWS_SEC = f'''<section class="sec" id="reviews">
 </div>
 </section>'''
 
+import posts
+HOME_BLOGS = "".join(
+    f'<a class="card post-card" href="/post/{p["slug"]}/"><div class="ic">{ic(p["icon"])}</div><p class="meta">{p["date_nl"]}</p><h3>{p["title"]}</h3><span class="link">Lees verder{ic("arrow")}</span></a>'
+    for p in sorted(posts.POSTS, key=lambda x: x["date"], reverse=True)[:3])
+
 home = f'''<section class="sec">
 <div class="w hero foto-eerst">
 <div>
@@ -336,6 +351,14 @@ home = f'''<section class="sec">
 <figure><img src="/portfolio/img/hogedrukreiniging-tegels.jpg" width="900" height="1200" alt="Tegels schoon met hogedrukreiniging" loading="lazy"><figcaption>Tegels schoon met hogedruk</figcaption></figure>
 </div>
 <p style="margin-top:18px"><a class="link" href="/portfolio/">Bekijk meer in ons portfolio{ic("arrow")}</a></p>
+</div>
+</section>
+
+<section class="sec band">
+<div class="w">
+<div class="head">{kop("Blog", "Tips en advies")}<p class="lead">Praktische artikelen over schoonmaak, ontruimen, verhuizen en opleveren.</p></div>
+<div class="g3">{HOME_BLOGS}</div>
+<p style="margin-top:18px"><a class="link" href="/blog/">Alle artikelen{ic("arrow")}</a></p>
 </div>
 </section>
 
@@ -654,6 +677,11 @@ for p in sorted(posts.POSTS, key=lambda x: x["date"], reverse=True):
     _alle = sorted([o for o in posts.POSTS if o["slug"] != p["slug"]], key=lambda x: x["date"], reverse=True)
     others = ([o for o in _alle if post_dienst(o) and post_dienst(o) == post_dienst(p)] + [o for o in _alle if not post_dienst(o) or post_dienst(o) != post_dienst(p)])[:6]
     more = "".join(f'<a class="card post-card" href="/post/{o["slug"]}/"><p class="meta">{o["date_nl"]}</p><h3>{o["title"]}</h3><span class="link">Lees verder{ic("arrow")}</span></a>' for o in others)
+    _ds = post_dienst(p)
+    _dd = next((x for x in D.DIENSTEN if x["slug"] == _ds), None)
+    dienst_link = (f'<a class="card svc-link" style="margin-top:24px" href="/{_dd["slug"]}/"><div class="ic">{ic(_dd["icon"])}</div>'
+                   f'<h2 class="h3">{_dd["kort"]} in Groningen, Friesland en Drenthe</h2><p class="muted">{D.KAART[_dd["slug"]]}</p>'
+                   f'<span class="link">Bekijk onze dienst{ic("arrow")}</span></a>') if _dd else ""
     body = f'''<section class="sec">
 <div class="w narrow">
 <nav class="bc" aria-label="Kruimelpad"><a href="/">Home</a> › <a href="/blog/">Blog</a> › <span>{p["title"]}</span></nav>
@@ -665,6 +693,7 @@ for p in sorted(posts.POSTS, key=lambda x: x["date"], reverse=True):
 <div class="note"><b>Hoe dit artikel tot stand kwam</b><br>{p["note"]}</div>
 {src_html}
 </article>
+{dienst_link}
 <div class="dark cta" style="margin-top:24px">
 <div><h2 style="color:#fff;margin:0 0 6px">Hulp nodig bij uw klus?</h2><p style="color:#E2E8EC;margin:0"><span class="acc" style="font-weight:700">Reactie binnen 12 uur, ook in het weekend.</span> App ons gerust, ook met een paar foto's van de klus.</p></div>
 <div class="row"><a class="btn btn-wa" href="{WA}" target="_blank" rel="noopener">{WAI}WhatsApp</a><a class="btn btn-light" href="/contact/">Offerte aanvragen</a></div>
@@ -910,6 +939,8 @@ headers = """/*
 /*.png
   Cache-Control: public, max-age=31536000
 /*.jpg
+  Cache-Control: public, max-age=31536000
+/*.webp
   Cache-Control: public, max-age=31536000
 """
 open(os.path.join(OUT, "_headers"), "w").write(headers)
