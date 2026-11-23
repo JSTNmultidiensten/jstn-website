@@ -3,6 +3,74 @@
 
 POSTS = [
 {
+ "slug": "schrobmachine-of-dweilen-verschil",
+ "title": "Schrobmachine of dweilen: wat is het verschil en wanneer heb je wat nodig?",
+ "seo_title": "Schrobmachine of dweilen: wat is het verschil? | JSTN",
+ "desc": "Dweilen haalt los vuil weg, een schrobmachine ook vuil dat vastzit. Zo zie je wanneer een mop volstaat en wanneer je vloer machinaal gereinigd moet worden.",
+ "date": "2026-11-23", "modified": "2026-11-23", "date_nl": "23 november 2026",
+ "cat": "Vloerreiniging", "icon": "floor",
+ "note": "Dit artikel is met AI-ondersteuning geschreven.",
+ "faq": [
+   ("Kan elke vloer met een schrobmachine gereinigd worden?",
+    "De meeste harde vloeren wel, zoals tegels, beton, gietvloeren, pvc, linoleum en marmoleum. Het verschil zit in de borstel of pad, het middel en hoeveel water je gebruikt. Bij vloeren die slecht tegen water kunnen, zoals onbehandeld hout of laminaat met open naden, is een schrobmachine met veel water geen goed idee. Twijfel je, test dan eerst op een onopvallende plek of vraag advies."),
+   ("Waarom wordt mijn vloer dof terwijl ik hem elke dag dweil?",
+    "Meestal door een combinatie van vuil dat zich in de structuur van de vloer heeft vastgezet en resten schoonmaakmiddel die achterblijven omdat het vuile water niet wordt afgezogen. Vaker dweilen helpt dan niet. Een machinale reiniging haalt die laag weg; daarna blijft dweilen met de juiste dosering weer goed werken."),
+   ("Is een schrobmachine huren voor thuis de moeite waard?",
+    "Voor een kleine woonkamer meestal niet: met een goede mop, een emmer schoon spoelwater en een harde borstel voor de hoeken kom je ver. Bij een grote tegelvloer, een garage of een vloer die na een verbouwing vol bouwstof zit, kan het wel schelen. Let op het juiste middel en de juiste pad voor jouw vloer."),
+   ("Hoe vaak moet een vloer machinaal gereinigd worden?",
+    "Dat hangt af van hoe intensief de vloer gebruikt wordt. Een drukke entree of gang van een school of bedrijfspand vaker dan een rustige kantoorruimte of een woonkamer. Een vaste regel is er niet; kijk naar loopstraten, vuilranden en een vloer die na het dweilen grauw blijft."),
+ ],
+ "html": """
+<p class="lead">Dweilen haalt los vuil van de vloer, een schrobmachine haalt ook het vuil weg dat zich heeft vastgezet. Het grote verschil: een schrobmachine borstelt de vloer mechanisch en zuigt het vuile water direct weer op, terwijl je bij dweilen een deel van het vuil met het water over de vloer verdeelt. Voor dagelijks onderhoud in huis of een klein kantoor is dweilen prima. Voor grote oppervlakken, drukke vloeren en vloeren die grauw of plakkerig blijven, is machinaal reinigen de betere keuze.</p>
+
+<h2>Wat dweilen wel en niet doet</h2>
+<p>Met een mop of vlakmop breng je water en schoonmaakmiddel op de vloer en neem je los vuil mee: stof, zand, gemorste koffie, een modderspoor. Dat is precies wat een vloer elke dag of elke week nodig heeft. Het werkt snel, je hebt weinig nodig en je kunt overal bij.</p>
+<p>De beperking zit in twee dingen. Ten eerste is de kracht waarmee je over de vloer gaat beperkt: vuil dat zich in de structuur van tegels, in de voegen of in een oude beschermlaag heeft genesteld, blijft gewoon zitten. Ten tweede wordt het water in de emmer steeds vuiler. Wat je niet opneemt, droogt op de vloer op, samen met resten schoonmaakmiddel. Daar plakt nieuw vuil weer aan. Zo wordt een vloer die trouw gedweild wordt toch langzaam dof en grauw.</p>
+
+<h2>Wat een schrobmachine anders doet</h2>
+<p>Een schrobmachine (ook wel schrob-zuigmachine genoemd) doet drie dingen in één beweging: hij brengt schoon water met middel aan, schrobt de vloer met roterende borstels of pads en zuigt het vuile water direct weer op met een rubberen zuigmond. Daardoor:</p>
+<ul>
+<li><strong>komt vastzittend vuil wel los</strong>, omdat de borstels met constante druk werken;</li>
+<li><strong>blijft er geen vuil water achter</strong>, dus ook geen vuilfilm of middelresten;</li>
+<li><strong>is de vloer snel weer droog</strong> en begaanbaar, wat in een school, winkel of bedrijfspand veel scheelt;</li>
+<li><strong>gaat het bij grote oppervlakken veel sneller</strong> en gelijkmatiger dan met de hand.</li>
+</ul>
+<p>Er zijn kleine machines voor gangen en lokalen en grote modellen voor loodsen en hallen. Welke borstel of pad en welk middel je gebruikt, hangt af van de vloer: een betonvloer in een bedrijfspand vraagt iets anders dan linoleum in een zorglocatie of een pvc-vloer thuis.</p>
+
+<h2>Wanneer is dweilen genoeg?</h2>
+<p>In veel situaties heb je geen machine nodig. Dweilen volstaat als:</p>
+<ul>
+<li>het om een kleine ruimte gaat, zoals een woonkamer, keuken of klein kantoor;</li>
+<li>de vloer er na het drogen egaal en schoon uitziet;</li>
+<li>je vooral los vuil weghaalt dat dagelijks binnenkomt;</li>
+<li>de vloer niet goed tegen veel water kan, zoals onbehandeld hout of laminaat.</li>
+</ul>
+<p>Werk thuis met twee emmers (een met sop, een om de mop uit te spoelen), ververs het water op tijd en gebruik niet meer middel dan op de verpakking staat. Dat scheelt al veel aan grauwe vloeren.</p>
+
+<h2>Wanneer heb je een schrobmachine nodig?</h2>
+<p>Machinaal reinigen loont als je een of meer van deze dingen herkent:</p>
+<ul>
+<li><strong>Grote oppervlakken</strong>, zoals gangen, aula's, kantines, winkels of bedrijfshallen.</li>
+<li><strong>Loopstraten</strong>: donkere of doffe banen op de plekken waar het meest gelopen wordt.</li>
+<li><strong>Een plakkerige vloer</strong>, ook direct nadat hij gedweild is.</li>
+<li><strong>Vuil in voegen en structuur</strong>, bijvoorbeeld bij antislip-tegels of een ruwe betonvloer.</li>
+<li><strong>Na een verbouwing of oplevering</strong>, als er bouwstof en fijn zand op en in de vloer zit.</li>
+<li><strong>Een vloer die snel weer in gebruik moet</strong>, omdat dweilen te lang een natte vloer geeft.</li>
+</ul>
+<p>In scholen en kantoren is de beste aanpak vaak een combinatie: dagelijks stofwissen en dweilen door de eigen schoonmaakdienst, en periodiek een machinale reiniging. Hoe vaak dat nodig is, lees je in ons artikel <a href="/post/hoe-vaak-school-of-kantoorvloer-laten-reinigen/">hoe vaak je een school- of kantoorvloer moet laten reinigen</a>.</p>
+
+<h2>Schrobben is iets anders dan strippen</h2>
+<p>Een veelvoorkomend misverstand: een schrobmachine haalt vuil weg, maar laat een eventuele beschermlaag (coating of polymeer) in principe intact. Is die laag zelf versleten, vergeeld of vol krassen, dan helpt schrobben maar beperkt. Dan moet de oude laag eraf en wordt de vloer opnieuw beschermd. Dat is een ander, zwaarder proces dat je niet vaak hoeft te doen. Het is goed om dat verschil te kennen als je offertes vergelijkt: vraag welke behandeling er precies bedoeld wordt.</p>
+
+<h2>Zelf een machine huren of laten doen?</h2>
+<p>Je kunt bij verhuurbedrijven een schrobmachine huren. Voor een grote tegelvloer, een garage of een eigen bedrijfsruimte kan dat prima werken, zeker als je er eerst even mee oefent op een rustig stuk. Let wel op: met de verkeerde pad of een te agressief middel kun je een vloer beschadigen of een coating aantasten, en te veel water kan onder plinten of in naden trekken.</p>
+<p>Bij grote of gevoelige vloeren, of als je geen tijd hebt om je in machines en middelen te verdiepen, is uitbesteden vaak handiger. Een vakkundige partij kiest de juiste methode voor het type vloer, verplaatst waar nodig meubilair en plant het werk op een moment dat het gebouw leeg is, zoals in een schoolvakantie of buiten kantoortijd.</p>
+
+<h2>Hulp bij vloerreiniging</h2>
+<p>JSTN Multidiensten verzorgt <a href="/vloerreiniging-groningen/">vloerreiniging</a> voor scholen, kantoren, zorglocaties, bedrijfspanden en particulieren in Groningen, Friesland en Drenthe, als eenmalige grondige beurt of als periodiek onderhoud. We zijn flexibel inplanbaar, ook in schoolvakanties, en je hebt één aanspreekpunt. Voor organisaties staat op onze <a href="/zakelijk/">zakelijke pagina</a> wat we verder doen. Twijfel je of jouw vloer een machinale reiniging nodig heeft? Neem <a href="/contact/">contact</a> op; je krijgt binnen 12 uur een reactie.</p>
+""",
+},
+{
  "slug": "wat-bepaalt-de-prijs-van-een-woningontruiming",
  "title": "Wat bepaalt de prijs van een woningontruiming? Dit zijn de factoren die meetellen",
  "seo_title": "Wat bepaalt de prijs van een woningontruiming? | JSTN",
