@@ -3,6 +3,77 @@
 
 POSTS = [
 {
+ "slug": "kamer-verpleeghuis-leegmaken-na-overlijden",
+ "title": "Kamer in het verpleeghuis leegmaken na overlijden: wat familie moet weten",
+ "seo_title": "Kamer verpleeghuis leegmaken na overlijden | JSTN",
+ "desc": "Je vader of moeder is overleden in het verpleeghuis en de kamer moet leeg. Wat moet blijven, hoeveel tijd je hebt en hoe je het rustig regelt.",
+ "date": "2026-11-26", "modified": "2026-11-26", "date_nl": "26 november 2026",
+ "cat": "Zakelijk", "icon": "clip",
+ "note": "Dit artikel is met AI-ondersteuning geschreven.",
+ "sources": [
+   ("CAK — Wat gebeurt er in de Wlz na een overlijden?", "https://hetcak.nl/zorg-vanuit-de-wlz/gebeurt-wlz-overlijden"),
+   ("Juridisch Loket — Kan ik na het overlijden van de huurder in de huurwoning blijven?", "https://www.juridischloket.nl/wonen-en-buren/huurwoning/overlijden-huurder/"),
+ ],
+ "faq": [
+   ("Hoeveel tijd heb je om een kamer in het verpleeghuis leeg te maken?",
+    "Dat verschilt per zorginstelling en staat in de zorgovereenkomst of de huisregels. Vraag het bij het eerste gesprek met de afdeling na, en vraag ook wat er gebeurt als het niet lukt binnen die termijn. Huurde je ouder de kamer of het appartement met een apart huurcontract en woonde hij of zij alleen, dan stopt dat contract volgens Juridisch Loket automatisch aan het einde van de tweede maand na het overlijden."),
+   ("Loopt de eigen bijdrage door zolang de spullen nog in de kamer staan?",
+    "Nee. Volgens het CAK betaal je de eigen bijdrage voor Wlz-zorg tot en met de dag van overlijden. Krijg je een factuur voor de maand erna, dan klopt die niet. Los daarvan kan een zorginstelling eigen afspraken hebben over kosten als de kamer niet op tijd leeg is; die staan in de overeenkomst."),
+   ("Wat moet er in de kamer blijven staan?",
+    "Alles wat eigendom is van de instelling, zoals een hoog-laagbed, tillift, nachtkastje of vaste kasten, en vaak ook hulpmiddelen die via de instelling, gemeente of zorgverzekeraar zijn verstrekt. Twijfel je over een stuk, vraag het dan na bij de afdeling voordat je het meeneemt of laat weghalen."),
+   ("Kun je het leeghalen ook helemaal uitbesteden?",
+    "Ja. Veel families halen zelf de persoonlijke spullen op en laten de rest over aan een ontruimingsbedrijf. Spreek af wat apart gelegd moet worden, zoals papieren, foto's en sieraden, en wie de toegang regelt met de afdeling."),
+ ],
+ "html": """
+<p class="lead">Na een overlijden in het verpleeghuis vraagt de instelling meestal om de kamer binnen een korte, vooraf afgesproken termijn leeg te maken. Hoe lang je precies hebt, staat in de zorgovereenkomst of de huisregels, dus vraag dat als eerste na. Haal daarna in rust de persoonlijke spullen op, laat alles staan wat van de instelling is, en besteed de rest uit als het jullie niet lukt. De eigen bijdrage voor Wlz-zorg loopt niet door: die stopt op de dag van overlijden.</p>
+
+<p>Een verpleeghuiskamer is klein, maar het leeghalen voelt vaak groter dan het is. Het is het laatste stukje van iemands leven dat nog ingericht is zoals hij of zij het wilde. Dit artikel helpt je om de praktische kant overzichtelijk te houden, zodat er ruimte blijft voor de rest.</p>
+
+<h2>Vraag eerst drie dingen na bij de afdeling</h2>
+<p>De regels verschillen per zorgorganisatie. Bel of spreek de afdeling of de contactpersoon van je ouder, en vraag in elk geval:</p>
+<ul>
+<li><strong>Wanneer moet de kamer leeg zijn?</strong> En wat gebeurt er als dat niet lukt: kun je uitstel krijgen, en zijn daar kosten aan verbonden?</li>
+<li><strong>Wat is van de instelling?</strong> Denk aan het bed, de tillift, het nachtkastje, een kledingkast of gordijnen. Die blijven staan.</li>
+<li><strong>Hoe regel je toegang?</strong> Wie heeft de sleutel, wanneer kun je langskomen, en mag je een ontruimingsbedrijf sturen zonder dat jij erbij bent?</li>
+</ul>
+<p>Vraag ook welk contract er gold. Bij een gewone verpleeghuisplek met Wlz-zorg gelden de afspraken van de instelling. Huurde je ouder de kamer of het appartement met een apart huurcontract en woonde hij of zij alleen, dan stopt dat contract volgens <a href="https://www.juridischloket.nl/wonen-en-buren/huurwoning/overlijden-huurder/" target="_blank" rel="noopener">Juridisch Loket</a> automatisch aan het einde van de tweede maand na het overlijden.</p>
+
+<h2>Wat er met de eigen bijdrage gebeurt</h2>
+<p>Veel families maken zich zorgen dat de kosten doorlopen zolang de spullen er nog staan. Voor de Wlz-zorg zelf is dat niet zo. Volgens het <a href="https://hetcak.nl/zorg-vanuit-de-wlz/gebeurt-wlz-overlijden" target="_blank" rel="noopener">CAK</a> betaal je de eigen bijdrage tot en met de dag van overlijden. Het CAK hoort het overlijden via de gemeente; je hoeft het niet zelf door te geven. Komt er toch nog een factuur voor de maand na het overlijden, dan hoef je die niet te betalen, en wat te veel is afgeschreven wordt teruggestort.</p>
+<p>Wat wel kan: een zorginstelling heeft eigen afspraken voor als de kamer niet op tijd vrij is. Dat staat los van het CAK. Daarom is die eerste vraag aan de afdeling zo belangrijk.</p>
+
+<h2>Eerst de persoonlijke spullen, dan de rest</h2>
+<p>Een handige volgorde, ook als je weinig tijd hebt:</p>
+<ol>
+<li><strong>Papieren en waardevolle spullen.</strong> Kijk in laden, tassen, jaszakken en achter in de kast. Bankpasjes, post, een agenda, sieraden, een horloge of hoortoestel komen vaak op onverwachte plekken terecht.</li>
+<li><strong>Wat de familie wil bewaren.</strong> Foto's, lijstjes, een favoriete stoel, kleding met een herinnering. Spreek met elkaar af wie wat neemt, liefst voordat je de kamer in gaat.</li>
+<li><strong>Wat nog bruikbaar is.</strong> Kleding, een televisie, een leesstoel of kleine meubels kunnen vaak nog een tweede leven krijgen via kringloop of verkoop.</li>
+<li><strong>Wat weg kan.</strong> Pas als het bovenstaande gedaan is.</li>
+</ol>
+<p>Neem dozen, vuilniszakken en een paar tassen mee voor de spullen die je zelf meeneemt. Een kleine kamer is in een paar uur leeg, maar plan liever wat ruimer: je komt dingen tegen waar je even bij wilt stilstaan.</p>
+
+<h2>Medicijnen en hulpmiddelen</h2>
+<p>Laat medicijnen niet zomaar in een vuilniszak verdwijnen. Vraag de afdeling wat zij ermee doen; vaak nemen ze die zelf in. Datzelfde geldt voor hulpmiddelen zoals een rollator, rolstoel of speciaal kussen: die zijn soms geleend van de instelling, de gemeente of de zorgverzekeraar en moeten terug. Vraag het na voordat je ze meeneemt of weg laat brengen.</p>
+
+<h2>Zelf doen of laten doen?</h2>
+<p>Woon je in de buurt, heb je een auto en is er weinig groot meubilair, dan kun je een verpleeghuiskamer prima zelf leeghalen. Voor veel families is dat ook een waardevol moment om afscheid te nemen.</p>
+<p>Uitbesteden ligt meer voor de hand als:</p>
+<ul>
+<li>je ver weg woont of de termijn kort is;</li>
+<li>er meubels zijn die je niet zelf kunt vervoeren;</li>
+<li>je wel de persoonlijke spullen wilt uitzoeken, maar niet de rest wilt afvoeren;</li>
+<li>er tegelijk ook een woning leeg moet, bijvoorbeeld van een partner die is achtergebleven.</li>
+</ul>
+<p>Een goede ontruimer legt papieren, foto's en waardevolle spullen apart in plaats van ze weg te gooien, zorgt dat bruikbare spullen waar mogelijk een tweede leven krijgen en laat de kamer bezemschoon achter. Spreek vooraf duidelijk af wat er moet blijven staan en met wie bij de afdeling de toegang geregeld wordt.</p>
+
+<h2>En daarna?</h2>
+<p>Als de kamer leeg is, neemt de instelling het meestal over: herstellen, schilderen en schoonmaken voor de volgende bewoner. Hoe zorgorganisaties dat aanpakken, lees je in ons artikel over <a href="/post/zorgappartement-opleveren-leegstand-kort-houden/">een zorgappartement snel opleveren na vertrek van een bewoner</a>. Moet er ook een woning van je ouder leeg, dan helpt ons <a href="/post/woning-ontruimen-na-overlijden-stappenplan/">stappenplan voor het ontruimen van een woning na overlijden</a>.</p>
+
+<h2>Hulp bij het leeghalen</h2>
+<p>JSTN Multidiensten helpt families en zorgorganisaties in Groningen, Friesland en Drenthe met het leeghalen van verpleeghuiskamers en <a href="/zorgappartementen-opleveren/">zorgappartementen</a>, en met <a href="/woningontruiming-groningen/">woningontruiming</a> als er ook een huis leeg moet. Je hebt één aanspreekpunt, we zijn flexibel inplanbaar en je krijgt binnen 12 uur een reactie. Wil je even overleggen wat er mogelijk is? Neem gerust <a href="/contact/">contact</a> op.</p>
+""",
+},
+{
  "slug": "schrobmachine-of-dweilen-verschil",
  "title": "Schrobmachine of dweilen: wat is het verschil en wanneer heb je wat nodig?",
  "seo_title": "Schrobmachine of dweilen: wat is het verschil? | JSTN",
